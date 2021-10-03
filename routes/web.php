@@ -23,3 +23,14 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'DashController@index')->name('dash.index');
+
+
+//試合関連
+Route::group(['prefix'=>'event'],function(){
+    
+    //試合情報取り込み
+    Route::get('/create', 'EventCreateController@index')->name('create');
+    Route::match(['post'],'/set', 'EventCreateController@set')->name('set');
+    Route::get('/end', 'EventCreateController@end')->name('end');
+
+});

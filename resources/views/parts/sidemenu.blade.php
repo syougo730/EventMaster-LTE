@@ -14,23 +14,22 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                
-          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-header">試合</li>
 
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="/event/create" class="nav-link">
               <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
+                試合登録
               </p>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="/event/list" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Gallery
+                試合一覧
               </p>
             </a>
           </li>
