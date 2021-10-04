@@ -25,9 +25,9 @@
         
 
     <div class="description">
-      <p>GoogleDriveで作成した各スプレッドシートのIDを入力してください。<br>
+      <p>GoogleDriveで作成した「event_config」スプレッドシートのURLを入力してください。<br>
           (URL例：https://docs.google.com/spreadsheets/d/xxxxxxxxxxxxxxxxxxxxxxxx/edit#gid=0)</p>
-      <p>※男子版</p>
+      <p>※男子版のみ対応</p>
   </div>
 
   <div class="card card-primary">
@@ -42,30 +42,6 @@
           <div class="form-group">
             <label for="config">Config</label>
             <input type="text" class="form-control" id="config" name="config" placeholder="Config" required>
-          </div>
-          <div class="form-group">
-            <label for="fx">FX</label>
-            <input type="text" class="form-control" id="fx" name="fx" placeholder="FloorExercise" required>
-          </div>
-          <div class="form-group">
-            <label for="ph">PH</label>
-            <input type="text" class="form-control" id="ph" name="ph" placeholder="PommelHorse" required>
-          </div>
-          <div class="form-group">
-            <label for="sr">SR</label>
-            <input type="text" class="form-control" id="sr" name="sr" placeholder="StillRings" required>
-          </div>
-          <div class="form-group">
-            <label for="vt">VT</label>
-            <input type="text" class="form-control" id="vt" name="vt" placeholder="Vault" required>
-          </div>
-          <div class="form-group">
-            <label for="pb">PB</label>
-            <input type="text" class="form-control" id="pb" name="pb" placeholder="ParallelBars" required>
-          </div>
-          <div class="form-group">
-            <label for="hb">HB</label>
-            <input type="text" class="form-control" id="hb" name="hb" placeholder="HorizontalBar" required>
           </div>
 
         </div>

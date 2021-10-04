@@ -43,7 +43,7 @@ class GoogleDrive
      * スプレッドシートを取得する
      *
      */
-    public function getSpreadSheet($id)
+    public function getSpreadSheet($id,$range='event_sheet!A5:N')
     {
         $client = new \Google_Client();
 
@@ -55,9 +55,18 @@ class GoogleDrive
         ]);
         $spreadsheet_service = new \Google_Service_Sheets($client);
         
-        $range = 'event_sheet!A5:N'; // 取得する範囲
-        $response = $spreadsheet_service->spreadsheets_values->get($id, $range);
-        $values = $response->getValues();
+        try{
+
+            $response = $spreadsheet_service->spreadsheets_values->get($id, $range);
+            $values = $response->getValues();
+
+        }catch(Google_Exception $e){
+
+            $errors = json_decode($e->getMessage(),true);
+            Log::error($errors);
+            return false;
+
+        }
 
         return $values;
     }

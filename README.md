@@ -1,3 +1,10 @@
+## 体操競技 大会情報閲覧ツール
+
+- 未処理部分は###で残す。VScodeで検索。誰かが追加してくれる(願望)。
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
