@@ -18,9 +18,12 @@
 						$table->increments('id');
 						$table->integer('event_id')->unsigned(); //大会ID
 						$table->integer('team_id')->unsigned();
+						$table->integer('athlete_number')->unsigned(); //選手番号
 						$table->string('athlete_name',511)->nullable(); //選手名
 						//$table->foreign("event_id")->references("id")->on("events");
 						//$table->foreign("team_id")->references("id")->on("teams");
+                        
+						$table->timestamps();
 
 
 
