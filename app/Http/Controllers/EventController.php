@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 use App\Event;
 use App\Team;
@@ -35,8 +35,8 @@ class EventController extends Controller
      */
     public function index()
     {
-
-        $events = Event::get();
+        $user_id = Auth::id();//login_user
+        $events = Event::where('user_id', $user_id)->get();
         
         //dd関数で変数の中身が見れるよ！
         //dd($events);

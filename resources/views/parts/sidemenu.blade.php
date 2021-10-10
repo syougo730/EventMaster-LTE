@@ -26,7 +26,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/event/list" class="nav-link">
+            <a href="/event/" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
                 試合一覧
