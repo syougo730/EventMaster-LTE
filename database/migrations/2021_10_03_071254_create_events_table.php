@@ -19,13 +19,14 @@
 						$table->bigInteger('user_id')->unsigned();
 						$table->integer('rule_id')->unsigned();
 						$table->text('event_name')->nullable();
+						$table->text('sheet_id')->nullable();
 						$table->timestamps();
 						
 
                     //*********************************
                     // Foreign KEY [ Uncomment if you want to use!! ]
                     //*********************************
-                        //$table->foreign("user_id")->references("id")->on("users");
+                        $table->foreign("user_id")->references("id")->on("users");
 						//$table->foreign("rule_id")->references("id")->on("event_rules");
 
 

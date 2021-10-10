@@ -26,11 +26,19 @@ Route::get('/', 'DashController@index')->name('dash.index');
 
 
 //試合関連
-Route::group(['prefix'=>'event'],function(){
+Route::group(['prefix'=>'event','as'=>'event.'],function(){
     
     //試合情報取り込み
     Route::get('/create', 'EventCreateController@index')->name('create');
     Route::match(['post'],'/set', 'EventCreateController@set')->name('set');
     Route::get('/end', 'EventCreateController@end')->name('end');
+
+
+    Route::get('/', 'EventController@index')->name('index');
+    Route::get('/{event_id?}', 'EventController@list')->where('event_id', '[0-9]+')->where('athlete_id', '[0-9]+')->name('list');
+    Route::get('/{event_id?}/{athlete_id?}', 'EventController@athlete')->where('event_id', '[0-9]+')->where('athlete_id', '[0-9]+')->name('athlete');
+
+
+
 
 });

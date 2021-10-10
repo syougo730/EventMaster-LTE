@@ -41,8 +41,12 @@
 
           <div class="form-group">
             <label for="config">Config</label>
-            <input type="text" class="form-control" id="config" name="config" placeholder="Config" required>
+            <input type="text" class="form-control @error('config') is-invalid @enderror" id="config" name="config" placeholder="Config" required>
           </div>
+
+          @error('config')
+            <p style="color: red">入力が正しくありません。</p>
+          @enderror
 
         </div>
         <!-- /.card-body -->

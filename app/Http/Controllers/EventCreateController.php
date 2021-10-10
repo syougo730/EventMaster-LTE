@@ -66,9 +66,18 @@ class EventCreateController extends Controller
             return $result[0][3];
         }
 
+        $validatedData = $request->validate([
+            'config' => 'required|url',
+        ]);
+
         $user_id = Auth::id();//login_user
 
         $config_url = get_sheet_id($request->config);
+
+        //2度登録を防ぐ
+        $sheet_check = Event::where('sheet_id',$config_url)->exists();
+        if($sheet_check) return redirect()->route('event.index');
+
         $config = $this->googleDrive->getSpreadSheet($config_url,'config!A5:N');
 
         $fx_id = get_sheet_id($config[3][1]);
@@ -83,6 +92,7 @@ class EventCreateController extends Controller
         $event->event_name = $config[0][1];
         $event->user_id = $user_id;
         $event->rule_id = 1;
+        $event->sheet_id = $config_url;
         $event->save();
 
         $eid = $event->id;

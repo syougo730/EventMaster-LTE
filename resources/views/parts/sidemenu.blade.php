@@ -35,10 +35,10 @@
           </li>
 
           <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
+            <a href="/dscore" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
-                Kanban Board
+                Ds.Creator
               </p>
             </a>
           </li>
