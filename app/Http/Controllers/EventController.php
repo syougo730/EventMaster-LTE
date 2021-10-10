@@ -35,8 +35,8 @@ class EventController extends Controller
      */
     public function index()
     {
-
-        $events = Event::get();
+        $user_id = Auth::id();//login_user
+        $events = Event::where('user_id', $user_id)->get();
         
         //dd関数で変数の中身が見れるよ！
         //dd($events);
