@@ -1,4 +1,10 @@
 @extends('layouts.common') 
+@section('pagehead')
+  <!-- DataTables -->
+  <link rel="stylesheet" href="/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+@endsection
 @section('header')
   <div class="col-sm-6">
     <h1 class="m-0">大会情報入力</h1>

@@ -30,20 +30,20 @@
             </div>
 
             <div class="card-body">
-
+                <?php echo $event->event_name ?>
                 {{-- ここに内容をいれるよ --}}
 
-                @foreach($events as $event)
+                {{-- @foreach($events as $event) --}}
 
                     {{-- ここに全件の試合データを表示させるよ IDを取得して次のページ(試合データ表示まで) --}}
 
 
                 {{-- これはテスト用　--}}
                 <div>
-                    <a href="/event/{{ $event->id }}">{{ $event->event_name }}</a>
+                    {{-- <a href="/event/{{ $event->id }}">{{ $event->event_name }}</a> --}}
                 </div>
 
-                @endforeach
+                {{-- @endforeach --}}
 
 
             </div>

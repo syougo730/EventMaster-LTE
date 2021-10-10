@@ -50,16 +50,14 @@ class EventController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function event()
+    public function list(Request $request)
     {
-
-        $events = Event::get();
-        
+        $request_id = $request->event_id;
         //dd関数で変数の中身が見れるよ！
-        //dd($events);
+        // dd($eid);
 
-
-        return view('event.list',compact('events'));
+        $event = Event::find($request_id);
+        return view('event.list.index',compact('request_id', 'event'));
     }
 
     /**
