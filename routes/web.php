@@ -42,3 +42,6 @@ Route::group(['prefix'=>'event','as'=>'event.'],function(){
 
 
 });
+
+
+Route::get('/dscreator', 'DsController@index')->name('ds.index');
