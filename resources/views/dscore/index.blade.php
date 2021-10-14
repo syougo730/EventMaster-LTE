@@ -26,7 +26,11 @@
 
         <div id="dscreator">
           <div class="tab-content ts" data-role="page" id="page1"></div>
-          <div class="tab-content fx" data-role="page" id="page2"></div>
+          <div class="tab-content fx" data-role="page" id="page2">
+
+            <div class="modal elements-modal"></div>
+
+          </div>
         </div>
 
       </div>

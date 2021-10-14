@@ -59,10 +59,9 @@ function group_calc(groups){
     let group_score = 0;
 
     //test
-    groups = ['Ⅰ','Ⅱ','Ⅲ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅳc',];
+    groups = ['Ⅰ','Ⅱ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅳc',];
 
     $.each(groups, function(idx,val){
-        
         switch (val) {
             case 'Ⅰ':
                 group1_cnt++;
@@ -93,21 +92,12 @@ function group_calc(groups){
             default:
                 break;
         }
-
     });
 
-    if(group1_cnt > MAX){
-        set_notice('グループⅠが上限数を超えています','danger');
-    }
-    if(group2_cnt > MAX){
-        set_notice('グループⅡが上限数を超えています','danger');
-    }
-    if(group3_cnt > MAX){
-        set_notice('グループⅢが上限数を超えています','danger');
-    }
-    if(group4_cnt > 1){
-        set_notice('終末技が複数セットされています','danger');
-    }
+    if(group1_cnt > MAX) set_notice('グループⅠが上限数を超えています','danger');
+    if(group2_cnt > MAX) set_notice('グループⅡが上限数を超えています','danger');
+    if(group3_cnt > MAX) set_notice('グループⅢが上限数を超えています','danger');
+    if(group4_cnt > 1) set_notice('終末技が複数セットされています','danger');
 
     if(group1_cnt) group_score = group_score + 0.5;
     if(group2_cnt) group_score = group_score + 0.5;
@@ -195,7 +185,92 @@ function def_to_val(def){
  */
 function set_notice(text,type='info'){
 
+    console.log( type + '：' + text );
+
 }
+
+/**
+ * 
+ * 技情報の取得
+ * 
+ */
+function set_elements(unsets=''){
+    
+    let events = ['fx','ph','sr','vt','pb','hb'];
+
+    if(unsets){
+        $.each(unsets,function(idx,val){
+            let index = events.indexOf(val);
+            events.splice(index,1);
+            console.log('ELEMENT UNSET：'+val);
+        })
+    };
+
+    $.each(events, function(idx,val){
+        
+        let event = val;
+        let json_file = val+'.json';
+
+        $.ajax({
+            type:'GET',
+            url:'/json/'+json_file,
+            dataType:'json'
+        })
+        .then(function(json){
+            
+            console.log(json);
+
+            let val_count = [
+                {'A':0},
+                {'B':0},
+                {'C':0},
+                {'D':0},
+                {'E':0},
+                {'F':0},
+                {'G':0},
+                {'H':0},
+                {'I':0},
+                {'J':0}
+            ];//[A~J]
+            let group_count = [
+                {'Ⅰ':0},
+                {'Ⅱ':0},
+                {'Ⅲ':0},
+                {'Ⅳ':0}
+            ];//[Ⅰ,Ⅱ,Ⅲ,Ⅳ]
+
+            $.each(json['element'],function(idx,val){
+                
+                let h = '<div class="element" data-group="'+val['group']+'" data-val="'+val['vv']+'">'+'<span class="ja">'+val['name']+'</span>'+'<span class="en">'+val['name_en']+'</span>'+'</div>';
+                $(".elements-modal").append(h);
+                val_count[val['vv']]++;
+                group_count[val['group']]++;
+
+            });
+
+            $.each(val_count,function(idx,val){
+                if(!val){
+                    $("."+event+" .value").attr('data-val',val).hide();
+                }
+            });
+            $.each(group_count,function(idx,val){
+                if(!val){
+                    $("."+event+" .group").hide();
+                }                
+            });
+
+        },function(e){
+            alert('error');
+            console.log(e);
+        });
+
+    });
+
+
+}
+
+
+
 
 $(function(){
 
@@ -204,5 +279,8 @@ $(function(){
     get_storage('fx');
 
     console.log(group_calc('test'));
+
+    var unsets = ['ph','sr','vt','pb','hb',];
+    set_elements(unsets);
 
 });
