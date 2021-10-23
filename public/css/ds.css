@@ -1,0 +1,147 @@
+:root{
+    --gray:#616161;
+
+    --elm: #5C6BC0;/* elm */
+    --elm-h: #303F9F;/* elm-hover */
+    --tab-h: #3F51B5;/* tab-hover */
+    --tab: #1A237E;/* tab */
+
+    --ac:#BF360C;/* accent */
+    --ac-h:#FF5722;/* accent-hover */
+    --ac-t:#BF360C;/* accent-total */
+}
+
+.jura{
+	font-family: 'Jura', sans-serif;
+}
+.noto {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+
+.js-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+}
+.js-tab>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14%;
+    background-color: var(--tab);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.js-tab>div:hover{
+    background-color: var(--tab-h);
+}.js-tab>div.active{
+    background-color: var(--ac-t);
+}
+
+
+.elm {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 2px;
+}
+.elm>div {
+    background-color: var(--elm);
+    color: #fff;
+    padding: 5px;
+    margin: 1px;
+    font-size: 14px;
+    height: 100%;
+}
+.elm>.num {
+    background-color: var(--gray);
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elm>.scores {
+    background-color: unset;
+    width: 5%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.elm>.scores>div {
+    background-color: var(--gray);
+    width: 100%;
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elm>.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.elm>.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 12%;
+    text-align: center;
+}
+
+
+
+.modal {
+    background: rgb(233 237 255 / 95%);
+    width: 70%;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999;
+}
+.modal.active {
+    display: block;
+}
+
+.modal>div {
+    display: flex;
+}
+
+
+.modal .level {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray);
+    color: #fff;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999;
+    cursor: pointer;
+    transition: .3s;
+}.level.active{
+    background-color: var(--ac);
+}.level:hover{
+    background-color: var(--ac-h);
+}
+.modal .level.level-value {
+    width: 80px;
+    margin: 5px;
+}

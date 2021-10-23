@@ -35,7 +35,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/dscore" class="nav-link">
+            <a href="/dscreator" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Ds.Creator
