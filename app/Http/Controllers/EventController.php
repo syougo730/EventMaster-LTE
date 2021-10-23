@@ -39,7 +39,7 @@ class EventController extends Controller
         $events = Event::where('user_id', $user_id)->get();
         
         //dd関数で変数の中身が見れるよ！
-        //dd($events);
+        // dd($events);
 
 
         return view('event.index',compact('events'));
@@ -50,17 +50,26 @@ class EventController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function event()
+    public function list(Request $request)
     {
-
+        $request_id = $request->event_id;
         $events = Event::get();
         
         //dd関数で変数の中身が見れるよ！
+        
+        
+        
         //dd($events);
+        $event = Event::find($request_id);
+        $athletes = Athlete::where('event_id',$request_id)->get();
+        return view('event.list.index',compact('request_id', 'events', 'athletes'));
 
-
-        return view('event.list',compact('events'));
+        // $events = Event::with(['event.athlete'])
+        // $athletes = App\Event::find(1)->athletes;
+        // return view('event.list.index',compact('request_id', 'event', 'athletes'));
     }
+     //本間くん参考(https://www.yoheim.net/blog.php?q=20181104)
+    //  $books = Book::with(['room','room.hotel','room.hotel.subgroup','roster'])
 
     /**
      * Show the application dashboard.
