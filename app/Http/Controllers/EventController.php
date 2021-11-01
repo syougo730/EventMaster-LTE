@@ -53,6 +53,7 @@ class EventController extends Controller
     public function list(Request $request)
     {
         $request_id = $request->event_id;
+
         $events = Event::get();
         
         //dd関数で変数の中身が見れるよ！
@@ -67,6 +68,7 @@ class EventController extends Controller
         // $events = Event::with(['event.athlete'])
         // $athletes = App\Event::find(1)->athletes;
         // return view('event.list.index',compact('request_id', 'event', 'athletes'));
+
     }
      //本間くん参考(https://www.yoheim.net/blog.php?q=20181104)
     //  $books = Book::with(['room','room.hotel','room.hotel.subgroup','roster'])

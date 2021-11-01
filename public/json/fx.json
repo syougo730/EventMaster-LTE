@@ -1,0 +1,439 @@
+{
+	"element":[
+		{
+			"key" : "0",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "倒立から下ろして開脚前挙(脚前挙)支持",
+			"name_en" : "From hdst.lower to L-sit or strad.L-sit."
+		},
+		{
+			"key" : "1",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "立位から伸腕屈伸力倒立",
+			"name_en" : "From stand,Swiss press to hdst."
+		},
+		{
+			"key" : "2",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "正面支持臥から勢いをつけて屈腕伸身力倒立",
+			"name_en" : "Rock to hdst.from prone position"
+		},
+		{
+			"key" : "3",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "倒立",
+			"name_en" : "handstand"
+		},
+		{
+			"key" : "4",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "開脚水平支持",
+			"name_en" : "Support lever,legs straddle"
+		},
+		{
+			"key" : "4",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "倒立(1回)ひねりor1回(1/2)ひねり倒立",
+			"name_en" : "1/2 or 1/1 turn in handstand or to handstand."
+		},
+		{
+			"key" : "5",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "脚上挙などから後方回転開脚立ち",
+			"name_en" : "From L-sit,etc.,turn over bwd.to stand."
+		},
+		{
+			"key" : "6",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方倒立回転 or メニケリ(背面支持臥から片足で蹴って倒立)",
+			"name_en" : "From stand or rear support,push off 1 foot through hdst.or back walkover."
+		},
+		{
+			"key" : "7",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方倒立回転",
+			"name_en" : "Forward walkover."
+		},
+		{
+			"key" : "8",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前後(左右)開脚座",
+			"name_en" : "Cross or side split."
+		},
+		{
+			"key" : "9",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "片足平均立ち",
+			"name_en" : "Any standing scale."
+		},
+		{
+			"key" : "11",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後ろとび正面支持臥",
+			"name_en" : "Jump bwd.to front support."
+		},
+		{
+			"key" : "12",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "バタフライ",
+			"name_en" : "Butterfly."
+		},
+		{
+			"key" : "13",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ブレイクダンスの変形",
+			"name_en" : "Breakdance variations."
+		},
+		{
+			"key" : "14",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "旋回2回",
+			"name_en" : "2 circles or flairs."
+		},
+		{
+			"key" : "15",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "開脚旋回ひねり",
+			"name_en" : "Flair with 1/2 spindle."
+		},
+		{
+			"key" : "16",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ロシアン360°(540°)転向",
+			"name_en" : "R360 or R540."
+		},
+		{
+			"key" : "17",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後転倒立ひねり",
+			"name_en" : "Roll bwd.through hdst.with 1/2t."
+		},
+		{
+			"key" : "18",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "脚上挙支持",
+			"name_en" : "V-sit."
+		},
+		{
+			"key" : "19",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "伸腕屈伸閉脚力倒立or屈腕伸身力倒立",
+			"name_en" : "Piked body,str.arm or str.body,bent arm press to hdst.with legs together."
+		},
+		{
+			"key" : "20",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "閉脚座(脚前挙支持or開脚前挙支持)から伸腕屈伸力倒立",
+			"name_en" : "Swiss press from split, L-sit,stand.L-sit or from sup."
+		},
+		{
+			"key" : "21",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(倒立から下してor立位から伸腕屈伸力or振動から)十字倒立",
+			"name_en" : "Press or lower or swing to Japanese hdst."
+		},
+		{
+			"key" : "22",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "水平支持",
+			"name_en" : "Support lever."
+		},
+		{
+			"key" : "23",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "開脚水平支持から伸腕伸身力倒立",
+			"name_en" : "From straddled support lever press hdst."
+		},
+		{
+			"key" : "24",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立前転開脚浮腰支持経過倒立",
+			"name_en" : "Endo roll to handstand."
+		},
+		{
+			"key" : "25",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "脚を保持しない180°開脚片足平均立ち",
+			"name_en" : "Any standing scale with 180° straddle,no hand hold."
+		},
+		{
+			"key" : "26",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろとび(屈・伸身or1回ひねり)正面支持臥",
+			"name_en" : "Jump bwd.with pike-stretch or with 1/1turn to front support."
+		},
+		{
+			"key" : "27",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "トンフェイ",
+			"name_en" : "Butterfly with 1/1 twist fwd.or bwd."
+		},
+		{
+			"key" : "28",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "旋回倒立",
+			"name_en" : "Circles or flair to handstand."
+		},
+		{
+			"key" : "29",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立から下して旋回",
+			"name_en" : "Lower from hdst.to flair or circle."
+		},
+		{
+			"key" : "30",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "開脚旋回1回ひねり(2回の旋回で)",
+			"name_en" : "Flair with 1/1 spindle(in 2 circles)."
+		},
+		{
+			"key" : "31",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "開脚旋回ひねり倒立",
+			"name_en" : "Flair with 1/2 spindle to handstand."
+		},
+		{
+			"key" : "32",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ロシアン720°(900°)転向",
+			"name_en" : "R720 or R900."
+		},
+		{
+			"key" : "33",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後転倒立とび1回ひねり",
+			"name_en" : "Roll bwd.with hop 1/1t.through hdst."
+		},
+		{
+			"key" : "34",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "マンナ",
+			"name_en" : "V-sit with legs horz."
+		},
+		{
+			"key" : "35",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "脚上挙支持から伸腕屈伸閉脚(開脚)力倒立",
+			"name_en" : "V-sit and press to hdst. also with strad.legs."
+		},
+		{
+			"key" : "36",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "開脚座から伸腕屈伸力十字倒立",
+			"name_en" : "From split press to Japanese handstand."
+		},
+		{
+			"key" : "37",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "中水平支持",
+			"name_en" : "Swallow."
+		},
+		{
+			"key" : "38",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "リーク(前転から手を広げた開脚浮腰支持経過十字倒立)",
+			"name_en" : ""
+		},
+		{
+			"key" : "39",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ゴゴラーゼ(旋回倒立、下ろして旋回)",
+			"name_en" : "Flair or circle to hdst.continue to flair or circle."
+		},
+		{
+			"key" : "40",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "開脚旋回270°以上ひねり直接倒立(2回の旋回で)",
+			"name_en" : "Flair with 270° spindle(in 2 circles)directly to handstand."
+		},
+		{
+			"key" : "41",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "フェドルチェンコ(ロシアン1080°以上転向)",
+			"name_en" : "R1080 or more."
+		},
+		{
+			"key" : "42",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "マンナから伸腕屈伸閉脚(開脚)力倒立",
+			"name_en" : "Manna and press to hdst. also with strad.legs."
+		},
+		{
+			"key" : "43",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "マンナから肩転位して倒立",
+			"name_en" : "From Manna,turn over(dislocation) to handstand."
+		},
+		{
+			"key" : "44",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "アルバリーニョ",
+			"name_en" : "From Swallow. press to Japanese hdst."
+		},
+		{
+			"key" : "45",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "開脚旋回とび1回ひねり倒立､開脚旋回(2回のとびを伴う)",
+			"name_en" : "Flair hopping with 360°t.bwd.thr.hdst.and back to flair(2 hops)."
+		},
+		{
+			"key" : "46",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "開脚旋回270°以上ひねり直接倒立、下ろして旋回",
+			"name_en" : "Flair with 270°spindle(in 2 circles)directly to handstand and continue to circle or flair."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "首(頭)はね起きひねり倒立(1回ひねり背面支持臥)",
+			"name_en" : "Neck or head spring w. 1/2t.to hdst.or 1/1t.torear support."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "(両足踏み切り)前転とび",
+			"name_en" : "Forward handspring or flyspring."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "伸身前とび前転",
+			"name_en" : "Dive roll."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方かかえ込み(屈伸)宙返り",
+			"name_en" : "Salto fwd. tucked or piked."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "片足踏み切り前方伸身宙返り",
+			"name_en" : "Aerial walkover fwd."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方かかえ込み(屈伸)宙返りひねり",
+			"name_en" : "Salto tucked and piked 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方かかえ込み宙返り",
+			"name_en" : "Salto tucked and piked."
+		}
+
+
+	]
+
+}
