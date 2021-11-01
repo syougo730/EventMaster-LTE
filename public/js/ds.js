@@ -2,11 +2,14 @@
  *
  * @file Ds.Creator
  * 
+ * 本プログラムはFIG、日本体操協会の制定する体操競技のルールを元に作成されていますが、日本体操協会の許可を得て作成している訳ではありません。
+ * 日本体操協会の許可なく営利目的での体操競技に関わるものの活動は認められていません。
+ * 本プログラムは体操競技関係者が体操競技の発展を願って作成してます。
+ * 本プログラムの無断利用はお控えして頂きますようお願い申し上げます。
+ * 
  * **************************************** */
 
-/**
- * 
- * データリセット
+/** データリセット
  * 全ては無に帰す
  * 
  * @param {*} data 
@@ -253,7 +256,7 @@ function set_elements(unsets=''){
             ];//[Ⅰ,Ⅱ,Ⅲ,Ⅳ]
 
             $.each(json['element'],function(idx,val){
-                let h = '<div class="element" data-group="'+val['group']+'" data-val="'+val['vv']+'">'+'<span class="ja">'+val['name']+'</span>'+'<span class="en">'+val['name_en']+'</span>'+'</div>';
+                let h = '<div class="element" data-key="'+val['key']+'" data-group="'+val['group']+'" data-val="'+val['vv']+'">'+'<span class="ja">'+val['name']+'</span>'+'<span class="en">'+val['name_en']+'</span>'+'</div>';
                 $(".level-event[data-event="+event+"]").append(h);
                 val_count[val['vv']]++;
                 group_count[val['group']]++;
@@ -273,30 +276,80 @@ function set_elements(unsets=''){
 function select_group(event){
 
     const EVENT_GROUPS = [
-        {event:'fx',groups:[1,2,3]},
-        {event:'ph',groups:[1,2,3,4]},
-        {event:'sr',groups:[1,2,3,4]},
-        {event:'vt',groups:[1,2,3,4]},
-        {event:'pb',groups:[1,2,3,4]},
-        {event:'hb',groups:[1,2,3,4]}
+        {event:'fx',groups:["I","Ⅱ","Ⅲ"]},
+        {event:'ph',groups:["I","Ⅱ","Ⅲ","Ⅳ"]},
+        {event:'sr',groups:["I","Ⅱ","Ⅲ","Ⅳ"]},
+        {event:'vt',groups:["I","Ⅱ","Ⅲ","Ⅳ"]},
+        {event:'pb',groups:["I","Ⅱ","Ⅲ","Ⅳ"]},
+        {event:'hb',groups:["I","Ⅱ","Ⅲ","Ⅳ"]}
     ];
 
     let set_event = $.grep(EVENT_GROUPS,function(obj,idx){
         return (obj.event == event);
     });
 
+    console.log(set_event);
+
     $(".level-group").hide();
     $.each(set_event[0]['groups'],function(idx,val){
         $(".level-group[data-group="+val+"]").show();
     });
+
+
 }
 
+/** 難度選択モーダル
+ * 
+ */
 function select_value(){
 
-
-
+    select_element(active_event());
     $(".values").show();
+
 }
+
+/** 技選択モーダル
+ * 
+ */
+function select_element(event=""){
+
+    let active_group = $(".level-group.active").attr("data-group");
+    let active_value = $(".level-value.active").attr("data-value");
+
+    console.log("active_group：" + active_group);
+    console.log("active_value：" + active_value);
+    
+    $(".level-event[data-event='"+event+"'] .element").hide();
+    $(".level-event[data-event='"+event+"'] .element[data-group='"+active_group+"'][data-val='"+active_value+"']").show();
+
+}
+
+/** モーダルに選択されているグループと難度を返す
+ * 
+ * @returns {array} [group,value]
+ */
+function active_selects(){
+    
+    let active_group = $(".level-group.active").attr("data-group");
+    let active_value = $(".level-value.active").attr("data-value");
+
+    return [active_group,active_value];
+
+}
+
+/** アクティブな情報を拾ってモーダルにセットする
+ * 
+ * @param {*} this $(".elm")
+ */
+function modal_init(that){
+
+    let event = active_event();
+    let elm_id = that.attr("data-key");
+
+    console.log(event+" , "+elm_id);
+
+}
+
 
 /**
  * HTMLセッティング
@@ -314,7 +367,7 @@ function set_html(){
         let h = '';
 
         for (let i = 1; i < cnt; i++) {
-            h += '<div class="elm">';
+            h += '<div class="elm" data-key="'+i+'">';
             h += '<div class="num">'+i+'</div>';
             h += '<div class="content">';
             h +=   '<span class="ja">"TOUCH"to SELECT ELEMENTS</span>';
@@ -343,36 +396,129 @@ function active_event(){
     return $(".js-tab>div.active").attr("data-event");
 }
 
+/** モーダル表示スイッチ
+ * 
+ * 
+ * @param {string} set 'remove' => remove the moldal.
+ */
+function modal_toggle(set=""){
+    if($(".darklayer").hasClass("active") || set == 'remove'){
+        $(".darklayer").removeClass("active");
+        $(".modal").removeClass("active");
+    }else{
+        $(".darklayer").addClass("active");
+        $(".modal").addClass("active");
+    }
+}
+
+/**
+ * 選択した値を当て込む
+ * @param {array} data [Group,value,id,name,name_en]
+ */
+function set_data(dom,data){
+    
+    let active_group = dom[0];
+    let active_value = dom[1];
+    let active_content = dom[2];
+
+    let group = data[0];
+    let value = data[1];
+    let content_ja = data[2];
+    let content_en = data[3];
+    
+    active_group.text(group);
+    active_value.text(value);
+    active_content.html('<span class="ja">'+content_ja+'</span><span class="en">'+content_en+'</span>');
+
+    console.log(active_group);
+    console.log(active_value);
+    console.log(active_content);
+
+}
 
 $(function(){
 
-    const GROUP_MODAL = $(".group-modal");
-    const VALUE_MODAL = $(".value-modal");
+    //動的に生成した要素はDOMが操作できないので操作すべき要素をしまっておく
+    var active_elm;
+    var active_group;
+    var active_value;
+    var active_content;
 
+    //関数テスト-----------------
 
     console.log(def_to_val('C'));
- 
     get_storage('fx');
-
     console.log(group_calc('test'));
 
-    var unsets = ['ph','sr','vt','pb','hb',];
+    //---------------------------
+
+    let unsets = ['ph','sr','vt','pb','hb',];
     set_elements(unsets);
 
     set_html();
+    
+    //モーダルの暗幕クリック処理
+    $(".darklayer").on("click",function(){
+        modal_toggle("remove");
+    });
 
+    //欄選択時
     $(".elm .content").on("click",function(){
         let event = active_event();
         select_group(event);
-        $(".modal").addClass("active");
+
+        //動的に生成した要素はDOMが操作できないので操作すべき要素をしまっておく
+        let elm = $(this).parents(".elm");
+        active_elm = elm;
+        active_group = elm.find(".group-score");
+        active_value = elm.find(".def-score");
+        active_content = elm.find(".content");
+        console.log("active_elm:"+active_elm);
+        console.log("active_group:"+active_group);
+        console.log("active_value:"+active_value);
+        console.log("active_content:"+active_content);
+        
+        if($(".elm").hasClass("set")){
+            //モーダルの初期設定
+            modal_init($(this).parents(".elm"));
+        }
+
+        modal_toggle();
     });
 
+    //グループ選択処理
     $(".level-group").on("click",function(){
         $(".level-group").removeClass("active");
         $(this).addClass("active");
 
         select_value();
-        
+    });
+
+    //難度選択処理
+    $(".level-value").on("click",function(){
+        let event = active_event();
+
+        $(".level-value").removeClass("active");
+        $(this).addClass("active");
+
+        select_element(event);
+        $(".elements").show();
+
+    });
+
+    $(".select-modal").on("click",".element",function(){
+
+        let dom = [active_group,active_value,active_content];
+
+        let data = [];//[group,value,ja,en]
+        data[0] = $(".level-group.active").attr("data-group");
+        data[1] = $(".level-value.active").attr("data-value");
+        data[2] = $(this).find(".ja").text();
+        data[3] = $(this).find(".en").text();
+
+        set_data(dom,data);
+
+        modal_toggle();
     });
 
 

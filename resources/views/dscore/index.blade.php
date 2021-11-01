@@ -42,33 +42,39 @@
           </div>
 
           <div class="modals-wrap">
-            <div class="modal group-modal">
-              <div class="groups">
-                <div class="level level-group" data-group="1">Ⅰ</div>
-                <div class="level level-group" data-group="2">Ⅱ</div>
-                <div class="level level-group" data-group="3">Ⅲ</div>
-                <div class="level level-group" data-group="4">Ⅳ</div>
-                <div class="level level-group" data-group="5">Ⅴ</div>
+            <div class="darklayer"></div>
+            <div class="modal select-modal">
+
+              <div class="modal-area-wrap">
+                <div class="groups">
+                  <div class="level level-group" data-group="I">I</div>
+                  <div class="level level-group" data-group="Ⅱ">Ⅱ</div>
+                  <div class="level level-group" data-group="Ⅲ">Ⅲ</div>
+                  <div class="level level-group" data-group="Ⅳ">Ⅳ</div>
+                  <div class="level level-group" data-group="Ⅴ">Ⅴ</div>
+                </div>
+                <div class="btn clear-btn">クリア</div>
               </div>
+              
               <div class="values" style="display: none">
-                <div class="level level-value" data-value="1">A</div>
-                <div class="level level-value" data-value="2">B</div>
-                <div class="level level-value" data-value="3">C</div>
-                <div class="level level-value" data-value="4">D</div>
-                <div class="level level-value" data-value="5">E</div>
-                <div class="level level-value" data-value="6">F</div>
-                <div class="level level-value" data-value="7">G</div>
-                <div class="level level-value" data-value="8">H</div>
-                <div class="level level-value" data-value="9">I</div>
-                <div class="level level-value" data-value="10">J</div>
+                <div class="level level-value" data-value="A">A</div>
+                <div class="level level-value" data-value="B">B</div>
+                <div class="level level-value" data-value="C">C</div>
+                <div class="level level-value" data-value="D">D</div>
+                <div class="level level-value" data-value="E">E</div>
+                <div class="level level-value" data-value="F">F</div>
+                <div class="level level-value" data-value="G">G</div>
+                <div class="level level-value" data-value="H">H</div>
+                <div class="level level-value" data-value="I">I</div>
+                <div class="level level-value" data-value="J">J</div>
               </div>
               <div class="elements" style="display: none">
-                <div class="level level-event" data-event="fx"></div>
-                <div class="level level-event" data-event="ph"></div>
-                <div class="level level-event" data-event="sr"></div>
-                <div class="level level-event" data-event="vt"></div>
-                <div class="level level-event" data-event="pb"></div>
-                <div class="level level-event" data-event="hb"></div>
+                <div class="level-event" data-event="fx"></div>
+                <div class="level-event" data-event="ph"></div>
+                <div class="level-event" data-event="sr"></div>
+                <div class="level-event" data-event="vt"></div>
+                <div class="level-event" data-event="pb"></div>
+                <div class="level-event" data-event="hb"></div>
               </div>
             </div> 
           </div>

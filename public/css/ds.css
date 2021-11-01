@@ -1,4 +1,5 @@
 :root{
+    
     --gray:#616161;
 
     --elm: #5C6BC0;/* elm */
@@ -9,6 +10,9 @@
     --ac:#BF360C;/* accent */
     --ac-h:#FF5722;/* accent-hover */
     --ac-t:#BF360C;/* accent-total */
+
+    --transition:0.3;
+
 }
 
 .jura{
@@ -17,7 +21,9 @@
 .noto {
     font-family: 'Noto Sans SC', sans-serif;
 }
-
+div#dscreator {
+    max-width: 1000px;
+}
 
 .js-tab {
     display: flex;
@@ -110,17 +116,21 @@
     padding: 15px;
     margin: auto;
     border-radius: 5px;
+    z-index: 10001;
+    overflow-y: auto;
     box-shadow: 1px 1px 3px #999;
 }
 .modal.active {
     display: block;
 }
 
-.modal>div {
+.modal>div,
+.modal .groups {
     display: flex;
 }
-
-
+.modal-area-wrap {
+    justify-content: space-between;
+}
 .modal .level {
     width: 100px;
     height: 60px;
@@ -144,4 +154,69 @@
 .modal .level.level-value {
     width: 80px;
     margin: 5px;
+}
+
+.darklayer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgb(0 0 0 / 85%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10000;
+}.darklayer.active {
+    display: block;
+}
+
+.level-event {
+    width: 100%;
+}
+.modal>div.elements {
+    display: block;
+}
+.level-event .element {
+    background-color: var(--gray);
+    margin: 5px 0;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 1px 1px 3px #999;
+    transition: .3s;
+    cursor: pointer;
+}
+.level-event .element:hover {
+    background-color: var(--ac-h);
+}
+.level-event .element.active {
+    background-color: var(--ac);
+}
+.level-event .element>span {
+    width: 100%;
+    display: inline;
+    word-break: break-word;
+    padding: 0 5px;
+    font-weight: bold;
+}.level-event .element>span.en {
+    font-size: 12px;
+}
+
+.btn.clear-btn {
+    background-color: var(--gray);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 80px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: .3s;
+}
+.btn.clear-btn:hover{
+    background-color: var(--ac-h);
 }
