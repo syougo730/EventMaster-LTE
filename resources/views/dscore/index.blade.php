@@ -8,7 +8,7 @@
 <div class="col-sm-6">
   <ol class="breadcrumb float-sm-right">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active">Ds.Creator</li>
+    <li class="breadcrumb-item active">Ds.Creator Ver2.0</li>
   </ol>
 </div><!-- /.col -->
 
@@ -39,6 +39,10 @@
           <div class="tab-content ts" data-role="page" id="page1"></div>
           <div class="tab-content fx" data-role="page" id="page2">
               <div class="elements-wrap"><!-- JS --></div>
+              <div class="notice-box">
+                <span class="jura">Notice</span>
+                <div class="notices noto"><!-- JS --></div>
+              </div>
           </div>
 
           <div class="modals-wrap">
@@ -79,6 +83,139 @@
             </div> 
           </div>
           
+
+          <div class="total-scores">
+            <div class="score-header">
+              <span class="score-header-title">FloorExercise</span>
+              <span class="score-header-content">0.0</span>
+            </div>
+            <div class="score-body" style="display: none">
+              <div class="events">
+                <!-- FX -->
+                <div class="fx">
+                  <p class="event-title">FloorExercise</p>
+                  <div class="difficult">
+                    <span>難度</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="exp">
+                    <span>特別要求</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="nd">
+                    <span>ND</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="dscore">
+                    <span>Dscore</span>
+                    <span>0.0</span>
+                  </div>
+                </div>
+                <!-- PH -->
+                <div class="ph">
+                  <p class="event-title">PommelHourse</p>
+                  <div class="difficult">
+                    <span>難度</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="exp">
+                    <span>特別要求</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="nd">
+                    <span>ND</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="dscore">
+                    <span>Dscore</span>
+                    <span>0.0</span>
+                  </div>
+                </div>
+                <!-- SR -->
+                <div class="sr">
+                  <p class="event-title">StillRings</p>
+                  <div class="difficult">
+                    <span>難度</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="exp">
+                    <span>特別要求</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="nd">
+                    <span>ND</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="dscore">
+                    <span>Dscore</span>
+                    <span>0.0</span>
+                  </div>
+                </div>
+                <!-- VT -->
+                <div class="vt">
+                  <p class="event-title">Voult</p>
+                  <div class="difficult">
+                    <span>難度</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="exp">
+                    <span>特別要求</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="nd">
+                    <span>ND</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="dscore">
+                    <span>Dscore</span>
+                    <span>0.0</span>
+                  </div>
+                </div>
+                <!-- PB -->
+                <div class="pb">
+                  <p class="event-title">ParallelBars</p>
+                  <div class="difficult">
+                    <span>難度</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="exp">
+                    <span>特別要求</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="nd">
+                    <span>ND</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="dscore">
+                    <span>Dscore</span>
+                    <span>0.0</span>
+                  </div>
+                </div>
+                <!-- HB -->
+                <div class="hb">
+                  <p class="event-title">HorizontalBar</p>
+                  <div class="difficult">
+                    <span>難度</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="exp">
+                    <span>特別要求</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="nd">
+                    <span>ND</span>
+                    <span>0.0</span>
+                  </div>
+                  <div class="dscore">
+                    <span>Dscore</span>
+                    <span>0.0</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -120,6 +257,10 @@ $(function(){
         $(this).hide();
       }
     });
+  });
+
+  $(".score-header").on("click",function(){
+    $(".score-body").slideToggle();
   });
 
 

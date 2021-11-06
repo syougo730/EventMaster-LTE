@@ -26,13 +26,19 @@ function data_set(data,event){
 
 }
 
-/*
-    TOTAL SCORE 計算
-*/
-function total_calc(){
+/** 
+ *   TOTAL SCORE 計算
+ */
+ function dscore_calc(event){
 
 
 
+}
+
+/** 
+ *   TOTAL SCORE 計算
+ */
+ function total_calc(){
 }
 
 /**
@@ -99,10 +105,10 @@ function group_calc(groups){
         }
     });
 
-    if(group1_cnt > MAX) set_notice('グループⅠが上限数を超えています','danger');
-    if(group2_cnt > MAX) set_notice('グループⅡが上限数を超えています','danger');
-    if(group3_cnt > MAX) set_notice('グループⅢが上限数を超えています','danger');
-    if(group4_cnt > 1) set_notice('終末技が複数セットされています','danger');
+    if(group1_cnt > MAX) set_notice('danger','グループⅠが上限数を超えています');
+    if(group2_cnt > MAX) set_notice('danger','グループⅡが上限数を超えています');
+    if(group3_cnt > MAX) set_notice('danger','グループⅢが上限数を超えています');
+    if(group4_cnt > 1) set_notice('danger','終末技が複数セットされています');
 
     if(group1_cnt) group_score = group_score + 0.5;
     if(group2_cnt) group_score = group_score + 0.5;
@@ -198,10 +204,19 @@ function csv_encode(data,event){
  * 通知欄の表示処理
  * 
  */
-function set_notice(text,type='info'){
+function set_notice(type='info',text,event=active_event()){
 
-    console.log( type + '：' + text );
+    if(type == 'allclear'){
+        console.log("NOTICE : ALL CLEAR");
+        $(".tab-content."+event+" .notice-box .notices").text("");
+        exit;
+    }
+    let color = '';
+    if(type == "danger") color = 'style="color:red;"';
 
+    let h = '<p '+color+'>'+type+"："+text+'</p>';
+    $(".tab-content."+event+" .notice-box .notices").append(h);
+    
 }
 
 /**
@@ -324,18 +339,6 @@ function select_element(event=""){
 
 }
 
-/** モーダルに選択されているグループと難度を返す
- * 
- * @returns {array} [group,value]
- */
-function active_selects(){
-    
-    let active_group = $(".level-group.active").attr("data-group");
-    let active_value = $(".level-value.active").attr("data-value");
-
-    return [active_group,active_value];
-
-}
 
 /** アクティブな情報を拾ってモーダルにセットする
  * 
@@ -415,7 +418,7 @@ function modal_toggle(set=""){
  * 選択した値を当て込む
  * @param {array} data [Group,value,id,name,name_en]
  */
-function set_data(dom,data){
+function active_set_data(dom,data){
     
     let active_group = dom[0];
     let active_value = dom[1];
@@ -430,15 +433,11 @@ function set_data(dom,data){
     active_value.text(value);
     active_content.html('<span class="ja">'+content_ja+'</span><span class="en">'+content_en+'</span>');
 
-    console.log(active_group);
-    console.log(active_value);
-    console.log(active_content);
-
 }
 
 $(function(){
 
-    //動的に生成した要素はDOMが操作できないので操作すべき要素をしまっておく
+    //動的に生成した要素はDOMが操作できないので操作すべき要素を記憶しておく
     var active_elm;
     var active_group;
     var active_value;
@@ -449,6 +448,8 @@ $(function(){
     console.log(def_to_val('C'));
     get_storage('fx');
     console.log(group_calc('test'));
+    set_notice("info","通知テスト");
+    set_notice("danger","通知テスト");
 
     //---------------------------
 
@@ -473,20 +474,17 @@ $(function(){
         active_group = elm.find(".group-score");
         active_value = elm.find(".def-score");
         active_content = elm.find(".content");
-        console.log("active_elm:"+active_elm);
-        console.log("active_group:"+active_group);
-        console.log("active_value:"+active_value);
-        console.log("active_content:"+active_content);
         
         if($(".elm").hasClass("set")){
             //モーダルの初期設定
             modal_init($(this).parents(".elm"));
         }
 
+        $(".score-body").slideUp();//スコア一覧を閉じる
         modal_toggle();
     });
 
-    //グループ選択処理
+    //グループ選択時処理
     $(".level-group").on("click",function(){
         $(".level-group").removeClass("active");
         $(this).addClass("active");
@@ -494,7 +492,7 @@ $(function(){
         select_value();
     });
 
-    //難度選択処理
+    //難度選択時処理
     $(".level-value").on("click",function(){
         let event = active_event();
 
@@ -506,9 +504,11 @@ $(function(){
 
     });
 
+    //技選択時処理
     $(".select-modal").on("click",".element",function(){
 
         let dom = [active_group,active_value,active_content];
+        let event = active_event();
 
         let data = [];//[group,value,ja,en]
         data[0] = $(".level-group.active").attr("data-group");
@@ -516,7 +516,8 @@ $(function(){
         data[2] = $(this).find(".ja").text();
         data[3] = $(this).find(".en").text();
 
-        set_data(dom,data);
+        active_set_data(dom,data);
+        dscore_calc(event);
 
         modal_toggle();
     });
