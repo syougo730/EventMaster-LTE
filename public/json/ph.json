@@ -1,0 +1,1174 @@
+{
+	"element":[
+		{
+			"key" : "0",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "正交差",
+			"name_en" : "Scissor forward."
+		},
+		{
+			"key" : "1",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "正交差ひねり正交差入れ",
+			"name_en" : "Scissor forward with 1/2t."
+		},
+		{
+			"key" : "2",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "逆交差",
+			"name_en" : "Scissor backward."
+		},
+		{
+			"key" : "3",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "逆交差ひねり逆交差入れ",
+			"name_en" : "Scissor backward with 1/2t."
+		},
+		{
+			"key" : "4",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "正交差とび横移動(ひねり正交差入れ)",
+			"name_en" : "Scissor forward with hop swd.(also with 1/2t.)"
+		},
+		{
+			"key" : "0",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "正交差ひねり逆交差入れ",
+			"name_en" : "Double scissor fwd.(1/2t.fwd.a.1/2t.bwd.)"
+		},
+		{
+			"key" : "0",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "逆交差とび横移動(ひねり逆交差入れ)",
+			"name_en" : "Scissor bwd.with hop swd.(also with 1/2t.)"
+		},
+		{
+			"key" : "5",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "逆交差ひねり正交差入れ",
+			"name_en" : "Double scissor bwd.(1/2t.fwd.a.1/2t.bwd.)"
+		},
+		{
+			"key" : "6",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(開脚)支持から後ろ抜き倒立、下ろして開脚支持",
+			"name_en" : "Leg cut or undercut bwd.through hdst.and lower to support w.strad.legs."
+		},
+		{
+			"key" : "7",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ステパンヤン(正交差倒立横移動しながらひねり開脚支持)",
+			"name_en" : "Double scissor fwd.with travel sideways through handstand."
+		},
+		{
+			"key" : "8",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "正交差とび横移動(馬端～馬端)",
+			"name_en" : "Scissor fwd.with hop swd.from one end to the other(3/3)"
+		},
+		{
+			"key" : "9",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "正交差横移動ひねり逆交差入れ",
+			"name_en" : "Double scissor fwd.(1/2t.fwd.a.1/2t.bwd.)with travel sdw."
+		},
+		{
+			"key" : "10",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "逆交差とび横移動(馬端～馬端)",
+			"name_en" : "Scissor bwd.with hop swd.from one end to the other(1-2 to 4-5)"
+		},
+		{
+			"key" : "11",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "(開脚)支持から後ろ抜き倒立、下ろして閉脚(開脚)旋回",
+			"name_en" : "Leg cut or undercut bwd.through hdst.and lower to flair or circle."
+		},
+		{
+			"key" : "12",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "リーニン(正交差1/4ひねり一把手上倒立経過、下ろして開脚支持)",
+			"name_en" : "Scissor fwd.w.1/2t.through hdst.on 1 p.,lower to sup.w.strad.legs on the other arm."
+		},
+		{
+			"key" : "13",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ミクラック(正交差とび横移動ひねり逆交差入れ(馬端～馬端))",
+			"name_en" : "Double scissor fwd with hop sideways from one end to the other(3/3)"
+		},
+		{
+			"key" : "14",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "逆交差1/4ひねり一把手上倒立経過、下ろして開脚支持",
+			"name_en" : "Swing bwd.w.1/2t. through hdst.on 1 p.lower to sup.w.strad.legs on the other arm."
+		},
+		{
+			"key" : "15",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ブライアン(正交差1/4ひねり倒立1/4ひねり逆把手に片腕支持逆交差入れ)",
+			"name_en" : "Scissor fwd.1/4t. to hdst1/4t.and straddle down bwd on 1 arm on the other pommel."
+		},
+		{
+			"key" : "16",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "逆交差1/4ひねり倒立1/4ひねり逆把手に片腕支持逆交差入れ",
+			"name_en" : "Scissor bwd,1/4t.to hdst.1/4t.and straddle down bwd on 1 arm on the other pommel."
+		},
+		{
+			"key" : "17",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "横向き旋回orトーマス",
+			"name_en" : "Any circle or flair in side support."
+		},
+		{
+			"key" : "18",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "馬端中向き縦向き旋回",
+			"name_en" : "Circle in cross support frontways on end."
+		},
+		{
+			"key" : "19",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "馬端外向き縦向き旋回",
+			"name_en" : "Circle in cross support rearways on end."
+		},
+		{
+			"key" : "20",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "横向き旋回1/4ひねり縦向き支持",
+			"name_en" : "Circle in side sup. 1/4 spindle to cross sup."
+		},
+		{
+			"key" : "21",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "馬端縦向き旋回1/4ひねり横向き支持",
+			"name_en" : "Cross support on end,circle with 1/4 spindle to side support."
+		},
+		{
+			"key" : "22",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "上向き転向",
+			"name_en" : "Double rear(kehr)"
+		},
+		{
+			"key" : "23",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "下向き転向移動",
+			"name_en" : "Wendswing fwd.w.1/2t.to sup.fw.on the end,from side support using 1 or 2 pommels."
+		},
+		{
+			"key" : "24",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "馬端下向き転向",
+			"name_en" : "Schwabenflank."
+		},
+		{
+			"key" : "25",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "把手上ロシアン180°(270°)転向",
+			"name_en" : "R180 or R270."
+		},
+		{
+			"key" : "26",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "馬端馬背ロシアン180°(270°)転向",
+			"name_en" : "On the leather,R180 or R270 also with travel."
+		},
+		{
+			"key" : "27",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "一把手上横向き旋回",
+			"name_en" : "Circle in side support on pommel."
+		},
+		{
+			"key" : "28",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "両把手を挟んで横向き旋回orあん部馬背横向き旋回",
+			"name_en" : "Circle with support outside pommels or between the pommels."
+		},
+		{
+			"key" : "29",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "一把手上縦向き旋回(前または後に1/4転向を伴っても)",
+			"name_en" : "Circle in cross support on 1 pommel(from or to 1/4t.fwd.)."
+		},
+		{
+			"key" : "30",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "あん部馬背縦向き旋回",
+			"name_en" : "Circles in cross support between the pommels."
+		},
+		{
+			"key" : "31",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "横向き旋回ひねり",
+			"name_en" : "Side support, 1/2 spindle."
+		},
+		{
+			"key" : "32",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "馬端縦向き旋回ひねり",
+			"name_en" : "Cross support on end,1/2 spindle."
+		},
+		{
+			"key" : "33",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(開脚)旋回倒立、下ろして開脚支持",
+			"name_en" : "Flair or circle through hdst.and lower to sup.w.strad.legs."
+		},
+		{
+			"key" : "34",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "シュテクリA(DSA)",
+			"name_en" : "Direct Stockli A(DSA)"
+		},
+		{
+			"key" : "35",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "シュテクリB(DSB)",
+			"name_en" : "Direct Stockli B(DSB)"
+		},
+		{
+			"key" : "36",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "把手上上向きとび転向",
+			"name_en" : "Kehrswing bwd.hop with 1/2t. on the pommels."
+		},
+		{
+			"key" : "37",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "一腕上上向き270°転向(縦向き～横向き)",
+			"name_en" : "Kehr with 270°t. on 1 p.(Sohn technique)from cross to side support."
+		},
+		{
+			"key" : "38",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "直接トラムロー",
+			"name_en" : "Direct Tramlot."
+		},
+		{
+			"key" : "39",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "下向き逆移行(=逆リア)",
+			"name_en" : "Reverse Stockli,180°or 270°turn in one circle. "
+		},
+		{
+			"key" : "40",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "スイスドゥーブル(下向きとび転向)",
+			"name_en" : "Double Swiss"
+		},
+		{
+			"key" : "41",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "把手上(あん部馬背)下向き転向(=フクガ)",
+			"name_en" : "Czechkehre on the leather or pommels"
+		},
+		{
+			"key" : "42",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "把手上ロシアン360°(540°)転向",
+			"name_en" : "R360 or R540."
+		},
+		{
+			"key" : "43",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "44",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "馬端馬背ロシアン360°(540°)転向",
+			"name_en" : "On the leather,R360 or R540."
+		},
+		{
+			"key" : "45",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "一把手上(あん部馬背)ロシアン180°(270°)転向",
+			"name_en" : "R180 or R270 on 1p.or between the pommels."
+		},
+		{
+			"key" : "46",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "チッペルト((開脚)旋回倒立ひねり、下ろして(開脚)旋回)",
+			"name_en" : "Flair or circle through hdst.(with or without 1/2 t.)and lower to flair or circle."
+		},
+		{
+			"key" : "47",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "背面とび横移動倒立経過、下ろして開脚支持",
+			"name_en" : "Flair with hop travel bwd.through hdst.and lower to sup.w.straddle legs."
+		},
+		{
+			"key" : "48",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "下向き逆移動(orDSA)倒立経過、下ろして開脚支持",
+			"name_en" : "Reverse Stockli or DSA strad.through hdst.and lower to sup.w.strad.legs."
+		},
+		{
+			"key" : "49",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "一腕上上向き270°転向(横向き-縦向き)",
+			"name_en" : "Kehr with 270°t.on 1 p.(Sohn technique)from side to cross support."
+		},
+		{
+			"key" : "50",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "一腕上下向き270°転向",
+			"name_en" : "Reverse Stockli with 270°t.to 1 pommel."
+		},
+		{
+			"key" : "51",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "把手上ロシアン720°(900°)転向",
+			"name_en" : "R720 or R900."
+		},
+		{
+			"key" : "52",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "馬端馬背ロシアン720°(900°)転向",
+			"name_en" : "On the leather,R720 or R900."
+		},
+		{
+			"key" : "53",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "一把手上(あん部馬背)ロシアン360°(540°)転向",
+			"name_en" : "R360 or R540 on 1 pommel or between the pommels."
+		},
+		{
+			"key" : "54",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ケイハ2(両把手を挟んで旋回ひねり(閉･開脚))",
+			"name_en" : "Side support,1/2 spindle with both pommels between the hands."
+		},
+		{
+			"key" : "55",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ベルトンチェリ(一腕上上向き270°転向(横向き-縦向き))",
+			"name_en" : ""
+		},
+		{
+			"key" : "56",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "横向き旋回1回ひねり(2回以内の旋回で)",
+			"name_en" : "Any side support 1/1 spindle w.legs straddle inside max.2 circles."
+		},
+		{
+			"key" : "57",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "マジャール、セラスライ(縦向き旋回1回ひねり(2回以内の旋回で))",
+			"name_en" : "Any cross support 1/1 spindle within max.2 circles.(also with 1/2,1/2 or 2/3 travel)."
+		},
+		{
+			"key" : "58",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "背面とび横移動倒立経過、下ろして開脚旋回",
+			"name_en" : "Flair with hop travel bwd.through hdst.and lower to circles or flairs."
+		},
+		{
+			"key" : "59",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ピネーロ(両把手を挟んで下向き転向)",
+			"name_en" : "Czechkechre outside p."
+		},
+		{
+			"key" : "60",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "把手上ロシアン1080°以上転向",
+			"name_en" : "R1080 or more."
+		},
+		{
+			"key" : "61",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "馬端馬背ロシアン1080°以上転向",
+			"name_en" : "On the leather,R1080 or more."
+		},
+		{
+			"key" : "62",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "一把手上(あん部馬背)ロシアン720°(900°)転向",
+			"name_en" : "720°(900°)Russian wendeswing on 1 pommel or between the pommels."
+		},
+		{
+			"key" : "63",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ケイハ3(両把手を挟んでシュテクリA(DSA))",
+			"name_en" : "Direct Stokli A(DSA) with both pommels between the hands."
+		},
+		{
+			"key" : "64",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "Dフロップ",
+			"name_en" : "3flops."
+		},
+		{
+			"key" : "65",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "Dコンバイン",
+			"name_en" : "1flop+R360 or 2flop+R180."
+		},
+		{
+			"key" : "66",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "アイヒホルン(横向き(開脚)旋回1回ひねり移動(2回以内の旋回で逆馬端へ移動し再び戻る))",
+			"name_en" : "Any side support 1/1 spindle with hand support to the other side and return(max.2flairs or circles)."
+		},
+		{
+			"key" : "67",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "セラスライ2(あん部馬背縦向き旋回1回ひねり(2回以内の旋回で))",
+			"name_en" : "Cross support,1/1 spindle with hands between the pommels max.2circles.(also with 1/3 travel)."
+		},
+		{
+			"key" : "68",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ベルキ(両把手上開脚旋回1回ひねり(2回以内の旋回で))",
+			"name_en" : "1/1 spindle w.legs straddle or together on the pommels inside max.2circles."
+		},
+		{
+			"key" : "69",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ショーン(一腕上上向き全転向)",
+			"name_en" : "Kehr with 1/1 turn on 1 pommel."
+		},
+		{
+			"key" : "70",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ベズゴ(一腕上下向き全転向)",
+			"name_en" : "Reverse Stockli with 360°t.on 1 pommels."
+		},
+		{
+			"key" : "71",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "一把手上(あん部馬背)ロシアン1080°以上転向",
+			"name_en" : "R1080 or more on 1 pommel or between the pommels."
+		},
+		{
+			"key" : "72",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "Eフロップ",
+			"name_en" : "4flops."
+		},
+		{
+			"key" : "73",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "開脚Dフロップ",
+			"name_en" : "3flops(flair)."
+		},
+		{
+			"key" : "74",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "Eコンバイン",
+			"name_en" : "1flop+R720 or 2flops+R360."
+		},
+		{
+			"key" : "75",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ケイハ1(両把手を挟んで(開脚)旋回1回ひねり(2回以内の旋回で))",
+			"name_en" : "Side support,1/1 spindle with both pommels between the hands(flair or circle)."
+		},
+		{
+			"key" : "76",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ブスナリ(下向き逆移動(orDSA)倒立3/3部分移動1回ひねり、下ろして開脚旋回)",
+			"name_en" : "Reverse Stockli,DSA or pommel circle strad.through hdst.3/3 travel(fwd.-bwd),360°turn to flairs."
+		},
+		{
+			"key" : "77",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "開脚Eフロップ",
+			"name_en" : "4flops(flair)."
+		},
+		{
+			"key" : "78",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "Fコンバイン",
+			"name_en" : "1flop+R1080 or 2flops+R720."
+		},
+		{
+			"key" : "79",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "Gコンバイン",
+			"name_en" : "2flops+R1080."
+		},
+		{
+			"key" : "80",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "正面横移動(1/4転向を伴っても)",
+			"name_en" : "Circles with travel fwd.in side support(also with 1/4 t.)."
+		},
+		{
+			"key" : "81",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "背面横移動",
+			"name_en" : "Circles with travel bwd. in side support."
+		},
+		{
+			"key" : "82",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "縦向き後ろ移動(1/3部分)",
+			"name_en" : "Travel bwd.in cross sup.from one horse part or pommel to another(1/3)"
+		},
+		{
+			"key" : "83",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.2",
+			"name" : "正面横移動連続(馬端～馬端)",
+			"name_en" : "Circles with travel fwd.in side support(3/3)."
+		},
+		{
+			"key" : "84",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "正面とび横移動",
+			"name_en" : "Circles with hop travel fwd. in side support."
+		},
+		{
+			"key" : "85",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "背面横移動連続(馬端～馬端)",
+			"name_en" : "Circles with travel bwd.in side support(3/3)"
+		},
+		{
+			"key" : "86",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "背面とび横移動",
+			"name_en" : "Circles with travel bwd.with hop."
+		},
+		{
+			"key" : "87",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "縦向き1/3移動ひねり",
+			"name_en" : "All travel with 1/2 spindle in cross support(1/3 travel)."
+		},
+		{
+			"key" : "88",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "縦向き前(後ろ)移動1/4ひねり",
+			"name_en" : "Travel fwd.or bwd. with 1/4 spindle to side support."
+		},
+		{
+			"key" : "89",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "縦向き前移動(2/3or1/2部分)",
+			"name_en" : "Travel bwd.in cross support(1/2 or 2/3)."
+		},
+		{
+			"key" : "90",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "正面移動連続(馬端～馬端:あん部馬背着手)",
+			"name_en" : "Circles with travel fwd.in side support(3/3),hands between pommels."
+		},
+		{
+			"key" : "91",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "正面とび横移動連続(馬端～馬端)",
+			"name_en" : "Circles with hop tr.fwd.2x in side support(3/3)."
+		},
+		{
+			"key" : "92",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "背面横移動連続(馬端～馬端:あん部馬背着手)",
+			"name_en" : "Circles with travel bwd.in side support(3/3),hands between pommels."
+		},
+		{
+			"key" : "93",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "背面とび横移動連続(馬端～馬端)",
+			"name_en" : "Circles with travel bwd.with hop 2x."
+		},
+		{
+			"key" : "94",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "縦向き(1/2 or 2/3)前(後ろ)移動ひねり",
+			"name_en" : "All travels with 1/2 spindle in cross support(1/2 or 2/3 travel)."
+		},
+		{
+			"key" : "95",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "一回の開脚旋回で正面横移動(馬端から両把手を超えて逆馬端)",
+			"name_en" : "From side sup. on 1 end.,travel fwd.over both p.to sup.on other end(3/3)in 1 flair."
+		},
+		{
+			"key" : "96",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "全ての旋回移動ひねり",
+			"name_en" : "All travels with 1/2 spindle in side support."
+		},
+		{
+			"key" : "97",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "縦向き前移動(3/3:馬端-把手-把手-馬端)",
+			"name_en" : "Travel fwd.in cross support with support on leather,pommel,pommel,leather(3/3)(1-2-4-5)"
+		},
+		{
+			"key" : "98",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ビロゼルチェフ(片手ずつ支持して前移動連続横向き支持)",
+			"name_en" : "Fr.cr.sup.on end,tr.fwd.in 2 circles to 1st p.,to 2nd p.,with1/4 turn to side sup.on other end(3/3)"
+		},
+		{
+			"key" : "99",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "縦向き後ろ移動(3/3:馬端-把手-把手-馬端)",
+			"name_en" : "Travel bwd.in cross sup with support on leather(3/3)(5-4-2-1)."
+		},
+		{
+			"key" : "100",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ウルジカ(馬端横向き支持から上向き転向、下向き逆移動)",
+			"name_en" : "From support on end,kehr fwd.around 1st p.,rev.Stockli around 2nd p.to side sup.,p.betw.hands."
+		},
+		{
+			"key" : "101",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "下向き正転向移動(把手間に着手なしで逆馬端へ)",
+			"name_en" : "From sup.on 1 p.,Russian wendswing fwd.to other end without sup.on or btw.the p."
+		},
+		{
+			"key" : "102",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "クロル(把手を挟んだ横向き支持からロシアン360°転向移動)",
+			"name_en" : "From side sup. pommel between hand, R360 with travel to the other end in side sup."
+		},
+		{
+			"key" : "103",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "1回の閉脚旋回で正面横移動(馬端から両把手を超えて逆馬端)",
+			"name_en" : "From side sup.on 1 end.,travel fwd.over both p.to sup.on other end (3/3)in 1 circle."
+		},
+		{
+			"key" : "104",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "正面とび横移動(馬端-馬端)",
+			"name_en" : "From sup.frontways on one end,travel hop over both p.to sup.frontways on other end."
+		},
+		{
+			"key" : "105",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "2回の旋回で背面横移動(馬端馬背から両把手を超えて逆馬端馬背)",
+			"name_en" : "From side sup.on 1 end.,travel bwd.over both p.to side sup.on the other end(3/3)in 2circles w."
+		},
+		{
+			"key" : "106",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "背面とび横移動(馬端-馬端)",
+			"name_en" : "From side support on one end,travel hop over both p.to sup.frways on other end(1-2 to 4-5)."
+		},
+		{
+			"key" : "107",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ニンレイズ(縦向き1/3前移動直ちに縦向き2/3移動ひねり)",
+			"name_en" : "Cross travel fwd.3/3 with 1/2 Spindle from one pommel over the other pommel."
+		},
+		{
+			"key" : "108",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "マジャール(縦向き前移動(3/3:馬端-把手-あん部馬背-把手-馬端))",
+			"name_en" : "Any other travel fwd.in cross support to other end(3/3)."
+		},
+		{
+			"key" : "109",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "110",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "シバド(縦向き後ろ移動(3/3:あん部馬背着手))",
+			"name_en" : "Any other travel bwd. in cross support to other end(3/3)."
+		},
+		{
+			"key" : "111",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "モギルニー(馬端横向き支持から上向き転向、下向き逆移動、上向き転向)",
+			"name_en" : "Kehre fwd.rev.Stockli,kehre fwd."
+		},
+		{
+			"key" : "112",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ベレンキ(馬端横向き支持から下向き逆移動、上向き転向、下向き逆移動)",
+			"name_en" : "Kehre bwd.kehre fwd.kehre bwd."
+		},
+		{
+			"key" : "113",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "トンフェイ(下向き正転向移動(馬端-馬端、把手または把手間に着手なしで))",
+			"name_en" : "From sup.on end,Russian wendeswing fwd.to other end without sup.on btw.the p.with full circle after."
+		},
+		{
+			"key" : "114",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ロス(ロシアン360°転向移動(3/3部分))",
+			"name_en" : "Any Russian wend.with 360° t.and 3/3 travel."
+		},
+		{
+			"key" : "115",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "馬端外向き支持から下向き逆移動で反対の馬端外向き支持",
+			"name_en" : "Reverse Stockli from cross support on one end to the other."
+		},
+		{
+			"key" : "116",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ヤマワキ(背面とび横移動(馬端馬背-馬端馬背))",
+			"name_en" : "From side sup.beside the p.,travel hop o.2 p. to sup.fwd on other end(1-1 to 5-5)."
+		},
+		{
+			"key" : "117",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "正面横移動ひねり、背面横移動ひねり(馬端-馬端)",
+			"name_en" : "From an end side travel with 2x 1/2 spindle to other end."
+		},
+		{
+			"key" : "118",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ニンレイズ2(両把手を超えて縦向き3/3前移動直ちに1/2ひねり)",
+			"name_en" : "Travel 3/3 over both pommels with 1/2 spindle."
+		},
+		{
+			"key" : "119",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ドリッグス(縦向きとび前移動(馬端-馬端))",
+			"name_en" : "3/3 cross support travel fwd.with hop."
+		},
+		{
+			"key" : "120",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "121",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "開脚旋回縦向き3/3前移動",
+			"name_en" : "3/3 cross support travel fwd.in flairs."
+		},
+		{
+			"key" : "122",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "開脚旋回縦向き3/3後ろ移動",
+			"name_en" : "Any other travel bwd. in cross support to other end(3/3)in flairs."
+		},
+		{
+			"key" : "123",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ウ・グォニアン(ロシアン720°(以上)転向移動(3/3部分))",
+			"name_en" : "Any 3/3 travel in Russian type wendeswing with 7201°or more turning."
+		},
+		{
+			"key" : "124",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "バンメン(両把手を超えてロシアン360°(540°)正転向)",
+			"name_en" : "On the leather,from cross support,Russian wendeswing with 360°or 540°over both pommels."
+		},
+		{
+			"key" : "125",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ケイハ4(両把手を挟んで外向き旋回ひねり)",
+			"name_en" : ""
+		},
+		{
+			"key" : "126",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "カルバノフ(縦向きとび後ろ移動(馬端-馬端))",
+			"name_en" : ""
+		},
+		{
+			"key" : "127",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ケイハ5(両把手を挟んで外向き旋回1回ひねり(2回以内の旋回で))",
+			"name_en" : ""
+		},
+		{
+			"key" : "128",
+			"group" : "Ⅳ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "下向き転向下り",
+			"name_en" : "Wende(from circle or flair)."
+		},
+		{
+			"key" : "129",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "シャギニアン下り",
+			"name_en" : "Chaguinian to wende."
+		},
+		{
+			"key" : "130",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ロシアン360°(540°)転向下り",
+			"name_en" : "On the end,Russian wendeswing with 360°or540°."
+		},
+		{
+			"key" : "131",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "下向き正移動下向き転向下り",
+			"name_en" : "Fr.s.sup.fw.,wendswing fwd.w.1/2t.to sup.fw.followed by Schwabenflank a.wende off."
+		},
+		{
+			"key" : "132",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(開脚)旋回倒立(3/4ひねり)下り(移動の有無に関わらず)",
+			"name_en" : "Circle or flair through hdst.(also with 3/4t. with or without travel)."
+		},
+		{
+			"key" : "133",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ロシアン720°(900°)転向下り",
+			"name_en" : "On the end,Russian wendeswing with 720°or900°."
+		},
+		{
+			"key" : "134",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "下向き逆移動(DSA)倒立下り",
+			"name_en" : "DSA,rev.Stoockli or circle on one pommel through hdst."
+		},
+		{
+			"key" : "135",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "(開脚)旋回背面とび横移動倒立下り",
+			"name_en" : "Circle or flair with hop travel bwd.thr.hdst."
+		},
+		{
+			"key" : "136",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "コリバノフ(旋回倒立450°(以上)ひねり3/3部分移動下り)",
+			"name_en" : "From side sup.on end,circle or flair to hdst.Any travel 3/3 with 450°or more turn."
+		},
+		{
+			"key" : "137",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ロシアン1080°(以上)転向下り",
+			"name_en" : "On the end,Russian wendeswing with 1080°or more."
+		},
+		{
+			"key" : "138",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "DSA直接背面とび横移動倒立下り",
+			"name_en" : "DSA with hop bwd.through hdst.on other end."
+		},
+		{
+			"key" : "139",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "下向き逆移動(DSA)倒立(450°(以上)ひねりor3/3移動)下り",
+			"name_en" : "DSA,rev.Stoockli or circle on one pommel through hdst(with 450°(or more)t.or travel 3/3)."
+		},
+		{
+			"key" : "140",
+			"group" : "Ⅳ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "DSA倒立450°(以上)ひねり3/3部分移動下り",
+			"name_en" : "DSA to hdst.3/3 with 450°or more turn."
+		},
+		{
+			"key" : "140",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "140",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "140",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "",
+			"name_en" : ""
+		}
+
+	]
+
+}

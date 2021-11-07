@@ -22,16 +22,71 @@ function data_resets(){
 /**
     データ反映
 */ 
-function data_set(data,event){
+function data_set(event){
+
+    let json = get_storage(event);
+    $.each(json,function(idx,val){
+        
+        let elm = $(".tab-content."+event+" .elements-wrap .elm[data-key="+(idx+1)+"]");
+        elm.find(".group-score").text(val['group']);
+        elm.find(".def-score").text(val['def']);
+        elm.find(".content .ja").text(val['ja']);
+        elm.find(".content .en").text(val['en']);
+    });
 
 }
 
 /** 
- *   TOTAL SCORE 計算
+ *   D SCORE 計算
  */
  function dscore_calc(event){
 
+    let groups = [];
+    let total_group = 0;
+    let total_def = 0;
+    let total_cv = 0;
+    let cv_group = ['Ⅳa','Ⅳb','Ⅳc','Ⅳ'];
+    let cv_value = [0.1,0.2];
+    let dscore = 0;
 
+    let json = get_storage(event);
+    if(json){
+
+        $.each(json,function(idx,val){
+            //difficult 
+            total_def += def_to_val(val['def']);            
+            //groups
+            if(0 < cv_group.indexOf(val['cv'])){
+                //CVにグループⅣが選択されている場合はⅣを優先する
+                groups[idx] = val['cv'];
+            }else{
+                groups[idx] = val['group'];
+            }
+            if(cv_value.indexOf(val['cv'])){
+                total_cv += val['cv'];
+            }
+        });
+        
+        total_group = group_calc(groups);
+        dscore = total_group + total_def + total_cv;
+
+        console.log( "TOTAL_DEF："+total_def);
+        console.log("TOTAL_GROUP："+total_group);
+
+        $(".total-scores ."+event+" .difficult span:last-child").text(total_def);
+        $(".total-scores ."+event+" .exp span:last-child").text(total_group);
+        $(".total-scores ."+event+" .cv span:last-child").text(total_cv);
+        $(".total-scores ."+event+" .dscore span:last-child").text(dscore);
+
+        if(event === active_event()){
+            $(".total-scores .score-header .score-header-content").text(dscore);
+        }
+
+        return dscore;
+
+    }else{ 
+        console.log("ERROR：データが見つかりません ["+event+"]");
+    }
 
 }
 
@@ -54,7 +109,7 @@ function group_calc(groups){
 
     const MAX = 5; //グループ上限
     const GROUP_SCORE = [
-        {group:'Ⅰ' , val:0.5},
+        {group:'I' , val:0.5},
         {group:'Ⅱ' , val:0.5},
         {group:'Ⅲ' , val:0.5},
         {group:'Ⅳa' , val:0.1},
@@ -69,12 +124,9 @@ function group_calc(groups){
     let group4 = 0;
     let group_score = 0;
 
-    //test
-    groups = ['Ⅰ','Ⅱ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅰ','Ⅳc',];
-
     $.each(groups, function(idx,val){
         switch (val) {
-            case 'Ⅰ':
+            case 'I':
                 group1_cnt++;
                 break;
             case 'Ⅱ':
@@ -98,9 +150,6 @@ function group_calc(groups){
             case 'Ⅳ':
                 group4 = 0.5;
                 group4_cnt++;
-                break;
-        
-            default:
                 break;
         }
     });
@@ -128,7 +177,9 @@ function group_calc(groups){
   * @return {float} defに応じて0.1 ~ 1.0の値を返す
   * 
 */
-function def_to_val(def){
+function def_to_val(def=""){
+
+    if(!def) return 0;
 
     const DEF_VALUE = [
         {def:'A', val:0.1},
@@ -175,7 +226,7 @@ function csv_encode(data,event){
 
     console.log(setJson);
 
-    //data_set();
+    return setJson;
 
 }
 
@@ -184,24 +235,32 @@ function csv_encode(data,event){
  * 種目のデータをJSON形式で保存する
  * 
  */ 
- function set_storage(json,event){
+ function set_storage(event,json=''){
 
-    // json = [
-    //     { element:'aaa',def:'A',group:'Ⅰ' },
-    //     { element:'bbb',def:'B',group:'Ⅱ' },
-    //     { element:'ccc',def:'C',group:'Ⅲ' },
-    // ];
+    if(!json){
+        json = [
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
+            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' }
+        ];
+    }
 
     let setName = event+'_storage';
     let setJson = JSON.stringify(json);
     
+    console.log(event+" SET STORAGE");
     localStorage.setItem(setName,setJson);
 
 }
 
-/**
- * 
- * 通知欄の表示処理
+/** 通知欄の表示処理
  * 
  */
 function set_notice(type='info',text,event=active_event()){
@@ -334,6 +393,8 @@ function select_element(event=""){
     console.log("active_group：" + active_group);
     console.log("active_value：" + active_value);
     
+    $(".level-event").hide();
+    $(".level-event[data-event='"+event+"']").show();
     $(".level-event[data-event='"+event+"'] .element").hide();
     $(".level-event[data-event='"+event+"'] .element[data-group='"+active_group+"'][data-val='"+active_value+"']").show();
 
@@ -353,42 +414,6 @@ function modal_init(that){
 
 }
 
-
-/**
- * HTMLセッティング
- */
-function set_html(){
-    
-    const MAX_ELEMENTS = 10;//最大技数数
-    //const EVENTS = ['fx','ph','sr','vt','pb','hb'];
-    const EVENTS = ['fx'];
-
-    $.each(EVENTS,function(idx,event){
-
-        let cnt = event !== 'vt' ? MAX_ELEMENTS+1 : 1; //跳馬だけ1技
-        let cv = event !== 'fx' ? 'CV' : 'GroupⅣ / CV'; //床だけgroupⅣ
-        let h = '';
-
-        for (let i = 1; i < cnt; i++) {
-            h += '<div class="elm" data-key="'+i+'">';
-            h += '<div class="num">'+i+'</div>';
-            h += '<div class="content">';
-            h +=   '<span class="ja">"TOUCH"to SELECT ELEMENTS</span>';
-            h +=   '<span class="en"></span>';
-            h += '</div>';
-            h += '<div class="scores">';
-            h +=   '<div class="group-score"></div>';
-            h +=   '<div class="def-score"></div>';
-            h += '</div>';
-            h += '<div class="cv">'+cv+'</div>';
-            h += '</div>';
-        }
-
-        $(".tab-content."+event+" .elements-wrap").append(h);
-
-    });
-
-}
 
 /** アクティブな種目を返す
  * 
@@ -418,11 +443,13 @@ function modal_toggle(set=""){
  * 選択した値を当て込む
  * @param {array} data [Group,value,id,name,name_en]
  */
-function active_set_data(dom,data){
-    
-    let active_group = dom[0];
-    let active_value = dom[1];
-    let active_content = dom[2];
+function active_set_data(active_num,data){
+    let event = active_event();
+    let elm = $('.tab-content.'+event+' .elm[data-key="'+active_num+'"]');
+
+    let active_group = elm.find(".group-score");
+    let active_value = elm.find(".def-score");
+    let active_content = elm.find(".content");
 
     let group = data[0];
     let value = data[1];
@@ -433,31 +460,42 @@ function active_set_data(dom,data){
     active_value.text(value);
     active_content.html('<span class="ja">'+content_ja+'</span><span class="en">'+content_en+'</span>');
 
+    let json = get_storage(active_event());
+    json[active_num] = {ja:content_ja,en:content_en,def:value,group:group,cv:''};
+    set_storage(event,json);
+
 }
 
 $(function(){
 
-    //動的に生成した要素はDOMが操作できないので操作すべき要素を記憶しておく
-    var active_elm;
-    var active_group;
-    var active_value;
-    var active_content;
+    var active_num;
 
     //関数テスト-----------------
 
     console.log(def_to_val('C'));
-    get_storage('fx');
-    console.log(group_calc('test'));
+    //get_storage('fx');
+    data_set("fx");
+    dscore_calc('fx');
+
     set_notice("info","通知テスト");
     set_notice("danger","通知テスト");
 
     //---------------------------
 
-    let unsets = ['ph','sr','vt','pb','hb',];
+    let unsets = ['vt','pb','hb',];
     set_elements(unsets);
-
-    set_html();
     
+    //初期設定
+    //データがStorageに保存されていなければ初期値を設定する。
+    if(!get_storage('fx')){
+        console.log("INIT STORAGE SET");
+        
+        let events = ['fx','ph','sr','vt','pb','hb'];
+        $.each(events, function(idx,val){
+            set_storage(val);
+        });
+    }
+
     //モーダルの暗幕クリック処理
     $(".darklayer").on("click",function(){
         modal_toggle("remove");
@@ -469,11 +507,7 @@ $(function(){
         select_group(event);
 
         //動的に生成した要素はDOMが操作できないので操作すべき要素をしまっておく
-        let elm = $(this).parents(".elm");
-        active_elm = elm;
-        active_group = elm.find(".group-score");
-        active_value = elm.find(".def-score");
-        active_content = elm.find(".content");
+        active_num = $(this).parents(".elm").attr("data-key");
         
         if($(".elm").hasClass("set")){
             //モーダルの初期設定
@@ -507,7 +541,6 @@ $(function(){
     //技選択時処理
     $(".select-modal").on("click",".element",function(){
 
-        let dom = [active_group,active_value,active_content];
         let event = active_event();
 
         let data = [];//[group,value,ja,en]
@@ -516,7 +549,7 @@ $(function(){
         data[2] = $(this).find(".ja").text();
         data[3] = $(this).find(".en").text();
 
-        active_set_data(dom,data);
+        active_set_data(active_num,data);
         dscore_calc(event);
 
         modal_toggle();

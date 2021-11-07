@@ -289,7 +289,7 @@ p.event-title {
 
 .score-body .events .difficult, 
 .score-body .events .exp, 
-.score-body .events .nd, 
+.score-body .events .cv, 
 .score-body .events .dscore {
     display: flex;
     justify-content: space-between;

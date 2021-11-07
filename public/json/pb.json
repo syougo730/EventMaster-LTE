@@ -1,0 +1,517 @@
+{
+	"element":[
+		{
+			"key" : "0",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "倒立、単棒倒立、後ろ振り倒立",
+			"name_en" : "Any handstand on 1 or 2 rails."
+		},
+		{
+			"key" : "1",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "(単棒)脚前挙支持",
+			"name_en" : "Any L-sit on 1 or 2 rails."
+		},
+		{
+			"key" : "2",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "カット(後ろ振り開脚入れ(支持or脚前挙支持))",
+			"name_en" : "Straddled cut fwd.to support."
+		},
+		{
+			"key" : "3",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "バックカット(前振り開脚抜き支持)",
+			"name_en" : "Straddle cut bwd.to support."
+		},
+		{
+			"key" : "4",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "移行(正倒立ひねり)",
+			"name_en" : "1/2t.fwd.in hdst."
+		},
+		{
+			"key" : "5",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "逆移行(逆倒立ひねり)",
+			"name_en" : "1/2t.bwd.in hdst."
+		},
+		{
+			"key" : "6",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "棒端中向き旋回1回",
+			"name_en" : "On end,1 circle or flair."
+		},
+		{
+			"key" : "7",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "カトウ(屈腕前振り上向きとび転向)",
+			"name_en" : "Bent arm swing fwd.to hop 1/2t.to sup."
+		},
+		{
+			"key" : "8",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "カルミニッチ(前振り1回ひねり支持)",
+			"name_en" : "Swing fwd.w.1/1t.to up.arm hang."
+		},
+		{
+			"key" : "9",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "バックカット倒立",
+			"name_en" : "Straddle cut bwd.to hdst."
+		},
+		{
+			"key" : "10",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前振り開脚抜き前方宙返り腕支持",
+			"name_en" : "Strad.cut bwd.and salto fwd.to up.arm hang."
+		},
+		{
+			"key" : "11",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(屈腕伸身or伸腕屈伸)力倒立",
+			"name_en" : "Any press w.bent arm str.body,orstr.arm bent body to hdst.,on 1 or 2 rails also strad."
+		},
+		{
+			"key" : "12",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "カルバロ(前振り倒立肩転移支持)",
+			"name_en" : "Swing fwd.to hdst.,hop to support."
+		},
+		{
+			"key" : "13",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立1/4ひねり直ちに片腕支持3/4ひねり支持",
+			"name_en" : "Hdst.with 1/4t.and fall back to sup.with 3/4t."
+		},
+		{
+			"key" : "14",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "バックツイスト(後ろ振りひねり支持)",
+			"name_en" : "Stutzkehr bwd.to support."
+		},
+		{
+			"key" : "15",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立から片腕支持1回ひねり腕支持",
+			"name_en" : "Healy to upper arm hang."
+		},
+		{
+			"key" : "16",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろとびひねり倒立",
+			"name_en" : "Swing bwd.with 1/2t.hop to hdst."
+		},
+		{
+			"key" : "17",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立1回ひねり",
+			"name_en" : "Any 1/1 pirouette in hdst.on 2 rails."
+		},
+		{
+			"key" : "18",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "単棒倒立から3/4ひねり倒立",
+			"name_en" : "From hdst.on 1 rail,3/4 pir.fwd.or bwd.In hdst."
+		},
+		{
+			"key" : "19",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方かかえ込み(屈伸)宙返り腕支持",
+			"name_en" : "5/4 salto fwd.t.or p.to upper arm hang."
+		},
+		{
+			"key" : "20",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方かかえこみ(屈伸)宙返り1/4ひねり単棒懸垂"
+		},
+		{
+			"key" : "21",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "棒の中央(棒端外向き)で旋回1回",
+			"name_en" : "In center or on end facingt out,1circle or flair."
+		},
+		{
+			"key" : "22",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ツイスト(前振りひねり倒立)",
+			"name_en" : "Stutzkehr fwd.to hdst."
+		},
+		{
+			"key" : "23",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "バボシュ(前振り開脚抜き懸垂)",
+			"name_en" : ""
+		},
+		{
+			"key" : "24",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "サラザール(ディアミドフひねり腕支持)",
+			"name_en" : "Diamidov and 1/2t.to upper arms."
+		},
+		{
+			"key" : "25",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ディアミドフ(前振り片腕支持1回ひねり倒立)",
+			"name_en" : "Swing fwd.w.1/1t.on 1 arm to hdst."
+		},
+		{
+			"key" : "26",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "マクーツ腕支持or3/4ディアミドフ同軸手で3/4ひねり支持",
+			"name_en" : "Makuts to upper arm hang or 3/4 Diamidov 1/4 Healy to support."
+		},
+		{
+			"key" : "27",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方棒上宙返り倒立",
+			"name_en" : "Salto bwd to hdst. Also to one rail."
+		},
+		{
+			"key" : "28",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ツミロビッチ(後方棒上宙返りひねり腕支持)",
+			"name_en" : "Salto bwd.with 1/2t.to up.arm hang."
+		},
+		{
+			"key" : "29",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ブランドストローム(倒立3/4ひねり直ちに片腕支持3/4ひねり支持)",
+			"name_en" : "Hdst.with 3/4t.and fall back to sup.with 1/4t."
+		},
+		{
+			"key" : "30",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後ろ振りひねり開脚抜き支持",
+			"name_en" : "Stutzkehr bwd.with strad.cut bwd.to sup."
+		},
+		{
+			"key" : "31",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ノビコフ(後ろ振り倒立経過ひねり支持)",
+			"name_en" : "Stutzkehr bwd.through hdst.to support."
+		},
+		{
+			"key" : "32",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "単棒倒立から片腕支持1回ひねり腕支持",
+			"name_en" : "From hdst.on 1 rail,Healy to upper arm hang."
+		},
+		{
+			"key" : "33",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後ろ振りとび3/4ひねり倒立",
+			"name_en" : "Swing bwd.with 3/4t.hop to hdst."
+		},
+		{
+			"key" : "34",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "カルバロ2(倒立から前方宙返り支持)or倒立から肩転移支持",
+			"name_en" : "From hdst.,salto fwd.to support or from hdst.with rotated grip,inlocate to support."
+		},
+		{
+			"key" : "35",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方宙返り支持",
+			"name_en" : "Salto fwd to support."
+		},
+		{
+			"key" : "36",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "単棒、前方かかえ込み(屈伸)宙返り懸垂",
+			"name_en" : "Salto fwd.t.or p.to hang at the end of thhe bars."
+		},
+		{
+			"key" : "37",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方伸身宙返り腕支持",
+			"name_en" : "5/4 salto fwd.str.to upper arm hang."
+		},
+		{
+			"key" : "38",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "39",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "デレサレ(棒端で下向き360°転向)",
+			"name_en" : "On end,R360."
+		},
+		{
+			"key" : "40",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "開脚旋回倒立",
+			"name_en" : "Any flair to hdst."
+		},
+		{
+			"key" : "41",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "開脚旋回倒立ひねり",
+			"name_en" : "Any flair with 1/2t.to hdst."
+		},
+		{
+			"key" : "42",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ピロゼルチェフ/ピータースorディミック(ツイスト1/4ひねり単棒倒立類)",
+			"name_en" : "Stutzkehr fwd.or salto bwd.to hdst.sideways on 1 rail."
+		},
+		{
+			"key" : "43",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "デフレタス(前振り片腕支持3/4ひねり単棒横向き倒立経過背面とび懸垂)",
+			"name_en" : "3/4 Diamidov and rear vault to side hang on 1 bar."
+		},
+		{
+			"key" : "44",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ディアミドフ(1/4)ひねり",
+			"name_en" : "Diamidov with 1/4 or 1/2t.to hdst."
+		},
+		{
+			"key" : "45",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ゾンダーランド腕支持",
+			"name_en" : "Swing fwd.with 5/4t.on one arm throughhdst.and healy to up.arm."
+		},
+		{
+			"key" : "46",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方棒上宙返り開脚入れ支持",
+			"name_en" : "Salto backward with strad.cut to support."
+		},
+		{
+			"key" : "47",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ルンプティス(後方棒上宙返り単棒倒立)(ヒーリー系の技へつなぐ)",
+			"name_en" : "Salto bwd.to hdst.1 rail.(Connected to Healy type element.)"
+		},
+		{
+			"key" : "48",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "モリスエ(後方棒上かかえ込み2回宙返り腕支持)",
+			"name_en" : "Double salto bwd.t.to up.arm hang."
+		},
+		{
+			"key" : "49",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "スアレス(後方棒上かかえ込み宙返りひねり腕支持)",
+			"name_en" : "3/2 salto bwd.with 1/2t.to up.arm hang."
+		},
+		{
+			"key" : "50",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ヒーリー(倒立から片腕支持1回ひねり支持)",
+			"name_en" : "Healy to support."
+		},
+		{
+			"key" : "51",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ギャッツスン(後ろ振りとび1回ひねり倒立)",
+			"name_en" : "Swing bwd.with 1/1t.hop to hdst."
+		},
+		{
+			"key" : "52",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "バクダンカット(前方開脚宙返り抜き腕支持)",
+			"name_en" : "5/4 salto fwd.straddled to up.arm hang."
+		},
+		{
+			"key" : "53",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方かかえ込み2回宙返り腕支持",
+			"name_en" : "Double salto fwd.t.to up.arm hang."
+		},
+		{
+			"key" : "54",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "マクーツ(3/4ディアミドフ単棒倒立経過、軸手を換えて3/4ひねり支持)",
+			"name_en" : "3/4 Diamidov and 3/4 Healy on the other hand to support."
+		},
+		{
+			"key" : "55",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ファン・リーピン(屈伸モリスエ)",
+			"name_en" : "Double salto bwd.p.to up.arm hang."
+		},
+		{
+			"key" : "56",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "B難度以上の単棒倒立になる振動技からヒーリー",
+			"name_en" : "Following a swing element(min.B)to hdst on 1 rail,Healy to support."
+		},
+		{
+			"key" : "57",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ギャッツスン2(後ろ振りとび5/4ひねり倒立経過1/4ひねり倒立)",
+			"name_en" : "Gatson 1 with 1/4t.to hdst.on 1 rail and 1/4t.hdst.on2 rails."
+		},
+		{
+			"key" : "58",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "リー・チョルホン/ササキ(バクダンカット懸垂)",
+			"name_en" : "5/4 salto fwd.strad.through support to hang or direct to hang."
+		},
+		{
+			"key" : "59",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "バクダンカット屈腕支持",
+			"name_en" : "5/4 salto fwd.strad.to bent arm support."
+		},
+		{
+			"key" : "60",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "前方屈伸2回宙返り腕支持",
+			"name_en" : "Double salto fwd.p.to up.arm hang."
+		},
+		{
+			"key" : "61",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ウルジカ(前方宙返り1回ひねり腕支持)",
+			"name_en" : "Salto fwd.with 1/1t.to up.arm hang."
+		},
+		{
+			"key" : "62",
+			"group" : "I",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ゾンダーランド(前振り片腕支持5/4ひねり単棒倒立経過、軸手を換えてヒーリー支持)",
+			"name_en" : "Swing fwd.with 5/4t.on one arm through hdst.and healy to support."
+		},
+		{
+			"key" : "64",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "",
+			"name_en" : ""
+		}
+
+
+	]
+}

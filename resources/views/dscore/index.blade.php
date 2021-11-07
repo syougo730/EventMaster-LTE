@@ -3,7 +3,7 @@
 @section('header')
 
 <div class="col-sm-6">
-  <h1 class="m-0">Ds.Creator</h1>
+  <h1 class="m-0">Ds.Creator Ver2.0</h1>
 </div><!-- /.col -->
 <div class="col-sm-6">
   <ol class="breadcrumb float-sm-right">
@@ -37,14 +37,89 @@
           </div>
 
           <div class="tab-content ts" data-role="page" id="page1"></div>
+          
+          <!-- --------------------------------
+                Floor Exercise
+          ---------------------------------- -->
           <div class="tab-content fx" data-role="page" id="page2">
-              <div class="elements-wrap"><!-- JS --></div>
+              <div class="elements-wrap">
+                @for($i = 1; $i < 11; $i++)
+                <div class="elm" data-key="{{ $i }}">
+                  <div class="num">{{ $i }}</div>
+                  <div class="content">
+                    <span class="ja">"TOUCH"to SELECT ELEMENTS</span>
+                    <span class="en"></span>
+                  </div>
+                  <div class="scores">
+                    <div class="group-score"></div>
+                    <div class="def-score"></div>
+                  </div>
+                  <div class="cv">GroupⅣ / CV</div>
+                </div>
+                @endfor
+              </div>
               <div class="notice-box">
                 <span class="jura">Notice</span>
                 <div class="notices noto"><!-- JS --></div>
               </div>
           </div>
 
+          <!-- --------------------------------
+                Pommel Hourse
+          ---------------------------------- -->
+          <div class="tab-content ph" data-role="page" id="page3">
+            <div class="elements-wrap">
+              @for($i = 1; $i < 11; $i++)
+              <div class="elm" data-key="{{ $i }}">
+                <div class="num">{{ $i }}</div>
+                <div class="content">
+                  <span class="ja">"TOUCH"to SELECT ELEMENTS</span>
+                  <span class="en"></span>
+                </div>
+                <div class="scores">
+                  <div class="group-score"></div>
+                  <div class="def-score"></div>
+                </div>
+                <div class="cv">GroupⅣ / CV</div>
+              </div>
+              @endfor
+            </div>
+              <div class="notice-box">
+                <span class="jura">Notice</span>
+                <div class="notices noto"><!-- JS --></div>
+              </div>
+          </div>
+          
+          <!-- --------------------------------
+                Still Rings
+          ---------------------------------- -->
+          <div class="tab-content sr" data-role="page" id="page4">
+            <div class="elements-wrap">
+              @for($i = 1; $i < 11; $i++)
+              <div class="elm" data-key="{{ $i }}">
+                <div class="num">{{ $i }}</div>
+                <div class="content">
+                  <span class="ja">"TOUCH"to SELECT ELEMENTS</span>
+                  <span class="en"></span>
+                </div>
+                <div class="scores">
+                  <div class="group-score"></div>
+                  <div class="def-score"></div>
+                </div>
+                <div class="cv">GroupⅣ / CV</div>
+              </div>
+              @endfor
+            </div>
+              <div class="notice-box">
+                <span class="jura">Notice</span>
+                <div class="notices noto"><!-- JS --></div>
+              </div>
+          </div>
+
+          
+          <!-- --------------------------------
+                SELECT ELEMENTS MODAL
+          ---------------------------------- -->
           <div class="modals-wrap">
             <div class="darklayer"></div>
             <div class="modal select-modal">
@@ -84,6 +159,9 @@
           </div>
           
 
+          <!-- --------------------------------
+                SCORES ACCORDION
+          ---------------------------------- -->
           <div class="total-scores">
             <div class="score-header">
               <span class="score-header-title">FloorExercise</span>
@@ -102,8 +180,8 @@
                     <span>特別要求</span>
                     <span>0.0</span>
                   </div>
-                  <div class="nd">
-                    <span>ND</span>
+                  <div class="cv">
+                    <span>CV</span>
                     <span>0.0</span>
                   </div>
                   <div class="dscore">
@@ -122,8 +200,8 @@
                     <span>特別要求</span>
                     <span>0.0</span>
                   </div>
-                  <div class="nd">
-                    <span>ND</span>
+                  <div class="cv">
+                    <span>CV</span>
                     <span>0.0</span>
                   </div>
                   <div class="dscore">
@@ -142,8 +220,8 @@
                     <span>特別要求</span>
                     <span>0.0</span>
                   </div>
-                  <div class="nd">
-                    <span>ND</span>
+                  <div class="cv">
+                    <span>CV</span>
                     <span>0.0</span>
                   </div>
                   <div class="dscore">
@@ -162,8 +240,8 @@
                     <span>特別要求</span>
                     <span>0.0</span>
                   </div>
-                  <div class="nd">
-                    <span>ND</span>
+                  <div class="cv">
+                    <span>CV</span>
                     <span>0.0</span>
                   </div>
                   <div class="dscore">
@@ -182,8 +260,8 @@
                     <span>特別要求</span>
                     <span>0.0</span>
                   </div>
-                  <div class="nd">
-                    <span>ND</span>
+                  <div class="cv">
+                    <span>CV</span>
                     <span>0.0</span>
                   </div>
                   <div class="dscore">
@@ -202,8 +280,8 @@
                     <span>特別要求</span>
                     <span>0.0</span>
                   </div>
-                  <div class="nd">
-                    <span>ND</span>
+                  <div class="cv">
+                    <span>CV</span>
                     <span>0.0</span>
                   </div>
                   <div class="dscore">
@@ -244,8 +322,8 @@ $(function(){
   
   window.scrollTo(0,1);
       
-  //$('#page2,#page3,#page4,#page5,#page6,#page7').hide();
-  
+  $('#page1,#page3,#page4,#page5,#page6,#page7').hide();
+
   $('.js-tab > div').click(function(){
     $('.js-tab > div,.js-tab_content').removeClass('active');
     var tabClass = $(this).attr('class');

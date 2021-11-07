@@ -1,0 +1,1246 @@
+{
+	"element":[
+		{
+			"key" : "0",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "懸垂前振り上がり支持",
+			"name_en" : "Uprise fwd.to support."
+		},
+		{
+			"key" : "1",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "支持後ろ振り、前に回りながら懸垂",
+			"name_en" : "Swing bwd in support,fall to bwd swing in hang."
+		},
+		{
+			"key" : "2",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ナカヤマ(懸垂から伸腕前振り出し(肩が輪の高さ以上))",
+			"name_en" : "From hang,underswing w.shoulders above rings."
+		},
+		{
+			"key" : "3",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ほん転逆上がり支持",
+			"name_en" : "From hang,felge upward to support."
+		},
+		{
+			"key" : "4",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ディスロー",
+			"name_en" : "Dislocate bwd.piked or streched."
+		},
+		{
+			"key" : "5",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後ろ振り上がり支持",
+			"name_en" : "Uprise bwd.to support."
+		},
+		{
+			"key" : "6",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "クーゲル",
+			"name_en" : "Inlocate piked or streched."
+		},
+		{
+			"key" : "7",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "懸垂からゆっくりと肩転移",
+			"name_en" : "Slow inlocate from hang."
+		},
+		{
+			"key" : "8",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "け上がり支持",
+			"name_en" : "Kip to suppport."
+		},
+		{
+			"key" : "9",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方け上がり支持",
+			"name_en" : "Back kip to support."
+		},
+		{
+			"key" : "10",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "支持前振り出し懸垂後ろ振り",
+			"name_en" : "Fwd.swing to swing bwd.in hang."
+		},
+		{
+			"key" : "11",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "(十字懸垂から)屈伸(伸身)逆上がり支持",
+			"name_en" : "From support or cross,felge bwd.piked or streched to support."
+		},
+		{
+			"key" : "12",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ケキ、ショラニー((背面懸垂)前振り上がり支持前方回転振り出し懸垂後ろ振り)",
+			"name_en" : "(Uprise fwd.or Li-Ning) and counter salto fwd.to bwd swing in hang."
+		},
+		{
+			"key" : "13",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "リーニン、リーニン2(懸垂(支持)後ろ振り出し、背面懸垂前振り上がり)",
+			"name_en" : "From a hang or support,back toss to hang rw.to uprise fwd.to support."
+		},
+		{
+			"key" : "14",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "伸腕ほん転逆上がり倒立経過",
+			"name_en" : "Swing fwd.with straight arms through hdst."
+		},
+		{
+			"key" : "15",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "デルチェフ(ほん転逆上がり、脚を腕の上に乗せた開脚前挙支持)",
+			"name_en" : "Felge upward to support with straddled legs supported above the rings."
+		},
+		{
+			"key" : "16",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(後ろ振り上がりor前方(屈伸)車輪)倒立経過",
+			"name_en" : "Uprise bwd.or giant swing piked or str.through handstand."
+		},
+		{
+			"key" : "17",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ホンマ(前方ほん転逆上がり支持)",
+			"name_en" : "Backward swing to salto fwd.p.to support."
+		},
+		{
+			"key" : "18",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方伸腕け上がり支持",
+			"name_en" : "Back kip with straight arms to support."
+		},
+		{
+			"key" : "19",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろ振り上がり開脚前挙支持",
+			"name_en" : "Uprise bwd.to straddled L-sit."
+		},
+		{
+			"key" : "20",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(後方け上がりor後方伸身支持回転)倒立",
+			"name_en" : "Back kip or roll bwd str.to handstand."
+		},
+		{
+			"key" : "21",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "○支持後ろ振り倒立",
+			"name_en" : "From support swing bwd.to handstand."
+		},
+		{
+			"key" : "22",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "グチョギー(後方かかえ込み2回宙返り懸垂)",
+			"name_en" : "Tucked double felge bwd.to hang."
+		},
+		{
+			"key" : "23",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方伸身ほん転逆上がり支持",
+			"name_en" : "Honma streched."
+		},
+		{
+			"key" : "24",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ヤマワキ(前方かかえ込み2回宙返り懸垂)",
+			"name_en" : "Double salto fwd.tucked to hang."
+		},
+		{
+			"key" : "25",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "支持後ろ振り前方かかえ込み(屈伸)宙返り支持",
+			"name_en" : "Bwd.swing,salto fwd tuck or piked to support."
+		},
+		{
+			"key" : "26",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "○ほん転逆上がり倒立",
+			"name_en" : "Swing fwd.with straight arms to hdst."
+		},
+		{
+			"key" : "27",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "○後ろ振り上がり倒立",
+			"name_en" : "Uprise bwd.or giant swing to handstand.with straight arms."
+		},
+		{
+			"key" : "28",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "○ホンマ支持後ろ振り倒立",
+			"name_en" : "Honma and swing bwd.to handstand."
+		},
+		{
+			"key" : "29",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方屈伸2回宙返り懸垂",
+			"name_en" : "Piked double felge bwd.to hang."
+		},
+		{
+			"key" : "30",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ジョナサン(前方屈伸(伸身)2回宙返り懸垂)",
+			"name_en" : "Double salto fwd.piked or streched to hang."
+		},
+		{
+			"key" : "31",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "○伸身ホンマ支持後ろ振り倒立",
+			"name_en" : "Honma str.and swing bwd.to handstand."
+		},
+		{
+			"key" : "32",
+			"group" : "I",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "オニール(後方伸身2回宙返り懸垂)",
+			"name_en" : "Streched double felge bwd.to hang."
+		},
+		{
+			"key" : "33",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "(開脚)脚前挙支持",
+			"name_en" : "L-sit or straddled L-sit."
+		},
+		{
+			"key" : "34",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "背面水平懸垂",
+			"name_en" : "Hanging scale rearways (back lever)."
+		},
+		{
+			"key" : "35",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "正面水平懸垂",
+			"name_en" : "Hanging scale frontways (front lever)"
+		},
+		{
+			"key" : "36",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "屈腕屈伸(開脚)力倒立",
+			"name_en" : "Press to hdst.with bent body and bent arms.-Also straddle legs."
+		},
+		{
+			"key" : "37",
+			"group" : "Ⅱ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ゆっくりと前方屈伸支持回転",
+			"name_en" : "Slow roll fwd.piked to support."
+		},
+		{
+			"key" : "38",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "39",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "脚上挙支持",
+			"name_en" : "V-sit."
+		},
+		{
+			"key" : "40",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "開脚水平支持",
+			"name_en" : "Support scale straddled."
+		},
+		{
+			"key" : "41",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(脚前挙)十字懸垂",
+			"name_en" : "Cross or L-cross."
+		},
+		{
+			"key" : "42",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "(屈腕伸身or伸腕屈伸or開脚水平から伸腕伸身)力倒立",
+			"name_en" : "Press to hdst.with str.body a.bent arms or b.body.a.str.arms,or fr.strad.sup.lever."
+		},
+		{
+			"key" : "43",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ゆっくりと前方伸身支持回転",
+			"name_en" : "Slow roll fwd.streched to support."
+		},
+		{
+			"key" : "44",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ゆっくりと伸腕伸身逆上がり脚前挙",
+			"name_en" : "Slow roll bwd.slowly with ssstr.arms and str.body to L-sit."
+		},
+		{
+			"key" : "45",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "屈腕引き上げ背面水平懸垂",
+			"name_en" : "Vertical pull up with bent arms to hanging scale rearways."
+		},
+		{
+			"key" : "46",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "十字懸垂から背面水平懸垂",
+			"name_en" : "From cross or L-cross,turn fwd.to back lever."
+		},
+		{
+			"key" : "47",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立から中水平を経過して背面水平懸垂",
+			"name_en" : "From hdst.,lower horiz.to back lever."
+		},
+		{
+			"key" : "48",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "倒立からゆっくり伸腕で十字倒立経過逆懸垂",
+			"name_en" : "From handstand,lower slowly with straight arms through inverted cross to inverted hang."
+		},
+		{
+			"key" : "49",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "十字倒立",
+			"name_en" : "Inverted cross."
+		},
+		{
+			"key" : "50",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "水平支持(=上水平)",
+			"name_en" : "Support scale (planche)."
+		},
+		{
+			"key" : "51",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "脚上挙十字懸垂",
+			"name_en" : "V-cross."
+		},
+		{
+			"key" : "52",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "支持(水平支持)から伸腕伸身力倒立",
+			"name_en" : "Press to hdst.with str.body and str.arms or from sup.lever."
+		},
+		{
+			"key" : "53",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ゆっくりと前方伸身支持回転伸腕伸身力倒立",
+			"name_en" : "Slow roll fwd.streche with straight arms to handstand."
+		},
+		{
+			"key" : "54",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ゆっくりと前方伸腕伸身支持回転十字懸垂",
+			"name_en" : "Slow roll fwd.streched (bent or straight arms) to cross or L-cross."
+		},
+		{
+			"key" : "55",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "伸腕引き上げ背面水平懸垂",
+			"name_en" : "Vertical pull up with straight arms to hanging scale rearways."
+		},
+		{
+			"key" : "56",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "伸腕引き上げ支持",
+			"name_en" : "Vertical pull up with straight arms to L-sit."
+		},
+		{
+			"key" : "57",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "リー・シャオシュン (支持(十字懸垂)から伸腕で下ろして懸垂、引き上げ十字懸垂)",
+			"name_en" : "From sup.or cross,lower slowly with str.arms to hang,and pull with str.arms to cross."
+		},
+		{
+			"key" : "58",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "脚前挙支持から伸腕屈伸力十字倒立",
+			"name_en" : "From L-sit,press to inverted cross."
+		},
+		{
+			"key" : "59",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "十字懸垂から引き揚げ脚前挙支持",
+			"name_en" : "From cross or.L-cross,press to L-sit."
+		},
+		{
+			"key" : "60",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "十字倒立から押し上げ倒立",
+			"name_en" : "Press from inverted cross to handstand."
+		},
+		{
+			"key" : "61",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ヒロンデル (中水平支持)",
+			"name_en" : "Support scale at ring height (swallow)."
+		},
+		{
+			"key" : "62",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ツカハラ3 (脚上挙十字懸垂から引き揚げ脚上挙支持)",
+			"name_en" : "V-cross,press to V-sit."
+		},
+		{
+			"key" : "63",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "中水平から伸腕伸身力倒立",
+			"name_en" : "Press to hdst.with str.body and str.arms from swallow."
+		},
+		{
+			"key" : "64",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ゆっくりと前方伸腕伸身支持回転十字倒立",
+			"name_en" : "Slow roll fwd.stretched with straight arms to inverted cross."
+		},
+		{
+			"key" : "65",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ピネダ (伸腕伸身正面水平懸垂経過十字懸垂)",
+			"name_en" : "Pull with straight arms and body through mo- mentary front lever to cross or L-cross."
+		},
+		{
+			"key" : "66",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ファム (伸腕伸身正面水平懸垂経過水平支持)",
+			"name_en" : "Pineda through cross to support scale."
+		},
+		{
+			"key" : "67",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "アザリアン (伸腕伸身逆上がり十字懸垂)",
+			"name_en" : "Roll bwd.slowly with str.arms and body to cross or L-cross."
+		},
+		{
+			"key" : "68",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ナカヤマ (背面水平懸垂経過十字懸垂)",
+			"name_en" : "From or through hanging scale rearways,with straight arms pull to cross  or L-cross."
+		},
+		{
+			"key" : "69",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "懸垂から伸腕で引き上げ十字懸垂",
+			"name_en" : "Vertical pull up with straight arms to cross or L-cross."
+		},
+		{
+			"key" : "70",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "中水平支持から押し上げ水平支持",
+			"name_en" : "From swallow,press to support scale."
+		},
+		{
+			"key" : "71",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "脚前挙十字懸垂から伸腕屈伸力十字倒立",
+			"name_en" : "From L-cross,press to inverted cross."
+		},
+		{
+			"key" : "72",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "水平支持から伸腕伸身力十字倒立",
+			"name_en" : "From support lever,press to inverted cross."
+		},
+		{
+			"key" : "73",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "十字懸垂から引き上げ水平支持",
+			"name_en" : "From cross,press to planche without first going to support."
+		},
+		{
+			"key" : "74",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ボロビオフ (十字倒立からゆっくり下ろして逆懸垂経過伸腕伸身逆上がり十字懸垂)",
+			"name_en" : "From inverted cross lower slowly to inverted hang and felge bwd.slowly to cross."
+		},
+		{
+			"key" : "75",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "グ・キュウ・チャン2 (ゆっくりと前方伸腕伸身支持回転十字懸垂経過水平支持)",
+			"name_en" : "Slowly roll fwd.str.w.str.arms through cross and press to planche without first going to support."
+		},
+		{
+			"key" : "76",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ダフチャン (ゆっくりと伸腕伸身で前に回り十字懸垂)",
+			"name_en" : "Slow ross fwd.with str.body and arms to cross or L-cross,also from inverted hang."
+		},
+		
+		{
+			"key" : "77",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "上向き中水平支持",
+			"name_en" : "Inverted swallow."
+		},
+		{
+			"key" : "78",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ペトロウニアス (伸腕伸身正面水平懸垂経過十字倒立)",
+			"name_en" : "Pineda to inverted cross."
+		},
+		{
+			"key" : "79",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ツカハラ2 (伸腕伸身正面水平懸垂経過脚上挙十字懸垂)",
+			"name_en" : "Pineda to V-cross."
+		},
+		{
+			"key" : "80",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "バブサー (伸腕伸身正面水平懸垂経過中水平支持)",
+			"name_en" : "Pineda to front lever to swallow."
+		},
+		{
+			"key" : "81",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "タイ (アザリアン脚上挙十字懸垂)",
+			"name_en" : "Azarian to V-cross."
+		},
+		{
+			"key" : "82",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "グ・キュウ・チャン (背面水平経過脚上挙十字懸垂)",
+			"name_en" : "Nakayama to V-cross."
+		},
+		{
+			"key" : "83",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "バンゲルダー (水平(中水平)支持からゆっくり下ろして背面水平懸垂経過引き上げ中水平支持)",
+			"name_en" : "From planche or swallow,lower horiz.and slowly to hanging scale rw.and press to swallow."
+		},
+		{
+			"key" : "84",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "中水平支持からゆっくり背面水平懸垂経過中水平支持",
+			"name_en" : "From swallow,lower slowly to hanging scale,press to swallow."
+		},
+		{
+			"key" : "85",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "十字懸垂から伸腕伸身力十字倒立",
+			"name_en" : "From cross,press with straight body to inverted cross."
+		},
+		{
+			"key" : "86",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "中水平支持から伸腕伸身力十字倒立",
+			"name_en" : "From swallow,press to inverted cross."
+		},
+		{
+			"key" : "87",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "十字懸垂から伸腕伸身中水平支持",
+			"name_en" : "From cross,press to swallow."
+		},
+		{
+			"key" : "88",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ヨブチェフ (十字倒立からゆっくり下ろして逆懸垂経過伸腕伸身逆上がり中水平支持)",
+			"name_en" : "From inverted cross lower slowwly to inverted hang and felge bwd.slowly to swallow."
+		},
+		{
+			"key" : "89",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ヤン・ミンヨン (アザリアン上水平支持)",
+			"name_en" : "Azarian to planche."
+		},
+		{
+			"key" : "90",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "バランディン1,3 (懸垂から伸腕で引き上げて水平(中水平)支持)",
+			"name_en" : "From hang vertical pull up with straight arms to swallow or planche."
+		},
+		{
+			"key" : "91",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ウィン (ゆっくりと伸腕伸身で前に回り十字懸垂経過十字倒立)",
+			"name_en" : "Slow roll fwd.with straight body and arms through cross to inverted cross."
+		},
+		{
+			"key" : "92",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ザフラン (背面水平懸垂経過伸腕伸身引き上げ上向き中水平支持)",
+			"name_en" : "Through hanging scale rearways(no hold required)pull with str.body through cross to inv.swallow."
+		},
+		{
+			"key" : "93",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ザネッティ (背面水平懸垂から引き上げ中水平(水平)支持)",
+			"name_en" : "From hanging scale rw.press to swallow(also to planche)."
+		},
+		{
+			"key" : "94",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "アザリアン中水平支持",
+			"name_en" : "Azarian to swallow."
+		},
+		{
+			"key" : "95",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "タロック (伸腕伸身逆上がり十字懸垂経過上向き中水平支持)",
+			"name_en" : "Azarian to inverted swallow."
+		},
+		{
+			"key" : "96",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "カルモナ (背面水平懸垂経過引き上げ十字倒立)",
+			"name_en" : "Through hang rearways press with straight arms and straight body to inverted cross."
+		},
+		{
+			"key" : "97",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "バランディン2 (懸垂から伸腕伸身十字倒立)",
+			"name_en" : "From hang vertical pull up with straight arms to inv.cross."
+		},
+		{
+			"key" : "98",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "懸垂前振り上がり脚前挙支持",
+			"name_en" : "Uprise fwd.to L-sit."
+		},
+		{
+			"key" : "99",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "け上がり脚前挙支持",
+			"name_en" : "Kip to L-sit."
+		},
+		{
+			"key" : "100",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ホンマ脚前挙支持",
+			"name_en" : "Honma to L-sit."
+		},
+		{
+			"key" : "101",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前振り上がり脚上挙支持",
+			"name_en" : "Uprise fwd.to V-sit."
+		},
+		{
+			"key" : "102",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "け上がり脚上挙支持",
+			"name_en" : "Kip to V-sit."
+		},
+		{
+			"key" : "103",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前振り上がり十字懸垂",
+			"name_en" : "Uprise fwd.to cross or L-cross."
+		},
+		{
+			"key" : "104",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後ろ振り上がり十字懸垂",
+			"name_en" : "Uprise bwd.to cross or L-cross."
+		},
+		{
+			"key" : "105",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "リーニン (リーニン2) から十字懸垂",
+			"name_en" : "Li-Ning or Li-Ning2 to cross or L-cross."
+		},
+		{
+			"key" : "106",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ほん転逆上がり十字懸垂",
+			"name_en" : "Felge upward to cross or L-cross."
+		},
+		{
+			"key" : "107",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "け上がり十字懸垂",
+			"name_en" : "Kip to cross or L-cross."
+		},
+		{
+			"key" : "108",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方け上がり十字懸垂",
+			"name_en" : "Back kip to cross or L-cross."
+		},
+		{
+			"key" : "109",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ほん転逆上がり開脚水平支持",
+			"name_en" : "Felge upward to support scale straddled."
+		},
+		{
+			"key" : "110",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後ろ振り上がり開脚水平支持",
+			"name_en" : "Uprise bwd.to support scale straddled."
+		},
+		{
+			"key" : "111",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "112",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方け上がり開脚水平支持",
+			"name_en" : "Back kip to support scale straddled."
+		},
+		{
+			"key" : "113",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ホンマ十字懸垂",
+			"name_en" : "Honma to cross or L-cross."
+		},
+		{
+			"key" : "114",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "支持後ろ振り前方屈伸宙返り直接十字懸垂",
+			"name_en" : "Bwd.swing,salto fwd p.to cross or L-cross."
+		},
+		{
+			"key" : "115",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ツカハラ(リーニン(リーニン2)から脚上挙十字懸垂)",
+			"name_en" : "Li-Ning or Li-Ning2 to V-cross."
+		},
+		{
+			"key" : "116",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "モリナリ(け上がり脚上挙十字懸垂)",
+			"name_en" : "Kip to V-cross."
+		},
+		{
+			"key" : "117",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "カトー(後ろ振り上がり脚上挙十字懸垂)",
+			"name_en" : "Back Uprise to V-cross."
+		},
+		{
+			"key" : "118",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ほん転逆上がり水平支持",
+			"name_en" : "Felge upward to planche."
+		},
+		{
+			"key" : "119",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後ろ振り上がり水平支持",
+			"name_en" : "Uprise bwd.to planche."
+		},
+		{
+			"key" : "120",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方け上がり水平支持",
+			"name_en" : "Back kip to planche."
+		},
+		{
+			"key" : "121",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "伸身逆上がり水平支持",
+			"name_en" : "Felge bwd.stretched to planche."
+		},
+		{
+			"key" : "122",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後ろ振り上がり十字倒立",
+			"name_en" : "Uprise bwd.to inverted cross."
+		},
+		{
+			"key" : "123",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方け上がり十字倒立",
+			"name_en" : "Back kip to inverted cross."
+		},
+		{
+			"key" : "124",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "タナカ(ホンマ脚上挙十字懸垂)",
+			"name_en" : "Honma to V-cross."
+		},
+		{
+			"key" : "125",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ほん転逆上がり中水平支持",
+			"name_en" : "Felge upward to swallow."
+		},
+		{
+			"key" : "126",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後ろ振り上がり中水平支持",
+			"name_en" : "Uprise bwd.to swallow."
+		},
+		{
+			"key" : "127",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後方け上がり中水平支持",
+			"name_en" : "Back kip to swallow."
+		},
+		{
+			"key" : "128",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ロドリゲス(前振り上がり上向き中水平支持)",
+			"name_en" : "Uprise fwd.to inverted swallow."
+		},
+		{
+			"key" : "129",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "け上がり上向き中水平支持",
+			"name_en" : "Kip to inverted swallow."
+		},
+		{
+			"key" : "130",
+			"group" : "Ⅳ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方屈伸(伸身)宙返り下り",
+			"name_en" : "Salto fwd.piked or stretched."
+		},
+		{
+			"key" : "131",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ケステ(後ろ振り上がり後方かかえ込み宙返り下り)",
+			"name_en" : "Uprise bwd.and salto bwd t."
+		},
+		{
+			"key" : "132",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方屈伸(伸身)宙返り下り",
+			"name_en" : "Salto bwd.piked or stretched."
+		},
+		{
+			"key" : "133",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方屈伸(伸身)宙返りひねり下り",
+			"name_en" : "Salto fwd.piked or stretched with 1/2t."
+		},
+		{
+			"key" : "134",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろ振り上がり後方屈伸(伸身)宙返り下り",
+			"name_en" : "Uprise bwd.and salto bwd p.or str."
+		},
+		{
+			"key" : "135",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方伸身宙返り1回(1/2)ひねり下り",
+			"name_en" : "Salto bwd.stretched with 1/2 or 1/1t."
+		},
+		{
+			"key" : "133",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方かかえ込み(屈伸)2回宙返り下り",
+			"name_en" : "Double salto bwd.tucked or piked."
+		},
+		{
+			"key" : "134",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方屈伸(伸身)宙返り1回(3/2)ひねり下り",
+			"name_en" : "Salto fwd.piked or stretched with 1/1 or 3/2t."
+		},
+		{
+			"key" : "135",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方かかえ込み2回宙返り(ひねり)下り",
+			"name_en" : "Double salto fwd.tucked or tucked with 1/2t."
+		},
+		{
+			"key" : "136",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後ろ振り上がり後方伸身宙返り1回ひねり下り",
+			"name_en" : "Uprise bwd.and salto bwd str.with 1/1t."
+		},
+		{
+			"key" : "137",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身宙返り2回(3/2)ひねり下り",
+			"name_en" : "Salto bwd.str.with 2/1t.or 3/2t."
+		},
+		{
+			"key" : "138",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身2回宙返り下り",
+			"name_en" : "Double salto bwd.stretched."
+		},
+		{
+			"key" : "139",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方かかえ込み2回宙返り1回(1/2)ひねり下り",
+			"name_en" : "Double salto bwd.t.with 1/2 or 1/1t."
+		},
+		{
+			"key" : "140",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身宙返り1回ひねり後方かかえ込み宙返り下り",
+			"name_en" : "Salto bwd.str.with 1/1t.and salto t."
+		},
+		{
+			"key" : "141",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方屈伸(伸身)宙返り2回ひねり下り",
+			"name_en" : "Salto fwd.piked or stretched with 2/1t."
+		},
+		{
+			"key" : "142",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "フィッシャー(前方かかえ込み2回宙返り3/2ひねり下り)",
+			"name_en" : "Double salto fwd.tucked with 3/2t.(also 1/1t.)."
+		},
+		{
+			"key" : "143",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "バラバノフ(後方屈伸2回宙返り(ひねり)下り)",
+			"name_en" : "Double salto fwd.piked or piked with 1/2t."
+		},
+		{
+			"key" : "144",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方かかえ込み2回宙返り3/2ひねり下り",
+			"name_en" : "Double salto bwd.t.with 3/2t."
+		},
+		{
+			"key" : "145",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方伸身2回宙返り1回(1/2)ひねり下り",
+			"name_en" : "Double salto bwd.stretched with 1/2 or 1/1t."
+		},
+		{
+			"key" : "146",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "前方屈伸2回宙返り3/2ひねり下り",
+			"name_en" : "Double salto fwd.piked with 3/2t.(also 1/1t.)"
+		},
+		{
+			"key" : "146",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後方伸身宙返り3回ひねり下り",
+			"name_en" : "Salto bwd.stretched with 3/1t."
+		},
+		{
+			"key" : "147",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後方かかえ込み2回宙返り2回ひねり下り",
+			"name_en" : "Double salto bwd.t.with 2/1t."
+		},
+		{
+			"key" : "148",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "後方かかえ込み3回宙返り下り",
+			"name_en" : "Triple salto bwd.tucked."
+		},
+		{
+			"key" : "149",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "トゥーハ(後方かかえ込み2回宙返り5/2ひねり下り)",
+			"name_en" : "Double salto bwd.t.with 5/2t."
+		},
+		{
+			"key" : "150",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "後方伸身2回宙返り2回(3/2)ひねり下り",
+			"name_en" : "Double salto bwd.str.with 3/2 or 2/1t."
+		}
+	]
+
+}
