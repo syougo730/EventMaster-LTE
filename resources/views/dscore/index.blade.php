@@ -3,12 +3,12 @@
 @section('header')
 
 <div class="col-sm-6">
-  <h1 class="m-0">Ds.Creator Ver2.0</h1>
+  <h1 class="m-0">Ds.Creator Ver{{ $version }}</h1>
 </div><!-- /.col -->
 <div class="col-sm-6">
   <ol class="breadcrumb float-sm-right">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active">Ds.Creator Ver2.0</li>
+    <li class="breadcrumb-item active">Ds.Creator Ver{{ $version }}</li>
   </ol>
 </div><!-- /.col -->
 
@@ -22,6 +22,7 @@
 
         <div class="config">
           <div class="btn csv-encode">CSV読み込み</div>
+          <div class="btn delete-btn">データ削除</div>
         </div>
 
         <div id="dscreator" class="jura">
@@ -325,10 +326,10 @@ $(function(){
   $('#page1,#page3,#page4,#page5,#page6,#page7').hide();
 
   $('.js-tab > div').click(function(){
-    $('.js-tab > div,.js-tab_content').removeClass('active');
+    $('.js-tab > div,.tab-content').removeClass('active');
     var tabClass = $(this).attr('class');
     $(this).addClass('active');
-    $('.js-tab_content').each(function(){
+    $('.tab-content').each(function(){
       if($(this).attr('class').indexOf(tabClass) != -1){
         $(this).addClass('active').fadeIn();
       }else{

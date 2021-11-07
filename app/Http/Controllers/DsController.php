@@ -23,7 +23,7 @@ class DsController extends Controller
      */
     public function index()
     { 
-
-        return view('dscore.index');
+        $version = '2.0';
+        return view('dscore.index',compact('version'));
     }
 }

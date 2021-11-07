@@ -9,13 +9,32 @@
  * 
  * **************************************** */
 
+const EVENTS = ['fx','ph','sr','vt','pb','hb'];
+
 /** データリセット
  * 全ては無に帰す
  * 
  * @param {*} data 
  * @param {*} event 
  */
-function data_resets(){
+function data_resets(event=''){
+
+    //種目未選択時は全て削除
+    if(!event){ 
+        $.each(EVENTS, function(idx,val){
+            set_storage(val);
+            data_set(val);
+            dscore_calc(val);
+        });
+        console.log("STORAGE CLEAR [ALL]");
+        exit;
+    }
+
+    set_storage(event);
+    data_set(event);
+    dscore_calc(event);
+    set_notice("info","データを削除しました。");
+    console.log("STORAGE CLEAR ["+event+"]");
 
 }
 
@@ -66,23 +85,23 @@ function data_set(event){
                 total_cv += val['cv'];
             }
         });
-        
+        console.log(total_cv);
         total_group = group_calc(groups);
-        dscore = total_group + total_def + total_cv;
+        dscore = Number.parseFloat(total_group) + Number.parseFloat(total_def) + Number.parseFloat(total_cv);
 
-        console.log( "TOTAL_DEF："+total_def);
-        console.log("TOTAL_GROUP："+total_group);
+        console.log( "TOTAL_DEF："+Number.parseFloat(total_def).toFixed(1));
+        console.log("TOTAL_GROUP："+Number.parseFloat(total_group).toFixed(1));
 
-        $(".total-scores ."+event+" .difficult span:last-child").text(total_def);
-        $(".total-scores ."+event+" .exp span:last-child").text(total_group);
-        $(".total-scores ."+event+" .cv span:last-child").text(total_cv);
-        $(".total-scores ."+event+" .dscore span:last-child").text(dscore);
+        $(".total-scores ."+event+" .difficult span:last-child").text(Number.parseFloat(total_def).toFixed(1));
+        $(".total-scores ."+event+" .exp span:last-child").text(Number.parseFloat(total_group).toFixed(1));
+        $(".total-scores ."+event+" .cv span:last-child").text(Number.parseFloat(total_cv).toFixed(1));
+        $(".total-scores ."+event+" .dscore span:last-child").text(Number.parseFloat(dscore).toFixed(1));
 
         if(event === active_event()){
-            $(".total-scores .score-header .score-header-content").text(dscore);
+            $(".total-scores .score-header .score-header-content").text(Number.parseFloat(dscore).toFixed(1));
         }
 
-        return dscore;
+        return Number.parseFloat(dscore).toFixed(1);
 
     }else{ 
         console.log("ERROR：データが見つかりません ["+event+"]");
@@ -265,6 +284,9 @@ function csv_encode(data,event){
  */
 function set_notice(type='info',text,event=active_event()){
 
+    let date = new Date();
+    let now = date.toLocaleString();
+
     if(type == 'allclear'){
         console.log("NOTICE : ALL CLEAR");
         $(".tab-content."+event+" .notice-box .notices").text("");
@@ -273,8 +295,8 @@ function set_notice(type='info',text,event=active_event()){
     let color = '';
     if(type == "danger") color = 'style="color:red;"';
 
-    let h = '<p '+color+'>'+type+"："+text+'</p>';
-    $(".tab-content."+event+" .notice-box .notices").append(h);
+    let h = '<p '+color+'>'+type+"："+text+'<span class="date">['+now+']</span></span></p>';
+    $(".tab-content."+event+" .notice-box .notices").prepend(h);
     
 }
 
@@ -555,5 +577,12 @@ $(function(){
         modal_toggle();
     });
 
+    //データ削除ボタン押下処理
+    $(".delete-btn").on("click",function(){
+        let event = active_event();
+        if(confirm(event+"の技情報をリセットします")){
+            data_resets(event);
+        }
+    });
 
 });

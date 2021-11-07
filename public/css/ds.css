@@ -29,8 +29,13 @@ div#dscreator {
 .config {
     margin: 0 0 10px;
 }
+
 .btn.csv-encode {
     background: #28a745;
+    color: #fff;
+}
+.btn.delete-btn {
+    background-color: #e74c3c;
     color: #fff;
 }
 
@@ -313,6 +318,13 @@ p.event-title {
     margin: 3px 1px;
     padding: 3px 10px;
     font-weight: bold;
+}
+.notices {
+    max-height: 100px;
+    overflow: auto;
+}
+.notices>p {
+    margin: 0;
 }
 
 /* Scroll Bar */
