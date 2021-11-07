@@ -25,6 +25,7 @@ function data_resets(event=''){
             set_storage(val);
             data_set(val);
             dscore_calc(val);
+            set_notice("info","データを削除しました。",val);
         });
         console.log("STORAGE CLEAR [ALL]");
         exit;
@@ -51,6 +52,7 @@ function data_set(event){
         elm.find(".def-score").text(val['def']);
         elm.find(".content .ja").text(val['ja']);
         elm.find(".content .en").text(val['en']);
+
     });
 
 }
@@ -295,7 +297,7 @@ function set_notice(type='info',text,event=active_event()){
     let color = '';
     if(type == "danger") color = 'style="color:red;"';
 
-    let h = '<p '+color+'>'+type+"："+text+'<span class="date">['+now+']</span></span></p>';
+    let h = '<p '+color+'><span class="notive-type">'+type+'</span><span class="notice-text">'+text+'<span class="date">['+now+']</span></span></p>';
     $(".tab-content."+event+" .notice-box .notices").prepend(h);
     
 }
@@ -500,7 +502,7 @@ $(function(){
     dscore_calc('fx');
 
     set_notice("info","通知テスト");
-    set_notice("danger","通知テスト");
+    set_notice("danger","通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト");
 
     //---------------------------
 

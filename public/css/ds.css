@@ -324,9 +324,19 @@ p.event-title {
     overflow: auto;
 }
 .notices>p {
+    display: flex;
     margin: 0;
 }
-
+.notive-type {
+    min-width: 80px;
+    position: relative;
+}
+.notive-type:after {
+    content: "：";
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+}
 /* Scroll Bar */
 
 /*スクロールバー全体*/
