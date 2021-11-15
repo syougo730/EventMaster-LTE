@@ -14,7 +14,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
           @auth
-          
+
           <li class="nav-header">試合</li>
 
           <li class="nav-item">
@@ -43,8 +43,38 @@
               </p>
             </a>
           </li>
-              
+          
           @endauth
+
+          @auth
+
+          <li class="nav-item">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" name="logout">
+              @csrf
+              <a href="javascript:document.logout.submit()" class="nav-link">
+                <i class="nav-icon fas fa-columns"></i>
+                <p>
+                  ログアウト
+                </p>
+              </a>
+            </form>
+          </li>
+
+          @else
+
+          <li class="nav-item">
+            <a href="/login" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                ログイン
+              </p>
+            </a>
+          </li>
+
+
+          @endauth
+
+
 
         </ul>
       </nav>
