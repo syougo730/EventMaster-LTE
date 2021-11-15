@@ -2,14 +2,20 @@
  *
  * @file Ds.Creator
  * 
- * 本プログラムはFIG、日本体操協会の制定する体操競技のルールを元に作成されていますが、日本体操協会の許可を得て作成している訳ではありません。
- * 日本体操協会の許可なく営利目的での体操競技に関わるものの活動は認められていません。
- * 本プログラムは体操競技関係者が体操競技の発展を願って作成してます。
- * 本プログラムの無断利用はお控えして頂きますようお願い申し上げます。
- * 
  * **************************************** */
 
 const EVENTS = ['fx','ph','sr','vt','pb','hb'];
+
+// 日付をYYYYMMDDHHMMSSの書式で返す
+function formatDate(dt) {
+    let y = dt.getFullYear();
+    let m = ('00' + (dt.getMonth()+1)).slice(-2);
+    let d = ('00' + dt.getDate()).slice(-2);
+    let hh = ('00' + dt.getHours()).slice(-2);
+    let mm = ('00' + dt.getMinutes()).slice(-2);
+    let ss = ('00' + dt.getSeconds()).slice(-2);
+    return (y +  m  + d + hh + mm + ss);
+}
 
 /** データリセット
  * 全ては無に帰す
@@ -25,7 +31,7 @@ function data_resets(event=''){
             set_storage(val);
             data_set(val);
             dscore_calc(val);
-            set_notice("info","データを削除しました。",val);
+            set_notice("Info","データを削除しました。",val);
         });
         console.log("STORAGE CLEAR [ALL]");
         exit;
@@ -34,7 +40,7 @@ function data_resets(event=''){
     set_storage(event);
     data_set(event);
     dscore_calc(event);
-    set_notice("info","データを削除しました。");
+    set_notice("Info","データを削除しました。");
     console.log("STORAGE CLEAR ["+event+"]");
 
 }
@@ -44,6 +50,9 @@ function data_resets(event=''){
 */ 
 function data_set(event){
 
+    let cv = 'CV';
+    if(event == 'fx') cv = 'GroupⅣ / CV';
+
     let json = get_storage(event);
     $.each(json,function(idx,val){
         
@@ -52,9 +61,19 @@ function data_set(event){
         elm.find(".def-score").text(val['def']);
         elm.find(".content .ja").text(val['ja']);
         elm.find(".content .en").text(val['en']);
+        elm.find(".cv").text((val['cv'] || cv));
 
     });
 
+}
+/**
+ * 値を少数付きFLOAT型で返す 0.1
+ * @param {*} num 
+ * @param {*} decimal_point 
+ * @returns 
+ */
+function fix_float(num,decimal_point=1){
+    return Number.parseFloat(num).toFixed(decimal_point);
 }
 
 /** 
@@ -67,7 +86,7 @@ function data_set(event){
     let total_def = 0;
     let total_cv = 0;
     let cv_group = ['Ⅳa','Ⅳb','Ⅳc','Ⅳ'];
-    let cv_value = [0.1,0.2];
+    let cv_value = ['0.1','0.2'];
     let dscore = 0;
 
     let json = get_storage(event);
@@ -77,18 +96,19 @@ function data_set(event){
             //difficult 
             total_def += def_to_val(val['def']);            
             //groups
-            if(0 < cv_group.indexOf(val['cv'])){
+            if(cv_group.indexOf(val['cv']) !== -1 ){
                 //CVにグループⅣが選択されている場合はⅣを優先する
                 groups[idx] = val['cv'];
             }else{
                 groups[idx] = val['group'];
             }
-            if(cv_value.indexOf(val['cv'])){
-                total_cv += val['cv'];
+            if(cv_value.indexOf(val['cv']) !== -1 ){
+                console.log("CV:value");
+                total_cv += Number.parseFloat(val['cv']);
             }
         });
         console.log(total_cv);
-        total_group = group_calc(groups);
+        total_group = group_calc(groups,event);
         dscore = Number.parseFloat(total_group) + Number.parseFloat(total_def) + Number.parseFloat(total_cv);
 
         console.log( "TOTAL_DEF："+Number.parseFloat(total_def).toFixed(1));
@@ -126,7 +146,7 @@ function data_set(event){
   * @return {float} Group要求の得点を返す
   * 
 */
-function group_calc(groups){
+function group_calc(groups,event=active_event()){
 
     const MAX = 5; //グループ上限
     const GROUP_SCORE = [
@@ -175,10 +195,13 @@ function group_calc(groups){
         }
     });
 
-    if(group1_cnt > MAX) set_notice('danger','グループⅠが上限数を超えています');
-    if(group2_cnt > MAX) set_notice('danger','グループⅡが上限数を超えています');
-    if(group3_cnt > MAX) set_notice('danger','グループⅢが上限数を超えています');
-    if(group4_cnt > 1) set_notice('danger','終末技が複数セットされています');
+    set_notice("Info","Group I："+group1_cnt+" , Ⅱ："+group2_cnt+" , Ⅲ："+group3_cnt+" , Ⅳ："+group4_cnt,event);
+
+    if(group1_cnt > MAX) set_notice('Danger','グループIが上限数を超えています');
+    if(group2_cnt > MAX) set_notice('Danger','グループⅡが上限数を超えています');
+    if(group3_cnt > MAX) set_notice('Danger','グループⅢが上限数を超えています');
+    if(group4_cnt > 1) set_notice('Danger','終末技が複数セットされています');
+
 
     if(group1_cnt) group_score = group_score + 0.5;
     if(group2_cnt) group_score = group_score + 0.5;
@@ -223,21 +246,123 @@ function def_to_val(def=""){
 
 }
 
-
-/* 
-    CSV読み込み、反映
-*/
-function csv_encode(data,event){
-
-    let csv = [];
-
-    data_set(csv,event);
+/*------------------------------
+    CSV 出入力処理
+--------------------------------*/
+/**
+ * FILE API が対応しているかチェック
+ * @returns Boolean
+ */
+function checkFileReader() {
+    var isUse = false;
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+      isUse = true;
+    }
+    return isUse;
 }
 
 /**
+ * jsonをcsv文字列に編集する
+ * @param {*} json 
+ * @param {*} delimiter 
+ * @returns 
+ */
+function jsonToCsv(json, delimiter) {
+    let header = Object.keys(json[0]).join(delimiter) + "\n";
+    let body = json.map(function(d){
+        return Object.keys(d).map(function(key) {
+            return d[key];
+        }).join(delimiter);
+    }).join("\n");
+    return header + body;
+}
+
+/**
+ * csvをjsonへ変換
+ * @param {*} csvArray 
+ * @returns 
+ */
+function csvToJson(csv){
+    let json = [];
+
+    $.each(csv,function(idx,val){
+        if(!idx) return true;
+        json[idx-1] = { ja:val[0],en:val[1],def:val[2],group:val[3],cv:val[4] };
+    });
+    return json;
+}
+
+/**
+ * CSV取り込み
+ * @param {*} csv 
+ * @param {*} event 
+ */
+function csv_encode(csv,event=active_event()){
+
+    console.log("CSV ENCODE START");
+
+    let json = csvToJson(csv);
+
+    set_storage(event,json);
+    data_set(event);
+    dscore_calc(event);
+
+    console.log("CSV ENCODE END");
+
+}
+
+/**
+ * CSV出力
  * 
+ * @param {*} event 
+ * @returns CSV_DATA DOWNLOAD
+ */
+function csv_decode( delimiter=",",event=active_event()){
+
+    let json = get_storage(event);
+    
+    let date = new Date();
+    let now = formatDate(date);
+    let filename = event + '_' + now;
+
+    let csv = jsonToCsv(json,',',filename);
+
+    //拡張子
+    let extention = delimiter==","?"csv":"tsv";
+
+    //出力ファイル名
+    let exportedFilenmae = (filename  || 'export') + '.' + extention;
+
+    //BLOBに変換
+    let blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+
+    if (navigator.msSaveBlob) { // for IE 10+
+        navigator.msSaveBlob(blob, exportedFilenmae);
+    } else {
+        //anchorを生成してclickイベントを呼び出す。
+        let link = document.createElement("a");
+        if (link.download !== undefined) {
+            let url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", exportedFilenmae);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    }
+
+}
+
+
+/*------------------------------
+    STORAGE SAVE & LOAD
+--------------------------------*/
+
+/**
  * 以前保存したローカルストレージから技構成データを読み込む
- * 
+ * @param {*} event 
+ * @returns Json
  */ 
  function get_storage(event){
 
@@ -252,10 +377,10 @@ function csv_encode(data,event){
 }
 
 /**
- * 
  * 種目のデータをJSON形式で保存する
- * 
- */ 
+ * @param {*} event 
+ * @param {*} json 
+ */
  function set_storage(event,json=''){
 
     if(!json){
@@ -281,10 +406,12 @@ function csv_encode(data,event){
 
 }
 
+
+
 /** 通知欄の表示処理
  * 
  */
-function set_notice(type='info',text,event=active_event()){
+function set_notice(type='Info',text,event=active_event()){
 
     let date = new Date();
     let now = date.toLocaleString();
@@ -295,9 +422,9 @@ function set_notice(type='info',text,event=active_event()){
         exit;
     }
     let color = '';
-    if(type == "danger") color = 'style="color:red;"';
+    if(type == "Danger") color = 'style="color:red;"';
 
-    let h = '<p '+color+'><span class="notive-type">'+type+'</span><span class="notice-text">'+text+'<span class="date">['+now+']</span></span></p>';
+    let h = '<p '+color+'><span class="notive-type">'+type+'</span><span class="notice-text">'+text+' <span class="date">['+now+']</span></span></p>';
     $(".tab-content."+event+" .notice-box .notices").prepend(h);
     
 }
@@ -305,6 +432,7 @@ function set_notice(type='info',text,event=active_event()){
 /**
  * 
  * 技情報の取得
+ * 技データの反映
  * 
  * @param {unset} 設定するとその種目をスルーする
  */
@@ -364,6 +492,10 @@ function set_elements(unsets=''){
             alert('error');
             console.log(e);
         });
+
+        //セーブデータロード
+        data_set(event);
+        dscore_calc(event);
 
     });
 }
@@ -429,12 +561,24 @@ function select_element(event=""){
  * 
  * @param {*} this $(".elm")
  */
-function modal_init(that){
+function modal_init(group="",def=""){
 
     let event = active_event();
-    let elm_id = that.attr("data-key");
 
-    console.log(event+" , "+elm_id);
+    $(".level").removeClass("active");
+
+    if(!group){
+        
+    }else{
+
+        $(".level-group[data-group="+group+"]").addClass("active");
+        $(".level-value[data-value="+def+"]").addClass("active");
+        $(".values").show();
+        
+        select_element(event);
+    }
+
+
 
 }
 
@@ -453,13 +597,13 @@ function active_event(){
  * 
  * @param {string} set 'remove' => remove the moldal.
  */
-function modal_toggle(set=""){
+function modal_toggle(set="",modal="select-modal"){
     if($(".darklayer").hasClass("active") || set == 'remove'){
         $(".darklayer").removeClass("active");
         $(".modal").removeClass("active");
     }else{
         $(".darklayer").addClass("active");
-        $(".modal").addClass("active");
+        $(".modal."+modal).addClass("active");
     }
 }
 
@@ -485,8 +629,22 @@ function active_set_data(active_num,data){
     active_content.html('<span class="ja">'+content_ja+'</span><span class="en">'+content_en+'</span>');
 
     let json = get_storage(active_event());
-    json[active_num] = {ja:content_ja,en:content_en,def:value,group:group,cv:''};
+    json[active_num-1] = {ja:content_ja,en:content_en,def:value,group:group,cv:''};
     set_storage(event,json);
+}
+
+/**
+ * CVをセットする
+ */
+function cv_set(active_num,data){
+
+    let event = active_event();
+
+    let json = get_storage(active_event());
+    json[active_num-1]['cv'] = data;
+    set_storage(event,json);
+    data_set(event);
+    dscore_calc(event);
 
 }
 
@@ -494,21 +652,6 @@ $(function(){
 
     var active_num;
 
-    //関数テスト-----------------
-
-    console.log(def_to_val('C'));
-    //get_storage('fx');
-    data_set("fx");
-    dscore_calc('fx');
-
-    set_notice("info","通知テスト");
-    set_notice("danger","通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト通知テスト");
-
-    //---------------------------
-
-    let unsets = ['vt','pb','hb',];
-    set_elements(unsets);
-    
     //初期設定
     //データがStorageに保存されていなければ初期値を設定する。
     if(!get_storage('fx')){
@@ -519,7 +662,11 @@ $(function(){
             set_storage(val);
         });
     }
-
+    
+    //技をセットする
+    let unsets = ['vt','hb',];
+    set_elements(unsets);
+    
     //モーダルの暗幕クリック処理
     $(".darklayer").on("click",function(){
         modal_toggle("remove");
@@ -530,12 +677,15 @@ $(function(){
         let event = active_event();
         select_group(event);
 
-        //動的に生成した要素はDOMが操作できないので操作すべき要素をしまっておく
-        active_num = $(this).parents(".elm").attr("data-key");
+        let parent = $(this).parents(".elm");
+        let set_group = parent.find(".group-score").text();
+        let set_def = parent.find(".def-score").text();
+
+        active_num = parent.attr("data-key");
         
-        if($(".elm").hasClass("set")){
+        if(set_group){
             //モーダルの初期設定
-            modal_init($(this).parents(".elm"));
+            modal_init(set_group,set_def);
         }
 
         $(".score-body").slideUp();//スコア一覧を閉じる
@@ -579,12 +729,74 @@ $(function(){
         modal_toggle();
     });
 
+    //CV欄押下時 モーダル展開
+    $(".elm .cv").on("click",function(){
+        modal_toggle("","cv-modal");
+        active_num = $(this).parents(".elm").attr("data-key");
+    });
+
+    //CVモーダル　項目選択時
+    $(".cv-modal .level").on("click",function(){
+        
+        let data;
+        
+        if($(this).hasClass("level-cv")){
+            data = $(this).attr("data-cv");
+        }
+        if($(this).hasClass("level-group4")){
+            data = $(this).attr("data-group");
+        }
+        console.log(active_num,data);
+        cv_set(active_num,data);
+
+        modal_toggle();
+
+    });
+
     //データ削除ボタン押下処理
     $(".delete-btn").on("click",function(){
         let event = active_event();
         if(confirm(event+"の技情報をリセットします")){
             data_resets(event);
         }
+    });
+
+    //CSVファイル取り込み
+    $('input[name="csv_file"]').on("change",function(e){
+
+        // 2：FileAPIがブラウザに対応してるか
+        if (!checkFileReader()) {
+            alert("エラー：FileAPI非対応のブラウザです。");
+            return;
+        }
+        // ファイル情報を取得
+        let fileData = e.target.files[0];
+        //console.log(fileData);
+
+        // CSVファイル以外は処理を止める
+        if(!fileData.name.match('.csv$')) {
+            alert('CSVファイルを選択してください');
+            return;
+        }
+        // FileReaderオブジェクトを使ってファイル読み込み
+        let reader = new FileReader();
+        reader.onload = function() {
+            let cols = reader.result.split('\n');
+            let data = [];
+            for (let i = 0; i < cols.length; i++) {
+                data[i] = cols[i].split(',');
+            }
+            console.log(data);
+            csv_encode(data);
+        }
+        // ファイル読み込みを実行
+        reader.readAsText(fileData);
+    });
+    
+    //CSVファイル出力
+    $(".csv-decode").on("click", function(){
+        csv_decode();
+        set_notice("Info","CSVファイルを出力しました");
     });
 
 });

@@ -21,8 +21,12 @@
       <div class="container-fluid">
 
         <div class="config">
-          <div class="btn csv-encode">CSV読み込み</div>
-          <div class="btn delete-btn">データ削除</div>
+          <label class="btn csv-encode">CSV読込<input type="file" name="csv_file" accept=".csv" style="display:none;"></label>
+          <div class="btn csv-decode">CSV出力</div>
+          <div class="btn data-btn">DATA1</div>
+          <div class="btn data-btn">DATA2</div>
+          <div class="btn data-btn">DATA3</div>
+          <div class="btn delete-btn">RESET</div>
         </div>
 
         <div id="dscreator" class="jura">
@@ -81,7 +85,6 @@
                   <div class="group-score"></div>
                   <div class="def-score"></div>
                 </div>
-                <div class="cv">GroupⅣ / CV</div>
               </div>
               @endfor
             </div>
@@ -107,7 +110,6 @@
                   <div class="group-score"></div>
                   <div class="def-score"></div>
                 </div>
-                <div class="cv">GroupⅣ / CV</div>
               </div>
               @endfor
             </div>
@@ -117,6 +119,82 @@
               </div>
           </div>
 
+          <!-- --------------------------------
+                Vault
+          ---------------------------------- -->
+          <div class="tab-content vt" data-role="page" id="page5">
+            <div class="elements-wrap">
+              @for($i = 1; $i < 2; $i++)
+              <div class="elm" data-key="{{ $i }}">
+                <div class="num">{{ $i }}</div>
+                <div class="content">
+                  <span class="ja">"TOUCH"to SELECT ELEMENTS</span>
+                  <span class="en"></span>
+                </div>
+                <div class="scores">
+                  <div class="group-score"></div>
+                  <div class="def-score"></div>
+                </div>
+              </div>
+              @endfor
+            </div>
+              <div class="notice-box">
+                <span class="jura">Notice</span>
+                <div class="notices noto"><!-- JS --></div>
+              </div>
+          </div>
+
+          <!-- --------------------------------
+                Parallel Bars
+          ---------------------------------- -->
+          <div class="tab-content pb" data-role="page" id="page6">
+            <div class="elements-wrap">
+              @for($i = 1; $i < 11; $i++)
+              <div class="elm" data-key="{{ $i }}">
+                <div class="num">{{ $i }}</div>
+                <div class="content">
+                  <span class="ja">"TOUCH"to SELECT ELEMENTS</span>
+                  <span class="en"></span>
+                </div>
+                <div class="scores">
+                  <div class="group-score"></div>
+                  <div class="def-score"></div>
+                </div>
+              </div>
+              @endfor
+            </div>
+              <div class="notice-box">
+                <span class="jura">Notice</span>
+                <div class="notices noto"><!-- JS --></div>
+              </div>
+          </div>
+          
+          <!-- --------------------------------
+                Horizontal Bar
+          ---------------------------------- -->
+          <div class="tab-content hb" data-role="page" id="page7">
+            <div class="elements-wrap">
+              @for($i = 1; $i < 11; $i++)
+              <div class="elm" data-key="{{ $i }}">
+                <div class="num">{{ $i }}</div>
+                <div class="content">
+                  <span class="ja">"TOUCH"to SELECT ELEMENTS</span>
+                  <span class="en"></span>
+                </div>
+                <div class="scores">
+                  <div class="group-score"></div>
+                  <div class="def-score"></div>
+                </div>
+                <div class="cv">CV</div>
+              </div>
+              @endfor
+            </div>
+              <div class="notice-box">
+                <span class="jura">Notice</span>
+                <div class="notices noto"><!-- JS --></div>
+              </div>
+          </div>
+          
           
           <!-- --------------------------------
                 SELECT ELEMENTS MODAL
@@ -157,6 +235,26 @@
                 <div class="level-event" data-event="hb"></div>
               </div>
             </div> 
+
+            <div class="modal cv-modal">
+              
+              <div class="modal-area-wrap">
+                <div class="cv">
+                  <div class="level level-cv" data-cv="0.1">0.1</div>
+                  <div class="level level-cv" data-cv="0.2">0.2</div>
+                </div>
+                <div class="btn clear-btn">クリア</div>
+              </div>
+
+              <div class="groups">
+                <div class="level level-group4" data-group="Ⅳa">Ⅳa</div>
+                <div class="level level-group4" data-group="Ⅳb">Ⅳb</div>
+                <div class="level level-group4" data-group="Ⅳc">Ⅳc</div>
+                <div class="level level-group4" data-group="Ⅳ">Ⅳ</div>
+              </div>
+
+
+            </div>
           </div>
           
 
@@ -232,7 +330,7 @@
                 </div>
                 <!-- VT -->
                 <div class="vt">
-                  <p class="event-title">Voult</p>
+                  <p class="event-title">Vault</p>
                   <div class="difficult">
                     <span>難度</span>
                     <span>0.0</span>
@@ -292,6 +390,26 @@
                 </div>
 
               </div>
+              
+              <div class="score-footer">
+                <div class="total-difficult">
+                  <span>難度</span>
+                  <span>0.0</span>
+                </div>
+                <div class="total-exp">
+                  <span>特別要求</span>
+                  <span>0.0</span>
+                </div>
+                <div class="total-cv">
+                  <span>CV</span>
+                  <span>0.0</span>
+                </div>
+                <div class="total-score">
+                  <span class="score-footer-title">TOTAL SCORE</span>
+                  <span class="score-footer-content">0.0</span>
+                </div>
+              </div>
+
             </div>
           </div>
 
