@@ -26,4 +26,15 @@ class DsController extends Controller
         $version = '2.0';
         return view('dscore.index',compact('version'));
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function open()
+    { 
+        $version = '2.0';
+        return view('dscore.open',compact('version'));
+    }
 }

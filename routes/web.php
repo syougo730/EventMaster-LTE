@@ -15,9 +15,6 @@
 //     return view('welcome');
 // });
 
-Route::get('/test', function () {
-    return view('test');
-});
 
 Auth::routes();
 
@@ -33,15 +30,14 @@ Route::group(['prefix'=>'event','as'=>'event.'],function(){
     Route::match(['post'],'/set', 'EventCreateController@set')->name('set');
     Route::get('/end', 'EventCreateController@end')->name('end');
 
-
     Route::get('/', 'EventController@index')->name('index');
     Route::get('/{event_id?}', 'EventController@list')->where('event_id', '[0-9]+')->name('list');
     Route::get('/{event_id?}/{athlete_id?}', 'EventController@athlete')->where('event_id', '[0-9]+')->where('athlete_id', '[0-9]+')->name('athlete');
-
-
-
 
 });
 
 
 Route::get('/dscreator', 'DsController@index')->name('ds.index');
+
+//ログインフリー
+Route::get('/ds', 'DsOpenController@index')->name('ds.open');

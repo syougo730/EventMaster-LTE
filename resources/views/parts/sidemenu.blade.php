@@ -13,7 +13,8 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-               
+          @auth
+          
           <li class="nav-header">試合</li>
 
           <li class="nav-item">
@@ -42,6 +43,8 @@
               </p>
             </a>
           </li>
+              
+          @endauth
 
         </ul>
       </nav>

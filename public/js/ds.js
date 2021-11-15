@@ -17,8 +17,8 @@ function formatDate(dt) {
     return (y +  m  + d + hh + mm + ss);
 }
 
-/** データリセット
- * 全ては無に帰す
+/** 
+ * データリセット
  * 
  * @param {*} data 
  * @param {*} event 
@@ -46,10 +46,11 @@ function data_resets(event=''){
 }
 
 /**
-    データ反映
-*/ 
+ *   データ反映
+ */ 
 function data_set(event){
 
+    let element_text = '"TOUCH" to SELECT ELEMENTS';
     let cv = 'CV';
     if(event == 'fx') cv = 'GroupⅣ / CV';
 
@@ -59,21 +60,12 @@ function data_set(event){
         let elm = $(".tab-content."+event+" .elements-wrap .elm[data-key="+(idx+1)+"]");
         elm.find(".group-score").text(val['group']);
         elm.find(".def-score").text(val['def']);
-        elm.find(".content .ja").text(val['ja']);
+        elm.find(".content .ja").text((val['ja'] || element_text ));
         elm.find(".content .en").text(val['en']);
         elm.find(".cv").text((val['cv'] || cv));
 
     });
 
-}
-/**
- * 値を少数付きFLOAT型で返す 0.1
- * @param {*} num 
- * @param {*} decimal_point 
- * @returns 
- */
-function fix_float(num,decimal_point=1){
-    return Number.parseFloat(num).toFixed(decimal_point);
 }
 
 /** 
@@ -385,16 +377,16 @@ function csv_decode( delimiter=",",event=active_event()){
 
     if(!json){
         json = [
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' },
-            { ja:'"TOUCH" to SELECT ELEMENTS',en:'',def:'',group:'',cv:'' }
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' },
+            { ja:'',en:'',def:'',group:'',cv:'' }
         ];
     }
 
@@ -405,7 +397,6 @@ function csv_decode( delimiter=",",event=active_event()){
     localStorage.setItem(setName,setJson);
 
 }
-
 
 
 /** 通知欄の表示処理
@@ -567,6 +558,7 @@ function modal_init(group="",def=""){
 
     $(".level").removeClass("active");
 
+    //グループがセットされていなければ初期化
     if(!group){
         
         $(".values").hide();
