@@ -1,4 +1,4 @@
-@extends('layouts.open')
+@extends('layouts.common')
 
 @section('header')
 
