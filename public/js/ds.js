@@ -569,6 +569,9 @@ function modal_init(group="",def=""){
 
     if(!group){
         
+        $(".values").hide();
+        $(".level-event").hide();
+        
     }else{
 
         $(".level-group[data-group="+group+"]").addClass("active");
@@ -577,8 +580,6 @@ function modal_init(group="",def=""){
         
         select_element(event);
     }
-
-
 
 }
 
@@ -597,7 +598,10 @@ function active_event(){
  * 
  * @param {string} set 'remove' => remove the moldal.
  */
-function modal_toggle(set="",modal="select-modal"){
+function modal_toggle(set="",modal="select-modal",data=""){
+
+    modal_init(data[0],data[1]);
+
     if($(".darklayer").hasClass("active") || set == 'remove'){
         $(".darklayer").removeClass("active");
         $(".modal").removeClass("active");
@@ -683,13 +687,8 @@ $(function(){
 
         active_num = parent.attr("data-key");
         
-        if(set_group){
-            //モーダルの初期設定
-            modal_init(set_group,set_def);
-        }
-
         $(".score-body").slideUp();//スコア一覧を閉じる
-        modal_toggle();
+        modal_toggle("","select-modal",[set_group,set_def]);
     });
 
     //グループ選択時処理
@@ -735,6 +734,11 @@ $(function(){
         active_num = $(this).parents(".elm").attr("data-key");
     });
 
+    //CVモーダル　クリア選択時
+    $(".cv-modal .clear-btn").on("click",function(){
+        cv_set(active_num,"");
+        modal_toggle();
+    });
     //CVモーダル　項目選択時
     $(".cv-modal .level").on("click",function(){
         
