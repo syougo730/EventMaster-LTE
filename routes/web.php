@@ -38,6 +38,3 @@ Route::group(['prefix'=>'event','as'=>'event.'],function(){
 
 
 Route::get('/dscreator', 'DsController@index')->name('ds.index');
-
-//ログインフリー
-Route::get('/ds', 'DsOpenController@index')->name('ds.open');
