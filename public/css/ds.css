@@ -121,6 +121,7 @@ div#dscreator {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+    transition: .3s;
 }
 .elm>.cv {
     display: flex;
@@ -129,6 +130,11 @@ div#dscreator {
     cursor: pointer;
     width: 17%;
     text-align: center;
+    transition: .3s;
+}
+.elm>.content:hover,
+.elm>.cv:hover {
+    background: var(--elm-h);
 }
 
 
@@ -281,6 +287,20 @@ div#dscreator {
     padding: 5px;
     margin: 2px;
     cursor: pointer;
+}
+.score-header:before {
+    content: "Current Event";
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    background: #fff;
+    color: rgb(218 108 15 / 60%);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -.5px;
+    line-height: 1;
+    border-radius: 5px;
+    padding: 0 3px;
 }
 .score-body .events>div {
     padding: 5px;

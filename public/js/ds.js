@@ -630,6 +630,28 @@ function active_set_data(active_num,data){
 }
 
 /**
+ * 得点エリアにアクティブな種目を表示させる
+ */
+function set_current_event(){
+    let event = active_event();
+    const EVENT_FULL = {
+        ts:'TotalScore',
+        fx:'FloorExercise',
+        ph:'PommelHorse',
+        sr:'StillRings',
+        vt:'Vault',
+        pb:'ParallelBars',
+        hb:'HorizontalBar'
+    };
+
+    let event_name = EVENT_FULL[event];
+    $(".score-header-title").text(event_name);    
+    let event_val = dscore_calc(event);
+    $(".score-header-content").text(event_val);
+    //console.log(event_name,event_val);
+}
+
+/**
  * CVをセットする
  */
 function cv_set(active_num,data){
@@ -683,6 +705,13 @@ $(function(){
         modal_toggle("","select-modal",[set_group,set_def]);
     });
 
+    //技モーダル　クリア選択時
+    $(".select-modal .clear-btn").on("click",function(){
+        active_set_data(active_num,["","","",""]);
+        data_set(active_event());
+        dscore_calc();
+        modal_toggle();
+    });
     //グループ選択時処理
     $(".level-group").on("click",function(){
         $(".level-group").removeClass("active");
