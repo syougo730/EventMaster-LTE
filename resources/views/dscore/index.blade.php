@@ -34,7 +34,7 @@
         <div id="dscreator" class="jura">
 
           <div class="js-tab">
-            <div class="ts" data-event="ts">TS</div>
+            {{-- <div class="ts" data-event="ts">TS</div> --}}
             <div class="fx active" data-event="fx">FX</div>
             <div class="ph" data-event="ph">PH</div>
             <div class="sr" data-event="sr">SR</div>
@@ -42,8 +42,6 @@
             <div class="pb" data-event="pb">PB</div>
             <div class="hb" data-event="hb">HB</div>
           </div>
-
-          <div class="tab-content ts" data-role="page" id="page1"></div>
           
           <!-- --------------------------------
                 Floor Exercise
@@ -393,7 +391,7 @@
 
               </div>
               
-              <div class="score-footer">
+              <div class="score-footer" style="display: none">
                 <div class="total-difficult">
                   <span>難度</span>
                   <span>0.0</span>
