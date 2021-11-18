@@ -311,6 +311,7 @@ div#dscreator {
     background: rgb(218 108 15 / 60%);
     width: 49%;
     min-width: 200px;
+    cursor: pointer;
 }
 p.event-title {
     margin: 0;

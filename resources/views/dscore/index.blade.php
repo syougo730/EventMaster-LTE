@@ -269,7 +269,7 @@
             <div class="score-body" style="display: none">
               <div class="events">
                 <!-- FX -->
-                <div class="fx">
+                <div class="fx" data-id="fx">
                   <p class="event-title">FloorExercise</p>
                   <div class="difficult">
                     <span>難度</span>
@@ -289,7 +289,7 @@
                   </div>
                 </div>
                 <!-- PH -->
-                <div class="ph">
+                <div class="ph" data-id="ph">
                   <p class="event-title">PommelHourse</p>
                   <div class="difficult">
                     <span>難度</span>
@@ -309,7 +309,7 @@
                   </div>
                 </div>
                 <!-- SR -->
-                <div class="sr">
+                <div class="sr" data-id="sr">
                   <p class="event-title">StillRings</p>
                   <div class="difficult">
                     <span>難度</span>
@@ -329,7 +329,7 @@
                   </div>
                 </div>
                 <!-- VT -->
-                <div class="vt">
+                <div class="vt" data-id="vt">
                   <p class="event-title">Vault</p>
                   <div class="difficult">
                     <span>難度</span>
@@ -349,7 +349,7 @@
                   </div>
                 </div>
                 <!-- PB -->
-                <div class="pb">
+                <div class="pb" data-id="pb">
                   <p class="event-title">ParallelBars</p>
                   <div class="difficult">
                     <span>難度</span>
@@ -369,7 +369,7 @@
                   </div>
                 </div>
                 <!-- HB -->
-                <div class="hb">
+                <div class="hb" data-id="hb">
                   <p class="event-title">HorizontalBar</p>
                   <div class="difficult">
                     <span>難度</span>
@@ -461,6 +461,11 @@ $(function(){
     $(".score-body").slideToggle();
   });
 
+  //
+  $(".score-body .events>div").on("click",function(){
+    let id = $(this).attr("data-id");
+    $(".js-tab ."+id).click();
+  });
 
 });
 </script>
