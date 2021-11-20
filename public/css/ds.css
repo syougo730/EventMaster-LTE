@@ -60,6 +60,7 @@ div#dscreator {
     justify-content: center;
     align-items: center;
     width: 16.4%;
+    margin: 1px;
     background-color: var(--tab);
     color: #fff;
     cursor: pointer;
