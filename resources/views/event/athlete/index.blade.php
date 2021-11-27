@@ -64,32 +64,32 @@
                       <td>{{ $athlete->team_name() }}</td>
                     </tr>
                     <tr>
-                      <th>FX</th>
+                      <th><a href="#element-fx">FX</a></th>
                       <td>{{ $data['fx']['ts'] }}</td>
                     </tr>
                     <tr>
-                      <th>PH</th>
+                      <th><a href="#element-ph">PH</a></th>
                       <td>{{ $data['ph']['ts'] }}</td>
                     </tr>
                     <tr>
-                      <th>SR</th>
+                      <th><a href="#element-sr">SR</a></th>
                       <td>{{ $data['sr']['ts'] }}</td>
                     </tr>
                     <tr>
-                      <th>VT</th>
+                      <th><a href="#element-vt">VT</a></th>
                       <td>{{ $data['vt']['ts'] }}</td>
                     </tr>
                     <tr>
-                      <th>PB</th>
+                      <th><a href="#element-pb">PB</a></th>
                       <td>{{ $data['pb']['ts'] }}</td>
                     </tr>
                     <tr>
-                      <th>HB</th>
+                      <th><a href="#element-hb">HB</a></th>
                       <td>{{ $data['hb']['ts'] }}</td>
                     </tr>
                     <tr>
                       <th>TOTAL SCORE</th>
-                      <td>{{ $data['ts'] }}</td>
+                      <td><b>{{ $data['ts'] }}</b></td>
                     </tr>
                   </tbody>
                 </table>
@@ -99,8 +99,113 @@
 
         </div><!-- /.row -->
 
+        <!-- ********************
+              FX
+          ********************* -->
+          <div id="element-fx" class="card elements-card">
+            <div class="card-header border-0">
+              <h3 class="card-title">FX</h3>
+              <label class="btn import-btn">
+                <input type="file" accept=".csv" name="csv_import_fx" style="display: none">
+                <span>CSV読込</span>
+              </label>
+            </div>
+            <div class="card-body">
+              <div class="element-box">
+                <div class="element-num">1</div>
+                <div class="element-name">
+                  <div class="ja">あああああああああああ</div>
+                  <div class="en">aaaaaaaaaaaaa</div>
+                </div>
+                <div class="element-status">
+                  <div class="status-group">Ⅲ</div>
+                  <div class="status-difficult">B</div>
+                </div>
+                <div class="element-cv">0.1</div>
+              </div>
+            </div>
+          </div>
 
+        <!-- ********************
+              PH
+          ********************* -->
+          <div id="element-ph" class="card elements-card">
+            <div class="card-header border-0">
+              <h3 class="card-title">PH</h3>
+              <label class="btn import-btn">
+                <input type="file" accept=".csv" name="csv_import_ph" style="display: none">
+                <span>CSV読込</span>
+              </label>
+            </div>
+            <div class="card-body">
+              <!-- JS -->
+            </div>
+          </div>
 
+        <!-- ********************
+              SR
+          ********************* -->
+          <div id="element-sr" class="card elements-card">
+            <div class="card-header border-0">
+              <h3 class="card-title">SR</h3>
+              <label class="btn import-btn">
+                <input type="file" accept=".csv" name="csv_import_sr" style="display: none">
+                <span>CSV読込</span>
+              </label>
+            </div>
+            <div class="card-body">
+              <!-- JS -->
+            </div>
+          </div>
+
+        <!-- ********************
+              VT
+          ********************* -->
+          <div id="element-vt" class="card elements-card">
+            <div class="card-header border-0">
+              <h3 class="card-title">VT</h3>
+              <label class="btn import-btn">
+                <input type="file" accept=".csv" name="csv_import_vt" style="display: none">
+                <span>CSV読込</span>
+              </label>
+            </div>
+            <div class="card-body">
+              <!-- JS -->
+            </div>
+          </div>
+
+        <!-- ********************
+              PB
+          ********************* -->
+          <div id="element-pb" class="card elements-card">
+            <div class="card-header border-0">
+              <h3 class="card-title">PB</h3>
+              <label class="btn import-btn">
+                <input type="file" accept=".csv" name="csv_import_pb" style="display: none">
+                <span>CSV読込</span>
+              </label>
+            </div>
+            <div class="card-body">
+              <!-- JS -->
+            </div>
+          </div>
+
+        <!-- ********************
+              HB
+          ********************* -->
+          <div id="element-hb" class="card elements-card">
+            <div class="card-header border-0">
+              <h3 class="card-title">HB</h3>
+              <label class="btn import-btn">
+                <input type="file" accept=".csv" name="csv_import_hb" style="display: none">
+                <span>CSV読込</span>
+              </label>
+            </div>
+            <div class="card-body">
+              <!-- JS -->
+            </div>
+          </div>
+            
 
       </div>
       <!-- /.container-fluid -->
@@ -126,6 +231,57 @@ table.prof-table td {
     text-align: right;
 }
 
+.card.elements-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn.import-btn {
+    margin: 0;
+    background-color: #007bff;
+    color: #fff;
+}
+.elements-card .card-header::after {
+    content: none;
+}
+.element-box {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.element-box>div {
+    padding: 3px 6px;
+    margin: 1px;
+    background: #f3f3f3;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}.element-num {
+    text-align: center;
+}.element-status {
+    align-items: center;
+}.element-name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+/*スクロールバー*/
+.element-box ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.element-box ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+}
+.element-box ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 50, .5);
+  border-radius: 10px;
+  box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
 </style>
 @endsection
 @section('script')
@@ -135,23 +291,42 @@ var myChart = new Chart(ctx, {
   type: 'radar',
   data: {
     labels: ['FX', 'PH', 'SR', 'VT', 'PB', 'HB'],
-    datasets: [{
-      label: 'TOTAL SCORE',
-      data: [
-        {{ $data['fx']['ts'] }},
-        {{ $data['ph']['ts'] }},
-        {{ $data['sr']['ts'] }},
-        {{ $data['vt']['ts'] }},
-        {{ $data['pb']['ts'] }},
-        {{ $data['hb']['ts'] }}
-      ],
-      // データライン
-      backgroundColor:'rgb(0 123 255 / 25%)',
-      borderColor: '#007bff',
-      borderWidth: 2,
-      pointRadius:6,
-      pointBackgroundColor:'lightBlue',
-    }],
+    datasets: [
+      {
+        label: 'E SCORE',
+        data: [
+          {{ $data['fx']['es'] }},
+          {{ $data['ph']['es'] }},
+          {{ $data['sr']['es'] }},
+          {{ $data['vt']['es'] }},
+          {{ $data['pb']['es'] }},
+          {{ $data['hb']['es'] }}
+        ],
+        // データライン
+        backgroundColor:'rgb(231 76 60 / 25%)',
+        borderColor: '#e74c3c',
+        borderWidth: 2,
+        pointRadius:6,
+        pointBackgroundColor:'lightRed',
+      },
+      {
+        label: 'TOTAL SCORE',
+        data: [
+          {{ $data['fx']['ts'] }},
+          {{ $data['ph']['ts'] }},
+          {{ $data['sr']['ts'] }},
+          {{ $data['vt']['ts'] }},
+          {{ $data['pb']['ts'] }},
+          {{ $data['hb']['ts'] }}
+        ],
+        // データライン
+        backgroundColor:'rgb(0 123 255 / 25%)',
+        borderColor: '#007bff',
+        borderWidth: 2,
+        pointRadius:6,
+        pointBackgroundColor:'lightBlue',
+      },
+    ],
   },
   options: {
     scale: {

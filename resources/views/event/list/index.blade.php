@@ -19,62 +19,57 @@
   <!-- Main content -->
   <section class="content">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <!-- /.card -->
-          <div class="card">
-            <!-- /.card-header -->
-            <div class="card-body">
 
+      <div class="card">
+        <!-- /.card-header -->
+        <div class="card-body">
 
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>選手No</th>
-                    <th>選手名</th>
-                    <th>学年</th>
-                    <th>団体名</th>
-                    <th>総合順位</th>
-                    <th>総合点</th>
-                    <th>床</th>
-                    <th>鞍馬</th>
-                    <th>吊り輪</th>
-                    <th>跳馬</th>
-                    <th>平行棒</th>
-                    <th>鉄棒</th>
-                  </tr>
-                </thead>
-                <tbody> 
-                  {{-- ここに全件の試合データを表示させるよ IDを取得して次のページ(試合データ表示まで) --}}
-                  {{-- ここからforeachでまわそう --}} 
-                  @foreach($athletes as $athlete) 
-                    <tr>
-                      <td>1</td>
-                      {{-- <td><a href="event/{{$event_id}}/{{$athlete_id}}">本間翔吾</a></td> --}}
-                      <td><a href="#">{{ $athlete->athlete_name }}</a></td>
-                      <td>4</td>
-                      <td>東海大学</td>
-                      <td>1</td>
-                      <td>88.15</td>
-                      <td>14.00</td>
-                      <td>14.00</td>
-                      <td>14.00</td>
-                      <td>14.00</td>
-                      <td>14.00</td>
-                      <td>14.00</td>
-                    </tr>
-                  @endforeach
-                </tbody>
-              </table>
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>選手No</th>
+                <th>選手名</th>
+                <th>学年</th>
+                <th>団体名</th>
+                <th>総合順位</th>
+                <th>総合点</th>
+                <th>床</th>
+                <th>鞍馬</th>
+                <th>吊り輪</th>
+                <th>跳馬</th>
+                <th>平行棒</th>
+                <th>鉄棒</th>
+              </tr>
+            </thead>
+            <tbody> 
+              {{-- ここに全件の試合データを表示させるよ IDを取得して次のページ(試合データ表示まで) --}}
+              {{-- ここからforeachでまわそう --}} 
+              @foreach($athletes as $athlete) 
+                @php $data = $athlete->event_data(); @endphp
+                <tr>
+                  <td>{{ $athlete->athlete_number }}</td>
+                  {{-- <td><a href="event/{{$event_id}}/{{$athlete_id}}">本間翔吾</a></td> --}}
+                  <td><a href="/event/{{ $event_id }}/{{ $athlete->id }}">{{ $athlete->athlete_name }}</a></td>
+                  <td>0</td>
+                  <td>{{ $athlete->team_name() }}</td>
+                  <td>1</td>
+                  <td>{{ $data['ts'] }}</td>
+                  <td>{{ $data['fx']['ts'] }}</td>
+                  <td>{{ $data['ph']['ts'] }}</td>
+                  <td>{{ $data['sr']['ts'] }}</td>
+                  <td>{{ $data['vt']['ts'] }}</td>
+                  <td>{{ $data['pb']['ts'] }}</td>
+                  <td>{{ $data['hb']['ts'] }}</td>
+                </tr>
+              @endforeach
+            </tbody>
+          </table>
 
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
         </div>
-        <!-- /.col -->
+        <!-- /.card-body -->
       </div>
-      <!-- /.row -->
+      <!-- /.card -->
+
     </div>
     <!-- /.container-fluid -->
   </section>
@@ -100,14 +95,24 @@
   <script>
     $(function () {
       $("#example1").DataTable({
-        "responsive": false, "lengthChange": false, "autoWidth": false, "bFilter": false,
+        "responsive": false, 
+        "lengthChange": false, 
+        "autoWidth": false, 
+        "bFilter": false,
         "buttons": ["csv"]
       }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     });
   </script>
 @endsection
 <style>
+  body{
+    overflow: hidden;
+  }
+  .content-wrapper {
+      padding-bottom: 100px;
+      overflow: auto;
+  }
   .card-body{
-    overflow: scroll;
+    overflow: auto;
   }
 </style>
