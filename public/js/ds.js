@@ -70,6 +70,7 @@ function data_set(event){
 
 /** 
  *   D SCORE 計算
+ * @returns {Float} Dscore
  */
  function dscore_calc(event){
 
