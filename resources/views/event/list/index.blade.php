@@ -3,13 +3,14 @@
   <div class="col-sm-6">
     {{-- ここは大会名を入れる --}}
     
-    <h1 class="m-0">大会情報入力</h1>
+    <h1 class="m-0">{{ $event->event_name }}</h1>
   </div>
   <!-- /.col -->
   <div class="col-sm-6">
     <ol class="breadcrumb float-sm-right">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active">試合一覧</li>
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active"><a href="/event/">試合一覧</a></li>
+      <li class="breadcrumb-item active">{{ $event->event_name }}</li>
     </ol>
   </div>
   <!-- /.col -->
@@ -27,18 +28,17 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>選手No</th>
+                <th>No</th>
                 <th>選手名</th>
                 <th>学年</th>
                 <th>団体名</th>
-                <th>総合順位</th>
                 <th>総合点</th>
-                <th>床</th>
-                <th>鞍馬</th>
-                <th>吊り輪</th>
-                <th>跳馬</th>
-                <th>平行棒</th>
-                <th>鉄棒</th>
+                <th>FX</th>
+                <th>PH</th>
+                <th>SR</th>
+                <th>VT</th>
+                <th>PB</th>
+                <th>HB</th>
               </tr>
             </thead>
             <tbody> 
@@ -48,11 +48,9 @@
                 @php $data = $athlete->event_data(); @endphp
                 <tr>
                   <td>{{ $athlete->athlete_number }}</td>
-                  {{-- <td><a href="event/{{$event_id}}/{{$athlete_id}}">本間翔吾</a></td> --}}
                   <td><a href="/event/{{ $event_id }}/{{ $athlete->id }}">{{ $athlete->athlete_name }}</a></td>
                   <td>0</td>
                   <td>{{ $athlete->team_name() }}</td>
-                  <td>1</td>
                   <td>{{ $data['ts'] }}</td>
                   <td>{{ $data['fx']['ts'] }}</td>
                   <td>{{ $data['ph']['ts'] }}</td>
@@ -95,6 +93,8 @@
   <script>
     $(function () {
       $("#example1").DataTable({
+        "info":false,
+        "paging": false,
         "responsive": false, 
         "lengthChange": false, 
         "autoWidth": false, 
@@ -104,15 +104,16 @@
     });
   </script>
 @endsection
+
+@section('pagehead')
+<!-- DataTables -->
+<link rel="stylesheet" href="/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 <style>
-  body{
-    overflow: hidden;
-  }
-  .content-wrapper {
-      padding-bottom: 100px;
-      overflow: auto;
-  }
+
   .card-body{
     overflow: auto;
   }
 </style>
+@endsection
