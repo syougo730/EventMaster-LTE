@@ -99,6 +99,16 @@
 
         </div><!-- /.row -->
 
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">MEMO</h3>
+          </div>
+          <div class="card-body">
+            <textarea name="memo" class="memo"></textarea>
+            <p class="memo-notice">※自動で保存されます(予定)</p>
+          </div>
+        </div>
+
         <!-- ********************
               FX
           ********************* -->
@@ -114,14 +124,26 @@
               <div class="element-box">
                 <div class="element-num">1</div>
                 <div class="element-name">
-                  <div class="ja">あああああああああああ</div>
-                  <div class="en">aaaaaaaaaaaaa</div>
+                  <div class="ja">CSV読込は未実装です</div>
+                  <div class="en">english sub</div>
                 </div>
                 <div class="element-status">
                   <div class="status-group">Ⅲ</div>
                   <div class="status-difficult">B</div>
                 </div>
                 <div class="element-cv">0.1</div>
+              </div>
+              <div class="element-box">
+                <div class="element-num">2</div>
+                <div class="element-name">
+                  <div class="ja">CSV読込は未実装です</div>
+                  <div class="en">english sub</div>
+                </div>
+                <div class="element-status">
+                  <div class="status-group">Ⅲ</div>
+                  <div class="status-difficult">B</div>
+                </div>
+                <div class="element-cv"></div>
               </div>
             </div>
           </div>
@@ -266,6 +288,17 @@ table.prof-table td {
     width: 100%;
     white-space: nowrap;
     overflow: auto;
+}
+textarea.memo {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    font-size: 12px;
+}
+.memo-notice {
+    margin: 0;
+    font-size: 12px;
 }
 
 /*スクロールバー*/

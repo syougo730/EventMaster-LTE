@@ -42,8 +42,6 @@
               </tr>
             </thead>
             <tbody> 
-              {{-- ここに全件の試合データを表示させるよ IDを取得して次のページ(試合データ表示まで) --}}
-              {{-- ここからforeachでまわそう --}} 
               @foreach($athletes as $athlete) 
                 @php $data = $athlete->event_data(); @endphp
                 <tr>
