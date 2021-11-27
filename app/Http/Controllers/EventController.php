@@ -52,22 +52,12 @@ class EventController extends Controller
      */
     public function list(Request $request)
     {
-        $request_id = $request->event_id;
+        $event_id = $request->event_id;
+        
+        $event = Event::find($event_id);
+        $athletes = Athlete::where('event_id',$event_id)->get();
 
-        $events = Event::get();
-        
-        //dd関数で変数の中身が見れるよ！
-        
-        
-        
-        //dd($events);
-        $event = Event::find($request_id);
-        $athletes = Athlete::where('event_id',$request_id)->get();
-        return view('event.list.index',compact('request_id', 'events', 'athletes'));
-
-        // $events = Event::with(['event.athlete'])
-        // $athletes = App\Event::find(1)->athletes;
-        // return view('event.list.index',compact('request_id', 'event', 'athletes'));
+        return view('event.list.index',compact('event_id', 'event','athletes'));
 
     }
      //本間くん参考(https://www.yoheim.net/blog.php?q=20181104)
