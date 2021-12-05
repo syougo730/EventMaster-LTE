@@ -6,9 +6,1166 @@
 			"group" : "I",
 			"vv" : "A",
 			"vs" : "0.1",
-			"name" : "車輪",
+			"name" : "後ろ振り上がり倒立",
+			"name_en" : "Back uprise to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後ろ振り上がりひねり倒立",
+			"name_en" : "Back uprise to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方車輪(逆車輪)",
+			"name_en" : "Giant swing fwd."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "移行(前方車輪ひねり倒立)",
+			"name_en" : "Giant swing fwd.with 1/2t.through hdst."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方車輪",
+			"name_en" : "Giant swing bwd."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "ツイスト(後方車輪ひねり倒立)",
+			"name_en" : "Giant swing bwd.with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方車輪とび逆手持ち換え",
+			"name_en" : "Giant swing bwd.with hop to undergrip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "スコーマル(大順手車輪)",
+			"name_en" : "Giant swing bwd.with inlocation during swing and dislocate to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "片逆手後ろ振り上がり1回ひねり倒立",
+			"name_en" : "Back uprise to hsdt.with 1/1t.also to mixt."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろ振りとび1回ひねり懸垂",
+			"name_en" : "Swing bwd.and pirouette to hang."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ヒーリー片逆手(前方車輪1回ひねり片大逆手)",
+			"name_en" : "Giant swing fwd.with 1/1t.to mx-el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方とび車輪",
+			"name_en" : "Flying giant swing fwd.or with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方片手車輪",
+			"name_en" : "Giant swing fwd.with one arm in ungr."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方片手車輪",
+			"name_en" : "Giant swing bwd.with one arm in ungr."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方とび車輪",
+			"name_en" : "Flying giant swing bwd."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方車輪とびひねり大逆手",
+			"name_en" : "Giant swing bwd.with hop 1/2t.to el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方車輪ひねり大逆手",
+			"name_en" : "Giant swing bwd.with 1/2t.to el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "懸垂前振りとび大逆手持ち換え",
+			"name_en" : "Long swing fwd.with hop to el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "大逆手車輪",
+			"name_en" : "El-grip giant swing."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後ろ振り上がりとび1回ひねり支持",
+			"name_en" : "Swing bwd.and pirouette to support."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ヒーリー大逆手(前方車輪1回ひねり大逆手",
+			"name_en" : "Giant swing fwd.with 1/1t.in el-grip."
+		},{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方とび車輪1回ひねり",
+			"name_en" : "ying giant swing fwd.with 1/1t."
+		},{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ツォ・リミン(前方車輪1回ひねり方大逆手後ろ振り上がり1回ひねり逆手倒立)",
+			"name_en" : "On one arm,giant swing fwd.w.1/1t.to el-grip and 1/1t.to ungr."
+		},{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "クースト(ホップターン)(後方とび車輪1回ひねり)",
+			"name_en" : "Flying giant swing bwd.with 1/1t."
+		},{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ホップターンハーフ(後方とび車輪3/2ひねり片大逆手)",
+			"name_en" : "Giant swing bwd.with hop 3/2t.to mx-el-grip."
+		},{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ロシア式車輪(逆手背面車輪)",
+			"name_en" : "Russian giant(Giant swing rearways fwd)."
+		},{
+			"key" : "",
+			"group" : "I",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "大逆手振り上がり1回ひねり倒立(片逆手倒立)",
+			"name_en" : "El-grip giant swing.with 1/1t.through hdst.to mx-el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方とび車輪2回ひねり",
+			"name_en" : "Flying giant swing bwd.with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "リバルコ(後方とび車輪3/2ひねり大逆手)",
+			"name_en" : "Giant swing bwd.with hop 3/2t.to el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "チェコ式車輪(順手背面車輪)",
+			"name_en" : "Czech giant swing(Giant swing rw.bwd)."
+		},
+		{
+			"key" : "",
+			"group" : "I",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "順手背面車輪ひねり倒立から前方車輪",
+			"name_en" : "Czech giant swing with 1/2t.to fwd.giant swing."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろ振り上がり開脚とび越し背面懸垂",
+			"name_en" : "Back uprise and strad.over to hang rw."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ボローニン(後ろ振り上がり屈伸ひねりとび越し懸垂)",
+			"name_en" : "Back uprise and piked vault with 1/2t.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろ振り上がり上向きとび越し懸垂",
+			"name_en" : "Back uprise and rear vault with 1/4t.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "マルケロフ(後ろ振り上がり開脚とび越しひねり懸垂)",
+			"name_en" : "Back uprise and strad.hecht with 1/2tto hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "トカチェフ(懸垂前振り開脚背面とび越し懸垂)",
+			"name_en" : "Swing fwd.and vault bwd.strad.or piked to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "イエーガー(前方開脚宙返り懸垂)",
+			"name_en" : "Swing bwd.and salto fwd.tuck or p.or strad.to hang.also from el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "順手背面懸垂前振り、開脚背面とび越し懸垂",
+			"name_en" : "Czech giant and vault bwd.strad.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "デルチェフ(懸垂前振りひねり前方開脚宙返り懸垂)",
+			"name_en" : "Swing fwd.and salto bwd.strad.w.1/2t.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ギンガー、サプロネンコ(後方屈伸宙返りひねり懸垂)",
+			"name_en" : "Swing fwd.and salto bwd.p.w.1/2t.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ヤンセン(シュタルダーひねり直ちにひねりとび越し懸垂)",
+			"name_en" : "Stalder 1/2t.to rear vault with 1/4t.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ヤマワキ(コスミック)(伸身マルケロフ)",
+			"name_en" : "Markelov str.with legs together."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "伸身トカチェフ",
+			"name_en" : "Tkatchev str."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "リンチ(開脚トカチェフひねり片大逆手後ろ振り上がり倒立)",
+			"name_en" : "Tkatchev strad.with 1/2t.to mx-el-grip into back uprise to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ピアッティ((ほん転or足裏支持回転orシュタルダー)から開脚トカチェフ)",
+			"name_en" : "Stalder,stoop circle or free hip circle bwd to Tlatchev strad."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "屈伸ピアッティ",
+			"name_en" : "Piatti p.."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "バラバノフ(伸身イエーガー)",
+			"name_en" : "Jager str."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "シャオ・ルイチ(懸垂前振り前方開脚宙返り懸垂)",
+			"name_en" : "Swing fwd.and counter salto fwd.strad.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ゲイロード(バーを越えながら前方かかえ込み宙返り懸垂)",
+			"name_en" : "Salto fwd.,tuck or strad.over the bar,also from el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "かかえ込みゲイロード2(バーを越えながら後方かかえ込み宙返りひねり懸垂)",
+			"name_en" : "Gayload2 tack."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "コバチ(バーを越えながら後方かかえ込み宙返り懸垂)",
+			"name_en" : "Double salto bwd.tuck over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "モズニク(伸身トカチェフひねり片大逆手後ろ振り上がり倒立)",
+			"name_en" : "Tkatchev str.with 1/2t.to mx-el-grip into back uprise to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "クレザ(開脚トカチェフひねり大逆手後ろ振り上がり倒立)",
+			"name_en" : "Tkatchev strad.1/2t.to el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "伸身ピアッティ",
+			"name_en" : "Piatti str."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ピアッティひねり片大逆手後ろ振り上がり倒立",
+			"name_en" : "Piatti with 1/2t.to mx-el-grip into back up.to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ミューノズ/ポッソ(ヤマワキひねり片大逆手後ろ振り上がり倒立)",
+			"name_en" : "Yamawaki 1/2t.str.to mx-el-grip into back uprise to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "屈伸ゲイロード",
+			"name_en" : "Gayload p."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ゲイロード2(バーを越えながら後方屈伸宙返りひねり懸垂)",
+			"name_en" : "Salto bwd.1/2t.p.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "屈伸(伸身)コバチ",
+			"name_en" : "Kovacs piked or str."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "コールマン(コバチ1回ひねり)",
+			"name_en" : "Kovacs with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ウェルストロム(ヤマワキ1回ひねり)",
+			"name_en" : "Yamawaki with 1/1t.to hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "リューキン(伸身トカチェフ1回ひねり)",
+			"name_en" : "Tkatchev str.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "キエルコフスキー(伸身ピアッティひねり片大逆手後ろ振り上がり倒立)",
+			"name_en" : "Piatti str.with 1/2t.to mx-el-grip into back uprise to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ウィンクラー、ポゴレロフ(伸身イエーガー1回ひねり)",
+			"name_en" : "Jager str with 1/1t.also from el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "ペガン(ゲイロードひねり)",
+			"name_en" : "Gayload with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "デフ(ギンガー1回ひねり)",
+			"name_en" : "Gienger with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "スアレス(伸身ピアッティ1回ひねり)",
+			"name_en" : "Piatti str.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "伸身イエーガー2回ひねり(前方伸身宙返り2回ひねり懸垂)",
+			"name_en" : "Jager str.with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "コーディノフ(ゲイロード1回ひねり)",
+			"name_en" : "Gayload with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "マラス(屈伸ペガン)",
+			"name_en" : "Pegan p."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "カッシーナ、ピネダ(伸身(屈伸)コールマン)",
+			"name_en" : "Kolman str.or p."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "シャハム(コバチ3/2ひねり片逆手)",
+			"name_en" : "Kovacs with 3/2t.to mx-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "H",
+			"vs" : "0.8",
+			"name" : "ブレッドシュナイダー(コバチ2回ひねり)",
+			"name_en" : "Kovacs with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "I",
+			"vs" : "0.9",
+			"name" : "ミヤチ(伸身ブレッドシュナイダー)",
+			"name_en" : "Kovacs str.with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "け上がり倒立",
+			"name_en" : "Kip to hdst.or from mx-grip to hdst.w.1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "懸垂振り出し倒立or後方浮腰支持回転倒立",
+			"name_en" : "From hang or from support,free hip circle through hdst."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "懸垂振り出しひねり倒立or後方浮支持回転ひねり倒立",
+			"name_en" : "From hang or from support,free hip circle through hdst.with 1/2t."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "懸垂振り出しとび逆手持ち換え倒立or後方浮支持回転とび逆手倒立",
+			"name_en" : "From hang or from support,free hip circle hop to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "順手背面後ろ振り出し",
+			"name_en" : "Back toss to dorsal hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "順手背面後ろ振り出し",
+			"name_en" : "Back toss to dorsal hang."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方浮腰回転開脚抜き懸垂",
+			"name_en" : "Stoop circle fwd.to strad.cut to hang or support."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "ワイラー(倒立から前方浮支持回転倒立)",
+			"name_en" : "From hdst.,free hip circle fwd.through hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "エンドー(前方開脚浮腰回転倒立)",
+			"name_en" : "Free circle fwd.strad.or legs together through hdst."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "シュタルダー(後方開脚浮腰回転倒立)",
+			"name_en" : "Free circle bwd.strad.or legs together through hdst."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "シュタイネマン(順手背面懸垂前振り上がり背面支持)",
+			"name_en" : "From dorsal hang,uprise fwd.to support rw."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "オノ(順手背面懸垂前振り上がりひねり支持)",
+			"name_en" : "Steineman uprise w.11/2t.to support."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "順手背面懸垂前振り上がり両脚横抜き支持",
+			"name_en" : "Steineman uprise w.flank bwd.to support or hang."
+		},{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方浮腰回転開脚抜き倒立経過",
+			"name_en" : "Stoop circle fwd.to strad.cut through hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "アドラー(前方浮腰回転振り出し倒立)",
+			"name_en" : "Stoop circle rearward fwd.through hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "ケステ(順手背面懸垂前振り上がり後方浮腰回転倒立)",
+			"name_en" : "Steineman uprise w.stoop or to hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "大逆手エンドー",
+			"name_en" : "Endo in el-grip through hdst."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "カルバロ(前方浮腰回転開脚抜きひねり懸垂)",
+			"name_en" : "Stoop circle fwd.to strad.cut with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "閉脚シュタルダー",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "閉脚エンドー",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "閉脚シュタルダーとび逆手持ち換え倒立",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "アドラーひねり倒立",
+			"name_en" : "Adler with 1/2t.through hdst.in ovgr."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "アドラーとび逆手倒立",
+			"name_en" : "Adler with 1/2t.through hdst.in ovgr."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "アドラー1回ひねり片逆手倒立",
+			"name_en" : "Adler and 1/1t.through hdst.in mx-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "バルダウフ(アドラー(とび)1回ひねり片逆手倒立)",
+			"name_en" : "Adler and 1/1t.through hdst.in mx-el-grip,also with hop."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "リホヴィツキー(順手背面懸垂振り上がり後方浮腰回転倒立ひねり大逆手)",
+			"name_en" : "Koste 1/2t.to el-grip."
+		},
+
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "キンテロ(前方浮腰回転開脚抜き1回ひねり片大逆手)",
+			"name_en" : "Carballo with 1/2t.to mx-el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "大逆手閉脚エンドー",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "アドラー1回ひねり逆手倒立orフェンテス(アドラーとび1回ひねり大逆手)",
+			"name_en" : "Adler and 1/1t.through hdst.in ungr."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "キンテロ大逆手",
+			"name_en" : "Quintero to el-grip."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "前方屈伸(伸身)宙返り下り",
+			"name_en" : "Salto fwd.p.or str.,also with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方屈伸(伸身)宙返り下り",
+			"name_en" : "Salto bwd.p.or str.,also with 1/2 or 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "大開脚(大伸身)とび越し下り",
+			"name_en" : "Hecht strad.,hecht or hecht with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方伸身宙返り1回ひねり下り",
+			"name_en" : "Salto fwd.str.with 1/1 or 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方伸身宙返り2回ひねり下り",
+			"name_en" : "Salto bwd.str.with 2/1 or 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方かかえ込み2回宙返り下り",
+			"name_en" : "Double salto bwd.tuck or p."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "バーを越えながら後方かかえ込み2回宙返り下り",
+			"name_en" : "Double salto bwd.tuck or p.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "大伸身とび越し1回ひねり下り",
+			"name_en" : "Hecht with 1/1 or 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方伸身宙返り2回ひねり下り",
+			"name_en" : "Salto fwd.str.with 2/1 or 5/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方かかえ込み2回宙返り下り",
+			"name_en" : "Double salto fwd.tuck or p.with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "バーを越えながら前方かかえ込み2回宙返り下り",
+			"name_en" : "Double salto fwd.tuck or p.with 1/2t.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身宙返り3回ひねり下り",
+			"name_en" : "Salto bwd.str.with 5/2 or 3/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方かかえ込み2回宙返り1回ひねり下り",
+			"name_en" : "Double salto bwd.tuck or p.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身2回宙返り下り",
+			"name_en" : "Double salto bwd.str."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方かかえ込み2回宙返り1回ひねり下り",
+			"name_en" : "Double salto bwd.tuck or p.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身2回宙返り下り",
+			"name_en" : "Double salto bwd.str."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "バーを越えながら後方かかえ込み2回宙返り1回ひねり下り",
+			"name_en" : "Double salto bwd.tuck or p.with 1/1t.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "バーを越えながら後方伸身2回宙返り下り",
+			"name_en" : "Double salto bwd.str.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方かかえ込み2回宙返り1回ひねり下り",
+			"name_en" : "Double salto fwd.tuck with 1/1 or 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方伸身2回宙返り下り",
+			"name_en" : "Double salto fwd.str.or with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "バーを越えながら前方かかえ込み2回宙返り1回ひねり下り",
+			"name_en" : "Double salto fwd.tuck or p.w.1/1 or 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方かかえ込み2回宙返り下り2回ひねり下り",
+			"name_en" : "Double salto bwd.tuck or p.with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方伸身2回宙返り1回ひねり下り",
+			"name_en" : "Double salto bwd.str.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "バーを越えながら後方かかえ込み2回宙返り2回ひねり下り",
+			"name_en" : "Double salto bwd.tuck or p.with 2/1t.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ヘイデン(バーを越えながら後方伸身2回宙返り1回ひねり下り)",
+			"name_en" : "Double salto bwd.str.with 1/1t.over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "大伸身とび越し2回ひねり下り",
+			"name_en" : "Hecht with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "前方かかえ込み2回宙返り2回ひねり下り",
+			"name_en" : "Double salto fwd.tuck or p.with 2/1 or 5/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "前方伸身2回宙返り1回ひねり下り",
+			"name_en" : "Double salto fwd.str.with 1/1 or 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ワタナベ(伸身新月面宙返り)(後方伸身2回宙返り2回ひねり下り)",
+			"name_en" : "Double salto bwd.str.with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "フェドルチェンコ(後方伸身2回宙返り3回ひねり下り)",
+			"name_en" : "Double salto bwd.str.with 3/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "アンドリアノフ、ホフマン((バーを越えながら)後方かかえ込み3回宙返り下り)",
+			"name_en" : "Triple salto bwd.tuck or over the bar."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "ルンプティス(前方かかえ込み3回宙返り下り)",
+			"name_en" : "Triple salto fwd.tuck."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "ファルダン(後方屈伸3回宙返り下り)",
+			"name_en" : "Triple salto bwd.p."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "ベーレ(後方かかえ込み3回宙返り1回ひねり下り)",
+			"name_en" : "Triple salto bwd.tuck with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
+			"name_en" : ""
+		},
+		{
+			"key" : "",
+			"group" : "Ⅳ",
+			"vv" : "",
+			"vs" : "0.",
+			"name" : "",
 			"name_en" : ""
 		}
+
 
 	]
 
