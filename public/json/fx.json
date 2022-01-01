@@ -426,13 +426,535 @@
 		},
 		{
 			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "1回ひねり前転とび",
+			"name_en" : "Jump with 1/1 twist to fwd.hdsp."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方伸身宙返り",
+			"name_en" : "Salto fwd.stretched."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方かかえ込み宙返り1回ひねり",
+			"name_en" : "Salto tucked with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方伸身宙返りひねり",
+			"name_en" : "Salto fwd.str.with 1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方かかえ込み宙返り3/2ひねり",
+			"name_en" : "Salto tucked with 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "前方かかえ込み(屈伸)宙返り正面支持臥",
+			"name_en" : "Salto fwd.t.or p.to front support."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方伸身宙返り正面支持臥",
+			"name_en" : "Salto fwd.str.to front support."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方伸身宙返り1回ひねり",
+			"name_en" : "Salto fwd.str.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方伸身宙返り3/2回ひねり",
+			"name_en" : "Salto fwd.str.with3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "前方かかえ込み(屈伸)宙返り1回ひねり正面支持臥",
+			"name_en" : "Salto fwd.t.,p or str.with1/1t.to front support."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "モランディ",
+			"name_en" : "Handspring salto fwd.tuck(Marinich style)."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方かかえ込み2回宙返り",
+			"name_en" : "Double salto fwd.tucked",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方伸身宙返り2回ひねり",
+			"name_en" : "Salto fwd.str.with 2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "デファー",
+			"name_en" : "Jump fwd. with 1/2t. to dbl.salto bwd.t.or p.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "前方屈伸2回宙返り",
+			"name_en" : "Double salto fwd.piked.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "○前方抱え込み2回宙返りひねり",
+			"name_en" : "Double salto fwd.tucked with 1/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "前方伸身宙返り5/2ひねり",
+			"name_en" : "Salto fwd.str.with 5/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "前方屈伸2回宙返りひねり",
+			"name_en" : "Double salto fwd.piked with 1/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "シライ２",
+			"name_en" : "Salto fwd.str.with 3/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "前方かかえ込み2回宙返り1回ひねり",
+			"name_en" : "Double salto fwd.tucked with 1/1t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.6",
+			"name" : "ゴシマ(前方伸身宙返り7/2ひねり)",
+			"name_en" : "Salto fwd.str.with 7/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅱ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "ザパタ(前方かかえ込み2回宙返り3/2ひねり)",
+			"name_en" : "Double salto fwd.tucked with 3/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
 			"group" : "Ⅲ",
 			"vv" : "A",
 			"vs" : "0.1",
-			"name" : "後方かかえ込み宙返り",
-			"name_en" : "Salto tucked and piked."
+			"name" : "後方かかえ込み(屈伸)宙返り",
+			"name_en" : "Salto backwards tucked or piked."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後方かかえ込み(屈伸)宙返りひねり",
+			"name_en" : "Salto backwards tucked or piked w.1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後転とび",
+			"name_en" : "Back handspring"
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後ろとびひねり前転",
+			"name_en" : "Jump bwd. with 1/2t.to roll fwd."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "A",
+			"vs" : "0.1",
+			"name" : "後ろとびひねり前転とび",
+			"name_en" : "Jump bwd.with 1/2t.to handspring forward."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方伸身宙返り",
+			"name_en" : "Salto backwards stretched."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方伸身宙返りひねり",
+			"name_en" : "Salto backwards str.w.1/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "テンポ宙返り",
+			"name_en" : "Tempo salto bwd."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方かかえ込み宙返り3/2ひねり",
+			"name_en" : "Salto backwards tucked w.3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後方伸身宙返り1回ひねり",
+			"name_en" : "Salto backwards str.with 1/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "B",
+			"vs" : "0.2",
+			"name" : "後ろとびひねり前方かかえ込み(屈伸)宙返り正面支持臥",
+			"name_en" : "Jump bwd.1/2t.to salto fwd.t.or p.to f.sup."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方かかえ込み2回宙返り",
+			"name_en" : "Double salto bwd.tucked.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方屈伸2回宙返り",
+			"name_en" : "Double salto bwd.piked.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身宙返り3/2ひねり",
+			"name_en" : "Salto bwd str.with 3/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "C",
+			"vs" : "0.3",
+			"name" : "後方伸身宙返り2回ひねり",
+			"name_en" : "Salto bwd.str.with2/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "ツカハラor後ろとびひねり前方かかえ込み(屈伸)2回宙返りひねり",
+			"name_en" : "Double salto bwd.piked.bwd.t.or piked with 1/1t.Also Arabian double t. or p.1/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "前方かかえ込み(屈伸)2回宙返りひねりor後ろとびひねり前方かかえ込み(屈伸)2回宙返り",
+			"name_en" : "Arabian double tucked or piked or double salto bwd.t. or p.with1/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方伸身宙返り5/2ひねり",
+			"name_en" : "Salto bwd.str.with5/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "後方伸身宙返り3回ひねり",
+			"name_en" : "Salto bwd.str.with3/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "D",
+			"vs" : "0.4",
+			"name" : "○後方伸身2回宙返り",
+			"name_en" : "Double salto bwd.streched.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後方かかえ込み2回宙返り2回ひねり",
+			"name_en" : "Double salto bwd.tucked.with 2/1t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後方かかえ込み2回宙返り3/2ひねり",
+			"name_en" : "Double salto bwd.tucked.with 3/2t.or Salto bwd.str.3/2 to fwd.salto tucked.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ゴンザレス(後方伸身宙返り7/2ひねり)",
+			"name_en" : "Salto bwd.str.with 7/2t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "ロウ・ユン(側方開脚2回宙返り3/4ひねり)",
+			"name_en" : "Double salto straddle with 1/1t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "タマヨor後方伸身2回宙返りひねり",
+			"name_en" : "Arabian Jump bwd.to dbl.salto fwd.str.or double salto bwd.streched with 1/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "E",
+			"vs" : "0.5",
+			"name" : "後方伸身2回宙返り1回ひねりorペネフ",
+			"name_en" : "Double salto bwd.str.with 1/1t.or arabian jump bwd.to dbl.salto fwd.str.with1/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "後方かかえ込み2回宙返り5/2ひねり",
+			"name_en" : "Double salto bwd.tucked with 5/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "シライ/グエン",
+			"name_en" : "Salto bwd.str.with 4/1t."
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "コリバノフ(後方伸身宙返り2回ひねり屈伸宙返り)",
+			"name_en" : "Salto bwd.str.with2/1t.and salto bwd piked.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "後方伸身2回宙返り3/2ひねりorヒポリト",
+			"name_en" : "Double salto bwd.str.with 3/2t.Also Hypolito",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "F",
+			"vs" : "0.6",
+			"name" : "後方伸身2回宙返り2回ひねり",
+			"name_en" : "Double salto bwd.str.with 2/1t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "リ・ジョンソン",
+			"name_en" : "Double salto bwd.tucked with 3/1t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "G",
+			"vs" : "0.7",
+			"name" : "後方伸身2回宙返り5/2ひねり",
+			"name_en" : "Double salto bwd.str.with 5/2t.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "H",
+			"vs" : "0.8",
+			"name" : "リューキン",
+			"name_en" : "Triple salto bwd.tucked.",
+			"option" : {
+				"dbl_flg":1
+			}
+		},
+		{
+			"key" : "",
+			"group" : "Ⅲ",
+			"vv" : "H",
+			"vs" : "0.8",
+			"name" : "シライ3",
+			"name_en" : "Double salto bwd.str.with 3/1t.",
+			"option" : {
+				"dbl_flg":1
+			}
 		}
-
 
 	]
 

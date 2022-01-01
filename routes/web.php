@@ -33,6 +33,7 @@ Route::group(['prefix'=>'event','as'=>'event.'],function(){
     Route::get('/', 'EventController@index')->name('index');
     Route::get('/{event_id?}', 'EventController@list')->where('event_id', '[0-9]+')->name('list');
     Route::get('/{event_id?}/{athlete_id?}', 'AthleteController@index')->where('event_id', '[0-9]+')->where('athlete_id', '[0-9]+')->name('athlete');
+    Route::put('/{event_id?}/{athlete_id?}/memo', 'AthleteController@update')->where('event_id', '[0-9]+')->where('athlete_id', '[0-9]+')->name('athlete.update');
 
 });
 

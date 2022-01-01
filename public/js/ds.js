@@ -400,7 +400,8 @@ function csv_decode( delimiter=",",event=active_event()){
 }
 
 
-/** 通知欄の表示処理
+/** 
+ * 通知欄の表示処理
  * 
  */
 function set_notice(type='Info',text,event=active_event()){
@@ -530,7 +531,8 @@ function select_value(){
 
 }
 
-/** 技選択モーダル
+/** 
+ * 技選択モーダル
  * 
  */
 function select_element(event=""){
@@ -549,7 +551,8 @@ function select_element(event=""){
 }
 
 
-/** アクティブな情報を拾ってモーダルにセットする
+/** 
+ * アクティブな情報を拾ってモーダルにセットする
  * 
  * @param {*} this $(".elm")
  */
@@ -577,7 +580,8 @@ function modal_init(group="",def=""){
 }
 
 
-/** アクティブな種目を返す
+/** 
+ * アクティブな種目を返す
  * 
  * @returns EVENTS fx ~ hb
  * 
@@ -586,8 +590,8 @@ function active_event(){
     return $(".js-tab>div.active").attr("data-event");
 }
 
-/** モーダル表示スイッチ
- * 
+/** 
+ * モーダル表示スイッチ
  * 
  * @param {string} set 'remove' => remove the moldal.
  */
