@@ -38,9 +38,9 @@
 
           <div class="col-lg-8">
             <div class="card">
-              <div class="card-header border-0">
+              {{-- <div class="card-header border-0">
                 <h3 class="card-title">EVENT DATA</h3>
-              </div>
+              </div> --}}
               <div class="card-body">
                 <canvas id="mychart-radar"></canvas>
               </div>
@@ -49,9 +49,9 @@
 
           <div class="col-lg-4">
             <div class="card">
-              <div class="card-header border-0">
+              {{-- <div class="card-header border-0">
                 <h3 class="card-title">ATHLETE DATA</h3>
-              </div>
+              </div> --}}
               <div class="card-body">
                 <table class="prof-table">
                   <tbody>
@@ -104,8 +104,8 @@
             <h3 class="card-title">MEMO</h3>
           </div>
           <div class="card-body">
-            <textarea name="memo" class="memo"></textarea>
-            <p class="memo-notice">※自動で保存されます(予定)</p>
+            <textarea name="memo" class="memo">{{ $athlete->memo }}</textarea>
+            <p class="memo-notice">※書き込むと自動で保存されます</p>
           </div>
         </div>
 
@@ -318,7 +318,28 @@ textarea.memo {
 </style>
 @endsection
 @section('script')
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
+
+$(function(){
+
+    // テキストエリア高さ自動調整・保存
+    $('.memo').attr('rows', 1).each(function() {
+        $(this).height(0).innerHeight(this.scrollHeight);
+    }).on('input', function() {
+        console.log(encodeURIComponent($(this).val()));
+        $(this).height(0).innerHeight(this.scrollHeight);
+        axios({
+            method: 'put',
+            url: '/event/{{ $event_id }}/{{ $athlete_id }}/memo',
+            data: 'memo=' + encodeURIComponent($(this).val())
+        }).catch(err => {
+            alert('ネットワークエラー：メモが保存できませんでした。');
+        });
+    });
+
+});
+
 var ctx = document.getElementById('mychart-radar');
 var myChart = new Chart(ctx, {
   type: 'radar',
@@ -368,7 +389,7 @@ var myChart = new Chart(ctx, {
       },
       ticks: {
         // 目盛り
-        min: 4,
+        min: 2,
         max:16,
         stepSize: 2,
         fontSize: 12,

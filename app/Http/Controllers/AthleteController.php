@@ -43,9 +43,21 @@ class AthleteController extends Controller
         $athlete = Athlete::where('id',$athlete_id)->first();
         $data = $athlete->event_data();
 
-        return view('event.athlete.index',compact('event_id','event','athlete','data'));
+        return view('event.athlete.index',compact('event_id','event','athlete','athlete_id','data'));
     }
 
+
+    public function update(Request $request)
+    {
+        $event_id = $request->event_id;
+        $athlete_id = $request->athlete_id;
+        
+        $athlete = Athlete::where('id',$athlete_id)->first();
+        $athlete->memo = $request->memo;
+        $athlete->save();
+
+        //Log::info("ATHLETE ID{$athlete_id} : {$athlete->memo}");
+    }
 
 
 }
