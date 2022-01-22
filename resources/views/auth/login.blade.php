@@ -137,11 +137,13 @@ div#venta {
         width: 100%;
         height: 100%;
     }
-    .offset-md-4 {
-        text-align: center;
-    }
     .card {
         margin: 10px;
+    }
+}
+@media screen and (max-width:768px){
+    .offset-md-4 {
+        text-align: center;
     }
 }
 </style>
