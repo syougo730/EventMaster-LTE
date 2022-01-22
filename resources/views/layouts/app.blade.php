@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     試合結果集計ツール
@@ -71,13 +71,17 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
-        <main class="py-4">
-            @yield('content')
+        <main class="">
+                @yield('content')
         </main>
     </div>
-    
+      
+    <div class="sub">
+        @yield('venta')
+    </div>
+
 @yield('js')
 
 </body>
