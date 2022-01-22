@@ -12,7 +12,6 @@
             <div class="card">
                 {{-- <div class="card-header">ログイン</div> --}}
 
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -56,7 +55,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary submit-btn">
                                     {{ __('ログイン') }}
                                 </button>
                             </div>
@@ -114,8 +113,12 @@ div#venta {
     width: 100%;
 }
 .btn-link{
-    margin-left: auto;
+    margin: auto;
 }
+.submit-btn {
+    margin: 15px 0;
+}
+
 .sp{display: none;}
 .sp-logo{
     margin: 20px 10px;   
@@ -125,12 +128,21 @@ div#venta {
 @media screen and (max-width:900px){
     .sp{display: block;}
     #app{
-    width: 100%;
-    min-width: unset;
-}
-.sub{
-    display: none;
-}
+        width: 100%;
+        min-width: unset;
+    }
+    .sub{ 
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .offset-md-4 {
+        text-align: center;
+    }
+    .card {
+        margin: 10px;
+    }
 }
 </style>
 @endsection
